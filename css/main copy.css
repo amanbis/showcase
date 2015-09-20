@@ -1,3 +1,17 @@
+.grid-container {
+	padding: 100px 100px;
+}
+
+.product-tile {
+	width: 10%;
+	display: inline-block;
+	border: 1px solid #333;
+}
+
+.product-tile p {
+	text-align: center; 
+}
+
 .modalDialog {
 	position: fixed;
 	font-family: Arial, Helvetica, sans-serif;
@@ -5,7 +19,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(0,0,0,0.8);
+	background: rgba(255,255,255,1);
 	z-index: 99999;
 	opacity:0;
 	-webkit-transition: opacity 400ms ease-in;
@@ -24,11 +38,18 @@
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
+	/*border-radius: 10px;
 	background: #fff;
 	background: -moz-linear-gradient(#fff, #999);
 	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);*/
+}
+
+.img {
+	width: 400px;
+	height: 400px;
+	background: #F8F8F8 url("../image/360.jpg") center center no-repeat;
+	background-size: cover;
 }
 
 .close {
@@ -36,9 +57,9 @@
 	color: #FFFFFF;
 	line-height: 25px;
 	position: absolute;
-	right: -12px;
+	right: 50px;
 	text-align: center;
-	top: -10px;
+	top: 50px;
 	width: 24px;
 	text-decoration: none;
 	font-weight: bold;
