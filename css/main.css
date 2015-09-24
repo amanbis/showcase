@@ -12,10 +12,38 @@ body {
 	display: table;
 	background-color: rgba(243, 244, 244, 0.95);
 	width: 100%;
-	height: 48px;
+	height: 125px;
 }
 
 .sub-nav .title {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+.sub-nav .title ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.sub-nav .title ul li {
+	display: inline-block;
+	margin: 0 auto;
+	width: 200px;
+	text-align: center;
+	font-size: 10px;
+}
+
+.sub-nav .title ul li::before {
+	display: block;
+	content: '';
+	height: 54px;
+	margin-bottom: 10px;
+	background: url("http://www.apple.com/v/ipad/home/u/home/images/familybrowser/ipadair_large.svg") no-repeat center;
+}
+
+header .hero {
+	width: 100%;
+	height: 400px;
+	background-image: url("image/hero.png");
 }
