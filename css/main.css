@@ -48,9 +48,37 @@ footer {
 	background: url("http://www.apple.com/v/ipad/home/u/home/images/familybrowser/ipadair_large.svg") no-repeat center;
 }
 
-header .hero {
+header > div {
 	width: 100%;
 	height: 745px;
-	background: url("../image/hero.png") center no-repeat;
+}
+
+.bp {
+	background: url("../image/bp.png") center no-repeat;
 	background-size: 100%;
+}
+
+.cup {
+	background: url("../image/cup.png") center no-repeat;
+	background-size: 100%;
+}
+
+.soother {
+	background: url("../image/soother.png") center no-repeat;
+	background-size: 100%;
+}
+
+.bottle {
+	background: url("../image/bottle.png") center no-repeat;
+	background-size: 100%;
+}
+
+.care {
+	background: url("../image/care.png") center no-repeat;
+	background-size: 100%;
+}
+
+.inset {
+	width: 200px;
+	height: 400px;
 }
