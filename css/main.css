@@ -79,6 +79,11 @@ header > div {
 }
 
 .inset {
-	width: 200px;
-	height: 400px;
+	position: relative;
+	top: 2em;
+	left: 0;
+	width: 400px;
+	height: 200px;
+	border: 1px solid #fff;
+	background-color: rgba(243, 244, 244, 0.75);
 }
