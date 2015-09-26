@@ -21,18 +21,18 @@ footer {
 	height: 125px;
 }
 
-.sub-nav .title {
+.sub-nav .icons {
 	display: table-cell;
 	vertical-align: middle;
 }
 
-.sub-nav .title ul {
+.sub-nav .icons ul {
 	padding: 0;
 	margin: 0 auto;
 	width: 1018px;
 }
 
-.sub-nav .title ul li {
+.sub-nav .icons ul li {
 	display: inline-block;
 	margin: 0 auto;
 	width: 200px;
@@ -40,7 +40,7 @@ footer {
 	font-size: 10px;
 }
 
-.sub-nav .title ul li::before {
+.sub-nav .icons ul li::before {
 	display: block;
 	content: '';
 	height: 54px;
@@ -48,7 +48,25 @@ footer {
 	background: url("http://www.apple.com/v/ipad/home/u/home/images/familybrowser/ipadair_large.svg") no-repeat center;
 }
 
-header > div {
+header {
+	display: table;
+	width: 100%;
+	height: 300px;
+}
+
+.title {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.title p {
+	max-width: 50%;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+
+.product-categories > div {
 	width: 100%;
 	height: 745px;
 }
@@ -79,11 +97,21 @@ header > div {
 }
 
 .inset {
+	display: table;
 	position: relative;
-	top: 2em;
-	left: 0;
 	width: 400px;
 	height: 200px;
 	border: 1px solid #fff;
 	background-color: rgba(243, 244, 244, 0.75);
+}
+
+.category {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.bp .inset {
+	top: 10em;
+	left: 60em;
 }
