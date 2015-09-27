@@ -111,7 +111,17 @@ header {
 	vertical-align: middle;
 }
 
-.bp .inset {
+.bp .inset, .soother .inset {
 	top: 10em;
 	left: 60em;
+}
+
+.cup .inset, .bottle .inset {
+	top: 10em;
+	left: 7em;
+}
+
+.care .inset {
+	top: 6em;
+	left: 7em;
 }
