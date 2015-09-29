@@ -9,4 +9,13 @@ $(document).ready(function() {
 			}
 		});
 	});
+
+	$.ajax({
+		url: 'pages/product.html',
+		type: 'GET',
+		dataType: 'html',
+		success: function(result) {
+			$('.main-content').html(result);
+		}
+	});
 });
