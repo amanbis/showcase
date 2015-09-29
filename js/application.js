@@ -11,7 +11,7 @@ $(document).ready(function() {
 	});
 
 	$.ajax({
-		url: 'pages/product.html',
+		url: 'pages/products.html',
 		type: 'GET',
 		dataType: 'html',
 		success: function(result) {
