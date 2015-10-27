@@ -9,7 +9,7 @@
   margin: 0;
 }
 
-html, body {
+html, /*body*/ {
   height: 100%;
 }
 
@@ -20,6 +20,6 @@ html, body {
   margin: 0 auto -4em;
 }
 
-footer, .push {
+.footer, .push {
   height: 4em;
 }
