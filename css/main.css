@@ -67,9 +67,6 @@ nav {
 
 .links ul a {
   display: inline-block;
-}
-
-.links ul li {
   width: 100px;
   height: 60px;
   margin: 0 20px;
@@ -78,8 +75,11 @@ nav {
   transition: background-color 0.3s ease-in-out;
 }
 
-.links ul li:hover {
+.links ul a:hover {
   background-color: #d20071;
+}
+
+.links ul li {
 }
 
 .dropdown {
