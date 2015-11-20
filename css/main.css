@@ -2,6 +2,12 @@ body {
 	background-color: #ececec;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper, footer {
 	max-width: 1280px;
 	margin: 0 auto;
@@ -58,18 +64,15 @@ nav {
   vertical-align: middle;
 }
 
-.links ul {
+.links .nav-links {
   list-style-type: none;
   width: 44.8%;
   margin: 0 auto;
   padding: 0;
 }
 
-.links ul a {
+.links .nav-links .nav-link {
   display: inline-block;
-}
-
-.links ul li {
   width: 100px;
   height: 60px;
   margin: 0 20px;
@@ -78,14 +81,12 @@ nav {
   transition: background-color 0.3s ease-in-out;
 }
 
-.links ul li:hover {
+.links .nav-links .nav-link:hover {
   background-color: #d20071;
 }
 
-.dropdown {
-}
-
 .dropdown .dropdown-menu {
+  display: table;
   position: absolute;
   top: 100%;
   right: 0;
@@ -94,13 +95,48 @@ nav {
   background-color: rgba(249, 249, 249, 0.95);
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0.5s ease-in-out 1s, opacity 0.5s ease-in-out 1s;
+  transform-origin: center top;
+  transform: scale(1,0);
+  transition: visibility 0.3s ease-in-out 1s, opacity 0.3s ease-in-out 1s, transform 0.3s ease-in-out 1s;
 }
 
 .dropdown:hover .dropdown-menu {
   visibility: visible;
   opacity: 1;
-  transition: visibility 0.5s ease-in-out 0.5s, opacity 0.5s ease-in-out 0.5s;
+  transform: scale(1,1);
+  transition: visibility 0.5s ease-in-out 0.5s, opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
+}
+
+.product-menu {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.product-menu ul a {
+  display: inline-block;
+}
+
+.product-menu ul {
+  width: 56.1%;
+  margin: 0 auto;
+}
+
+.product {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+  background-color: #ececec;
+  opacity: 0;
+  transition: background-color 0.3s ease-in-out, opacity 0.5s ease-in-out 0.8s;
+}
+
+.product:hover {
+  background-color: #f3f3f3;
+}
+
+.dropdown:hover .product {
+  opacity: 1;
 }
 
 .search-container {
