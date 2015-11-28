@@ -246,6 +246,32 @@ nav {
   text-decoration: underline;
 }
 
+.product-img {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.product-img img {
+  width: 100%;
+}
+
+.m-breastpump {
+  margin-top: 1.5em;
+}
+
+.e-breastpump {
+  margin-top: 2.25em;
+}
+
+.nipple-protector {
+  margin-top: 3.5em;
+}
+
+.breastpad {
+  width: 35%;
+  margin-top: 2em;
+}
+
 .product-tiles div:first-child {
   border-right: 10px solid #f9f9f9;
 }
@@ -259,12 +285,12 @@ nav {
 .related-container .hr {
   display: block;
   position: absolute;
-  left: 42.75em;
   height: 350px;
   width: 1px;
   background-color: #ccc;
   border: 0;
-  margin: 1.5em 0;
+  margin-top: 1.5em;
+  margin-left: 40em;
   padding: 0; 
 }
 
