@@ -114,6 +114,10 @@ nav {
   transition: visibility 0.3s ease-in-out 0.5s, opacity 0.3s ease-in-out 0.5s, transform 0.3s ease-in-out 0.5s;
 }
 
+.dropdown:hover > .nav-link {
+  background-color: #d20071;
+}
+
 .product-menu {
   display: table-cell;
   vertical-align: middle;
@@ -222,16 +226,28 @@ nav {
 }
 
 .product-tile {
-  display: inline-block;
-  width: 49.59%;
-  height: 400px;
+  display: block;
+  float: left;
+  width: 42.1%;
+  height: 335px;
   margin: 0 auto;
-  padding: 0;
+  padding: 2em 3em;
   background-color: #f3f3f3;
 }
 
+.product-tile a {
+  text-decoration: none;
+  color: #2198b8;
+  font-size: 1.5em;
+  font-variant: small-caps;
+}
+
+.product-tile a:hover {
+  text-decoration: underline;
+}
+
 .product-tiles div:first-child {
-  border-right: 6px solid #f9f9f9;
+  border-right: 10px solid #f9f9f9;
 }
 
 .related-container {
