@@ -253,6 +253,11 @@ nav {
 
 .product-img img {
   width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-img a:hover img {
+  transform: scale(1.15,1.15);
 }
 
 .m-breastpump {
