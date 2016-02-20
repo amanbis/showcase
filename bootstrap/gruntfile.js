@@ -10,15 +10,30 @@ module.exports = function(grunt) {
 			} //my_target
 		}, //uglify
 
+		compass: {
+			dev: {
+				options: {
+					config: 'config.rb'
+				} //options
+			} //dev
+		}, //compass + sass
+
 		watch: {
-			files: ['_/components/js/*.js'],
-			tasks: ['uglify']
+			scripts: {
+				files: ['_/components/js/*.js'],
+				tasks: ['uglify']
+			}, //scripts
+			sass: {
+				files: ['_/components/sass/*.scss'],
+				tasks: ['compass:dev']
+			} //sass
 		}, //watch
 
 		browserSync: {
 			bsFiles: {
 				src: [
-					'_/components/js/*.js',
+					'_/js/*.js',
+					'_/css/*.css',
 					'./*.html'
 				]
 			},
@@ -34,8 +49,8 @@ module.exports = function(grunt) {
 
 	// load npm tasks
 	grunt.loadNpmTasks('grunt-contrib-uglify')
-	grunt.loadNpmTasks('grunt-contrib-watch')
 	grunt.loadNpmTasks('grunt-contrib-compass')
+	grunt.loadNpmTasks('grunt-contrib-watch')
 	grunt.loadNpmTasks('grunt-browser-sync')
 
 	// define default task
