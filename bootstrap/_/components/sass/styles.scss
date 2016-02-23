@@ -1,3 +1,19 @@
+@mixin respond-to($media) {
+	@if $media == sm {
+		@media only screen and (min-width: 768px) {
+			@content
+		}
+	} @else if $media == md {
+		@media only screen and (min-width: 992px) {
+			@content
+		}
+	} @else {
+		@media only screen and (min-width: $media) {
+			@content
+		}
+	}
+}
+
 body {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -11,6 +27,10 @@ body {
 	text-align: center;
 }
 
+.product img {
+	width: 100%;
+}
+
 .feature {
 	margin-top: 4.5em;
 }
@@ -21,6 +41,50 @@ body {
 	background-color: #eee;
 }
 
-.product img {
-	width: 100%;
+.feature::before {
+	@include respond-to(md) {
+		content: '';
+		display: block;
+		position: relative;
+		top: 6em;
+		left: 34em;
+		width: 10px;
+		height: 2px;
+		background-color: #333;
+		transform-origin: left center;
+		animation: scaleout 1.0s 1 ease-in-out forwards;
+		z-index: 999;	
+	}
+}
+
+.feature::after {
+	@include respond-to(md) {
+		content: '';
+		display: block;
+		position: relative;
+		top: -3.325em;
+		left: 34em;
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		background-color:#333;
+		animation: slideout 1.0s 1 ease-in-out forwards;
+		z-index: 999;
+	}
+}
+
+@keyframes scaleout {
+  from {
+    transform: scaleX(0);
+  } to {
+    transform: scaleX(30);
+  }
+}
+
+@keyframes slideout {
+  from {
+    transform: translateX(0);
+  } to {
+    transform: translateX(300px);
+  }
 }
