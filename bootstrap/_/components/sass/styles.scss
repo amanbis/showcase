@@ -50,9 +50,7 @@ body {
 		left: 34em;
 		width: 10px;
 		height: 2px;
-		background-color: #333;
-		transform-origin: left center;
-		animation: scaleout 1.0s 1 ease-in-out forwards;
+		background-color: #eee;
 		z-index: 999;	
 	}
 }
@@ -67,10 +65,18 @@ body {
 		width: 7px;
 		height: 7px;
 		border-radius: 50%;
-		background-color:#333;
-		animation: slideout 1.0s 1 ease-in-out forwards;
+		background-color:#eee;
 		z-index: 999;
 	}
+}
+
+.animate.feature::before {
+	transform-origin: left center;
+	animation: scaleout 1.0s 1 ease-in-out forwards;
+}
+
+.animate.feature::after {
+	animation: slideout 1.0s 1 ease-in-out forwards;
 }
 
 @keyframes scaleout {
