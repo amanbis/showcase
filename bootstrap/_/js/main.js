@@ -1,1 +1,1 @@
-$(document).ready(function(){console.log("hello")});
+$(document).ready(function(){$(".feature").viewportChecker({classToAdd:"animate"})});
