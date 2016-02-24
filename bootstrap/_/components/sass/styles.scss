@@ -1,0 +1,160 @@
+@mixin respond-to($media, $query) {
+	@if $media == sm {
+		@media only screen and ($query: 768px) {
+			@content
+		}
+	} @else if $media == md {
+		@media only screen and ($query: 992px) {
+			@content
+		}
+	} @else {
+		@media only screen and ($query: $media) {
+			@content
+		}
+	}
+}
+
+@mixin scale-out($length) {
+	-webkit-transform: scaleX($length);
+	-moz-transform: scaleX($length);
+	-ms-transform: scaleX($length);
+	-o-transform: scaleX($length);
+	transform: scaleX($length);
+}
+
+@mixin slide-out($length) {
+	-webkit-transform: translateX($length + px);
+	-moz-transform: translateX($length + px);
+	-o-transform: translateX($length + px);
+	transform: translateX($length + px);
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.feature-title {
+	text-align: center;
+}
+
+.product img {
+	width: 100%;
+}
+
+.features, .product {
+	margin-top: 2em;
+}
+
+
+
+.feature-img {
+	width: 100%;
+	height: 300px;
+	background-color: #eee;
+}
+
+.feature {
+	margin-top: 5.1em;
+
+	@include respond-to(1200px, max-width) {
+		margin-top: 2.5em;
+	}
+}
+
+.feature::before, .feature::after {
+	content: '';
+	opacity: 0;
+	display: block;
+	position: relative;
+	background-color: #616161;
+	z-index: 999;
+	transition: transform 1.0s cubic-bezier(.55,0,.1,1),
+				opacity 0.3s cubic-bezier(.55,0,.1,1);
+}
+
+.feature::before {
+	@include respond-to(md, min-width) {
+		top: 6em;
+		left: 33.5em;
+		width: 10px;
+		height: 2px;
+		@include scale-out(0);
+	}
+
+	@include respond-to(1200px, max-width) {
+		top: 6.4em;
+		left: 28em;
+	}
+}
+
+.feature::after {
+	@include respond-to(md, min-width) {
+		top: -3.36em;
+		left: 33.5em;
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		@include slide-out(0);
+	}
+
+	@include respond-to(1200px, max-width) {
+		top: -2.94em;
+		left: 28em;
+	}
+}
+
+.animate.feature::before {
+	opacity: 1;
+	transform-origin: left center;
+	@include scale-out(30);
+
+	@include respond-to(1200px, max-width) {
+		@include scale-out(25);
+	}
+}
+
+.animate.feature:nth-child(2)::before {
+	@include scale-out(25);
+
+	@include respond-to(1200px, max-width) {
+		@include scale-out(20);
+	}
+}
+
+.animate.feature::after {
+	opacity: 1;
+	@include slide-out(300);
+
+	@include respond-to(1200px, max-width) {
+		@include slide-out(250);
+	}
+}
+
+.animate.feature:nth-child(2)::after {
+	@include slide-out(250);
+
+	@include respond-to(1200px, max-width) {
+		@include slide-out(200);
+	}
+}
+
+@keyframes scaleout {
+  from {
+    transform: scaleX(0);
+  } to {
+    transform: scaleX(30);
+  }
+}
+
+@keyframes slideout {
+  from {
+    transform: translateX(0);
+  } to {
+    transform: translateX(300px);
+  }
+}
