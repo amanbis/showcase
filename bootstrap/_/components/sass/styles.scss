@@ -46,6 +46,12 @@ body {
 	width: 100%;
 }
 
+.features, .product {
+	margin-top: 2em;
+}
+
+
+
 .feature-img {
 	width: 100%;
 	height: 300px;
@@ -72,7 +78,7 @@ body {
 .feature::before {
 	@include respond-to(md, min-width) {
 		top: 6em;
-		left: 34em;
+		left: 33.5em;
 		width: 10px;
 		height: 2px;
 		@include scale-out(0);
@@ -87,7 +93,7 @@ body {
 .feature::after {
 	@include respond-to(md, min-width) {
 		top: -3.36em;
-		left: 34em;
+		left: 33.5em;
 		width: 7px;
 		height: 7px;
 		border-radius: 50%;
