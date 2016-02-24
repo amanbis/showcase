@@ -24,8 +24,12 @@ body {
 /* line 55, ../components/sass/styles.scss */
 .feature {
   margin-top: 5.1em; }
+  @media only screen and (max-width: 1200px) {
+    /* line 55, ../components/sass/styles.scss */
+    .feature {
+      margin-top: 2.5em; } }
 
-/* line 59, ../components/sass/styles.scss */
+/* line 63, ../components/sass/styles.scss */
 .feature::before, .feature::after {
   content: '';
   display: block;
@@ -35,7 +39,7 @@ body {
   transition: transform 1s cubic-bezier(0.55, 0, 0.1, 1); }
 
 @media only screen and (min-width: 992px) {
-  /* line 68, ../components/sass/styles.scss */
+  /* line 72, ../components/sass/styles.scss */
   .feature::before {
     top: 6em;
     left: 34em;
@@ -46,9 +50,14 @@ body {
     -ms-transform: scaleX(0);
     -o-transform: scaleX(0);
     transform: scaleX(0); } }
+@media only screen and (max-width: 1200px) {
+  /* line 72, ../components/sass/styles.scss */
+  .feature::before {
+    top: 6.4em;
+    left: 28em; } }
 
 @media only screen and (min-width: 992px) {
-  /* line 78, ../components/sass/styles.scss */
+  /* line 87, ../components/sass/styles.scss */
   .feature::after {
     top: -3.36em;
     left: 34em;
@@ -59,8 +68,13 @@ body {
     -moz-transform: translateX(0px);
     -o-transform: translateX(0px);
     transform: translateX(0px); } }
+@media only screen and (max-width: 1200px) {
+  /* line 87, ../components/sass/styles.scss */
+  .feature::after {
+    top: -2.94em;
+    left: 28em; } }
 
-/* line 89, ../components/sass/styles.scss */
+/* line 103, ../components/sass/styles.scss */
 .animate.feature::before {
   transform-origin: left center;
   -webkit-transform: scaleX(30);
@@ -68,28 +82,58 @@ body {
   -ms-transform: scaleX(30);
   -o-transform: scaleX(30);
   transform: scaleX(30); }
+  @media only screen and (max-width: 1200px) {
+    /* line 103, ../components/sass/styles.scss */
+    .animate.feature::before {
+      -webkit-transform: scaleX(25);
+      -moz-transform: scaleX(25);
+      -ms-transform: scaleX(25);
+      -o-transform: scaleX(25);
+      transform: scaleX(25); } }
 
-/* line 94, ../components/sass/styles.scss */
+/* line 112, ../components/sass/styles.scss */
 .animate.feature:nth-child(2)::before {
   -webkit-transform: scaleX(25);
   -moz-transform: scaleX(25);
   -ms-transform: scaleX(25);
   -o-transform: scaleX(25);
   transform: scaleX(25); }
+  @media only screen and (max-width: 1200px) {
+    /* line 112, ../components/sass/styles.scss */
+    .animate.feature:nth-child(2)::before {
+      -webkit-transform: scaleX(20);
+      -moz-transform: scaleX(20);
+      -ms-transform: scaleX(20);
+      -o-transform: scaleX(20);
+      transform: scaleX(20); } }
 
-/* line 98, ../components/sass/styles.scss */
+/* line 120, ../components/sass/styles.scss */
 .animate.feature::after {
   -webkit-transform: translateX(300px);
   -moz-transform: translateX(300px);
   -o-transform: translateX(300px);
   transform: translateX(300px); }
+  @media only screen and (max-width: 1200px) {
+    /* line 120, ../components/sass/styles.scss */
+    .animate.feature::after {
+      -webkit-transform: translateX(250px);
+      -moz-transform: translateX(250px);
+      -o-transform: translateX(250px);
+      transform: translateX(250px); } }
 
-/* line 102, ../components/sass/styles.scss */
+/* line 128, ../components/sass/styles.scss */
 .animate.feature:nth-child(2)::after {
   -webkit-transform: translateX(250px);
   -moz-transform: translateX(250px);
   -o-transform: translateX(250px);
   transform: translateX(250px); }
+  @media only screen and (max-width: 1200px) {
+    /* line 128, ../components/sass/styles.scss */
+    .animate.feature:nth-child(2)::after {
+      -webkit-transform: translateX(200px);
+      -moz-transform: translateX(200px);
+      -o-transform: translateX(200px);
+      transform: translateX(200px); } }
 
 @keyframes scaleout {
   from {
