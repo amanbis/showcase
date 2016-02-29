@@ -32,29 +32,29 @@ body {
       height: 600px; } }
 
 /* line 77, ../components/sass/styles.scss */
-.hero-title {
+.hero-title, .medical .feature-title {
   margin-top: 1em;
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.9); }
   @media only screen and (min-width: 480px) {
     /* line 77, ../components/sass/styles.scss */
-    .hero-title {
+    .hero-title, .medical .feature-title {
       margin-top: 4em; } }
   @media only screen and (max-width: 992px) {
     /* line 77, ../components/sass/styles.scss */
-    .hero-title {
+    .hero-title, .medical .feature-title {
       text-align: center; } }
   @media only screen and (min-width: 992px) {
     /* line 77, ../components/sass/styles.scss */
-    .hero-title {
+    .hero-title, .medical .feature-title {
       margin-top: 25em; } }
 
 /* line 95, ../components/sass/styles.scss */
-.hero-title h1 {
+.hero-title h1, .medical .feature-title h1 {
   color: #e95f9d; }
   @media only screen and (min-width: 992px) {
     /* line 95, ../components/sass/styles.scss */
-    .hero-title h1 {
+    .hero-title h1, .medical .feature-title h1 {
       font-size: 3em; } }
 
 /* line 104, ../components/sass/styles.scss */

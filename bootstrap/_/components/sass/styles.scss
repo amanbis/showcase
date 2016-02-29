@@ -74,7 +74,7 @@ body {
 	}
 }
 
-.hero-title {
+.hero-title, .medical .feature-title {
 	margin-top: 1em;
 	border: 1px solid white;
 	background-color: rgba(255, 255, 255, 0.9);
@@ -92,7 +92,7 @@ body {
 	}
 }
 
-.hero-title h1 {
+.hero-title h1, .medical .feature-title h1 {
 	color: $pink;
 
 	@include respond-to(md, min-width) {
