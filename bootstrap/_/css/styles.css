@@ -218,13 +218,20 @@ body {
       -o-transform: translateX(150px);
       transform: translateX(150px); } }
 
-@keyframes scaleout {
-  from {
-    transform: scaleX(0); }
-  to {
-    transform: scaleX(30); } }
-@keyframes slideout {
-  from {
-    transform: translateX(0); }
-  to {
-    transform: translateX(300px); } }
+/* line 233, ../components/sass/styles.scss */
+.related-tabs {
+  list-style-type: none;
+  width: 360px;
+  margin: auto;
+  padding: 0; }
+  /* line 239, ../components/sass/styles.scss */
+  .related-tabs li {
+    display: inline-block;
+    margin: 0 1.5em; }
+    /* line 244, ../components/sass/styles.scss */
+    .related-tabs li a {
+      display: block;
+      width: 75px;
+      height: 75px;
+      background-color: #cecece;
+      border-radius: 50%; }

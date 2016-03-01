@@ -230,18 +230,23 @@ body {
 	}
 }
 
-@keyframes scaleout {
-  from {
-    transform: scaleX(0);
-  } to {
-    transform: scaleX(30);
-  }
-}
+.related-tabs {
+	list-style-type: none;
+	width: 360px;
+	margin: auto;
+	padding: 0;
 
-@keyframes slideout {
-  from {
-    transform: translateX(0);
-  } to {
-    transform: translateX(300px);
-  }
+	li {
+		display: inline-block;
+		margin: 0 1.5em;
+
+
+		a {
+			display: block;
+			width: 75px;
+			height: 75px;
+			background-color: #cecece;
+			border-radius: 50%;
+		}
+	}
 }
