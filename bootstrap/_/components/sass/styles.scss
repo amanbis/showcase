@@ -230,7 +230,20 @@ body {
 	}
 }
 
-.related-tabs {
+.related {
+	background-color: white;
+}
+
+.tab-content {
+	margin-top: 2em;
+}
+
+.related-tab-title {
+	text-align: center;
+	margin: 3em 0 2em 0;
+}
+
+.related-tabs ul {
 	list-style-type: none;
 	width: 360px;
 	margin: auto;
@@ -248,5 +261,18 @@ body {
 			background-color: #cecece;
 			border-radius: 50%;
 		}
+
+		&.active a{
+			border: 1px solid $blue;
+		}
 	}
 }
+
+@for $i from 1 through 3 {
+	.tab-img-#{$i} {
+		height: 267px;
+		background: url('../img/#{$i}.jpg') no-repeat center center;
+		background-size: 100%;
+	}
+}
+	

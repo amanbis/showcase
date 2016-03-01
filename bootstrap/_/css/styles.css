@@ -219,19 +219,53 @@ body {
       transform: translateX(150px); } }
 
 /* line 233, ../components/sass/styles.scss */
-.related-tabs {
+.related {
+  background-color: white; }
+
+/* line 237, ../components/sass/styles.scss */
+.tab-content {
+  margin-top: 2em; }
+
+/* line 241, ../components/sass/styles.scss */
+.related-tab-title {
+  text-align: center;
+  margin: 3em 0 2em 0; }
+
+/* line 246, ../components/sass/styles.scss */
+.related-tabs ul {
   list-style-type: none;
   width: 360px;
   margin: auto;
   padding: 0; }
-  /* line 239, ../components/sass/styles.scss */
-  .related-tabs li {
+  /* line 252, ../components/sass/styles.scss */
+  .related-tabs ul li {
     display: inline-block;
     margin: 0 1.5em; }
-    /* line 244, ../components/sass/styles.scss */
-    .related-tabs li a {
+    /* line 257, ../components/sass/styles.scss */
+    .related-tabs ul li a {
       display: block;
       width: 75px;
       height: 75px;
       background-color: #cecece;
       border-radius: 50%; }
+    /* line 265, ../components/sass/styles.scss */
+    .related-tabs ul li.active a {
+      border: 1px solid #1ebbef; }
+
+/* line 272, ../components/sass/styles.scss */
+.tab-img-1 {
+  height: 267px;
+  background: url("../img/1.jpg") no-repeat center center;
+  background-size: 100%; }
+
+/* line 272, ../components/sass/styles.scss */
+.tab-img-2 {
+  height: 267px;
+  background: url("../img/2.jpg") no-repeat center center;
+  background-size: 100%; }
+
+/* line 272, ../components/sass/styles.scss */
+.tab-img-3 {
+  height: 267px;
+  background: url("../img/3.jpg") no-repeat center center;
+  background-size: 100%; }
