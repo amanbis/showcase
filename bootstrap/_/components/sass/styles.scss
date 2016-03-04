@@ -51,6 +51,19 @@ body {
   margin-bottom: 20px;
 }
 
+.product-nav {
+	width: 100%;
+	height: 4em;
+	background-color: rgba(#f3f3f3, 0.95);
+}
+
+.sticky {
+	position:fixed;
+	max-width: 1140px;
+	top: 0;
+	z-index: 1000;
+}
+
 .hero {
 	margin: 0;
 	width: 100%;
