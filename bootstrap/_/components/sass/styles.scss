@@ -59,8 +59,11 @@ header {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 4em;
 	background-color: rgba(#f3f3f3, 0.95);
+}
+
+.product-nav div {
+	padding: 2em 1em;
 }
 
 .sticky {
@@ -68,6 +71,11 @@ header {
 	max-width: 1140px;
 	top: 0;
 	z-index: 1000;
+}
+
+.product-nav-title {
+	line-height: 0;
+	margin: 0;
 }
 
 .hero {
