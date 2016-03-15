@@ -62,7 +62,7 @@ header {
 	background-color: rgba(#f3f3f3, 0.95);
 }
 
-.product-nav div {
+.product-nav > div {
 	padding: 2em 1em;
 }
 
@@ -73,9 +73,33 @@ header {
 	z-index: 1000;
 }
 
-.product-nav-title {
+.product-nav h3 {
 	line-height: 0;
 	margin: 0;
+}
+
+.visible {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.5s ease-in-out;	
+}
+
+.product-nav p {
+	position: absolute;
+	top: -1.3em;
+	margin: 0;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.product-nav a {
+	padding: 5px 16px;
 }
 
 .hero {
