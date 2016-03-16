@@ -11,10 +11,10 @@ $(document).ready(function() {
 
     	if(window_top > div_top) {
     		$('.product-nav').addClass('sticky')
-            $('.product-nav p').removeClass('hidden').addClass('visible')
+            $('.product-nav p').addClass('visible')
         } else {
     		$('.product-nav').removeClass('sticky')
-            $('.product-nav p').removeClass('visible').addClass('hidden')
+            $('.product-nav p').removeClass('visible')
     	}
     })
 
