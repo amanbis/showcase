@@ -47,9 +47,14 @@ body {
   padding-bottom: 20px;
 }
 
-.nav-container div {
-	background-color: $grey;
-	height: 50px;
+.nav-container > div {
+	margin: 0;
+}
+
+.logo {
+	background-color: $pink;
+	width: 100px;
+	height: 73px;
 }
 
 .navbar {
