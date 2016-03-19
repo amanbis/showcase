@@ -47,14 +47,29 @@ body {
   padding-bottom: 20px;
 }
 
-.nav-container > div {
-	margin: 0;
+.nav-container {
+	/*margin: 0;*/
+}
+
+.nav-container > div:first-child {
+	background-color: #f3f3f3;
+}
+
+.nav-container > div:nth-child(2) {
+	background-color: #f7f7f7;
+	height: 73px;
+}
+
+.nav-container > div:nth-child(3) {
+	background-color: #f9f9f9;
+	height: 73px;
 }
 
 .logo {
-	background-color: $pink;
+	background-color: $accent-pink;
 	width: 100px;
 	height: 73px;
+	border-radius: 0 15px 15px 0;
 }
 
 .navbar {
