@@ -92,6 +92,7 @@ body {
 .nav-links-md a {
 	color: #777;
 	text-decoration: none;
+	transition: color 0.3s ease-in-out;
 }
 
 .nav-links-md a:hover {
@@ -101,7 +102,7 @@ body {
 .search-btn {
 	position: absolute;
 	top: 12.5px;
-	right: 10px;
+	right: 15px;
 }
 
 .navbar {
