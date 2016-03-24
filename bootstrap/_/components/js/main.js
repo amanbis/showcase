@@ -21,4 +21,8 @@ $(document).ready(function() {
 	$('.feature').viewportChecker({
 		classToAdd: 'animate'
 	})
+
+    $('.products-btn').click(function() {
+        $('.drawer-menu').addClass('visible')
+    })
 })
