@@ -23,6 +23,13 @@ $(document).ready(function() {
 	})
 
     $('.products-btn').click(function() {
-        $('.drawer-menu').addClass('visible')
+        $('.drawer-menu').addClass('show')
+    })
+
+    $('.drawer').mouseleave(function(e) {
+        console.log('out')
+        setTimeout(function() {
+            $('.drawer-menu').removeClass('show')
+        }, 600)
     })
 })

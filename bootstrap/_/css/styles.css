@@ -81,7 +81,7 @@ body {
   transition: transform 1s cubic-bezier(0.55, 0, 0.1, 1), opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
 
 /* line 128, ../components/sass/styles.scss */
-.drawer-menu.visible {
+.drawer-menu.show {
   visibility: visible;
   opacity: 0.95;
   transform: scaleY(1); }

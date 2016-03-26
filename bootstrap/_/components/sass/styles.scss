@@ -125,7 +125,7 @@ body {
 				opacity 0.3s cubic-bezier(.55,0,.1,1);
 }
 
-.drawer-menu.visible {
+.drawer-menu.show {
 	visibility: visible;
 	opacity: 0.95;
 	transform: scaleY(1);
