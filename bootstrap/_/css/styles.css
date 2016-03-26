@@ -52,22 +52,35 @@ body {
   transition: color 0.3s ease-in-out; }
 
 /* line 98, ../components/sass/styles.scss */
+.nav-links-md a::after {
+  content: '';
+  display: block;
+  width: 75%;
+  height: 2.5px;
+  margin: 0 auto;
+  background-color: #d10371; }
+
+/* line 107, ../components/sass/styles.scss */
+.products-btn a::after {
+  width: 100%; }
+
+/* line 111, ../components/sass/styles.scss */
 .nav-links-md a:hover {
   color: #555; }
 
-/* line 102, ../components/sass/styles.scss */
+/* line 115, ../components/sass/styles.scss */
 .search-btn {
   position: absolute;
   top: 12.5px;
   right: 15px; }
 
-/* line 108, ../components/sass/styles.scss */
+/* line 121, ../components/sass/styles.scss */
 .drawer {
   position: relative;
   margin: 0;
   z-index: 999; }
 
-/* line 114, ../components/sass/styles.scss */
+/* line 127, ../components/sass/styles.scss */
 .drawer-menu {
   position: absolute;
   top: -20px;
@@ -80,40 +93,40 @@ body {
   transform-origin: center top;
   transition: transform 1s cubic-bezier(0.55, 0, 0.1, 1), opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
 
-/* line 129, ../components/sass/styles.scss */
+/* line 142, ../components/sass/styles.scss */
 .drawer-menu.show {
   visibility: visible;
   opacity: 0.95;
   transform: scaleY(1); }
 
-/* line 135, ../components/sass/styles.scss */
+/* line 148, ../components/sass/styles.scss */
 header {
   position: relative; }
 
-/* line 139, ../components/sass/styles.scss */
+/* line 152, ../components/sass/styles.scss */
 .product-nav {
   position: absolute;
   top: 0;
   width: 100%;
   background-color: rgba(243, 243, 243, 0.95); }
 
-/* line 146, ../components/sass/styles.scss */
+/* line 159, ../components/sass/styles.scss */
 .product-nav > div {
   padding: 2em 1em; }
 
-/* line 150, ../components/sass/styles.scss */
+/* line 163, ../components/sass/styles.scss */
 .sticky {
   position: fixed;
   max-width: 1140px;
   top: 0;
   z-index: 1000; }
 
-/* line 157, ../components/sass/styles.scss */
+/* line 170, ../components/sass/styles.scss */
 .product-nav h3 {
   line-height: 0;
   margin: 0; }
 
-/* line 162, ../components/sass/styles.scss */
+/* line 175, ../components/sass/styles.scss */
 .buy {
   position: absolute;
   top: -1.3em;
@@ -122,17 +135,17 @@ header {
   visibility: hidden;
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; }
 
-/* line 172, ../components/sass/styles.scss */
+/* line 185, ../components/sass/styles.scss */
 .buy.visible {
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s ease-in-out; }
 
-/* line 178, ../components/sass/styles.scss */
+/* line 191, ../components/sass/styles.scss */
 .product-nav a {
   padding: 5px 16px; }
 
-/* line 182, ../components/sass/styles.scss */
+/* line 195, ../components/sass/styles.scss */
 .hero {
   margin: 0;
   width: 100%;
@@ -140,11 +153,11 @@ header {
   background: url("../img/bp.png") no-repeat center center;
   background-size: cover; }
   @media only screen and (min-width: 992px) {
-    /* line 182, ../components/sass/styles.scss */
+    /* line 195, ../components/sass/styles.scss */
     .hero {
       height: 600px; } }
 
-/* line 194, ../components/sass/styles.scss */
+/* line 207, ../components/sass/styles.scss */
 .medical {
   margin: 0;
   width: 100%;
@@ -152,89 +165,89 @@ header {
   background: url("../img/bp-2.jpg") no-repeat center center;
   background-size: cover; }
   @media only screen and (min-width: 992px) {
-    /* line 194, ../components/sass/styles.scss */
+    /* line 207, ../components/sass/styles.scss */
     .medical {
       height: 600px; } }
 
-/* line 206, ../components/sass/styles.scss */
+/* line 219, ../components/sass/styles.scss */
 .hero-title, .medical .feature-title {
   margin-top: 1em;
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.9); }
   @media only screen and (min-width: 480px) {
-    /* line 206, ../components/sass/styles.scss */
+    /* line 219, ../components/sass/styles.scss */
     .hero-title, .medical .feature-title {
       margin-top: 4em; } }
   @media only screen and (max-width: 992px) {
-    /* line 206, ../components/sass/styles.scss */
+    /* line 219, ../components/sass/styles.scss */
     .hero-title, .medical .feature-title {
       text-align: center; } }
 
 @media only screen and (min-width: 992px) {
-  /* line 221, ../components/sass/styles.scss */
+  /* line 234, ../components/sass/styles.scss */
   .hero-title {
     margin-top: 25em; }
 
-  /* line 225, ../components/sass/styles.scss */
+  /* line 238, ../components/sass/styles.scss */
   .medical .feature-title {
     margin-top: 0; } }
-/* line 230, ../components/sass/styles.scss */
+/* line 243, ../components/sass/styles.scss */
 .hero-title h1, .medical .feature-title h1 {
   color: #e95f9d; }
   @media only screen and (min-width: 992px) {
-    /* line 230, ../components/sass/styles.scss */
+    /* line 243, ../components/sass/styles.scss */
     .hero-title h1, .medical .feature-title h1 {
       font-size: 3em; } }
 
-/* line 239, ../components/sass/styles.scss */
+/* line 252, ../components/sass/styles.scss */
 .featurette {
   background-color: #f3f3f3;
   padding: 2.5em 0;
   margin: 0; }
   @media only screen and (min-width: 992px) {
-    /* line 239, ../components/sass/styles.scss */
+    /* line 252, ../components/sass/styles.scss */
     .featurette {
       padding: 2.5em; } }
   @media only screen and (min-width: 1200px) {
-    /* line 239, ../components/sass/styles.scss */
+    /* line 252, ../components/sass/styles.scss */
     .featurette {
       padding: 5em; } }
 
-/* line 253, ../components/sass/styles.scss */
+/* line 266, ../components/sass/styles.scss */
 .feature-title {
   text-align: left; }
   @media only screen and (min-width: 768px) {
-    /* line 253, ../components/sass/styles.scss */
+    /* line 266, ../components/sass/styles.scss */
     .feature-title {
       text-align: center; } }
 
-/* line 261, ../components/sass/styles.scss */
+/* line 274, ../components/sass/styles.scss */
 .product img {
   width: 100%; }
 
-/* line 265, ../components/sass/styles.scss */
+/* line 278, ../components/sass/styles.scss */
 .features, .product {
   margin-top: 2em; }
 
-/* line 269, ../components/sass/styles.scss */
+/* line 282, ../components/sass/styles.scss */
 .feature-img {
   width: 100%;
   height: 300px;
   background-color: #cecece; }
 
-/* line 275, ../components/sass/styles.scss */
+/* line 288, ../components/sass/styles.scss */
 .feature {
   margin-bottom: 5em; }
   @media only screen and (min-width: 992px) {
-    /* line 275, ../components/sass/styles.scss */
+    /* line 288, ../components/sass/styles.scss */
     .feature {
       margin: 2.15em 0; } }
   @media only screen and (min-width: 1200px) {
-    /* line 275, ../components/sass/styles.scss */
+    /* line 288, ../components/sass/styles.scss */
     .feature {
       margin: 3em 0; } }
 
-/* line 287, ../components/sass/styles.scss */
+/* line 300, ../components/sass/styles.scss */
 .feature::before, .feature::after {
   content: '';
   opacity: 0;
@@ -244,16 +257,16 @@ header {
   z-index: 999;
   transition: transform 1s cubic-bezier(0.55, 0, 0.1, 1), opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
   @media only screen and (min-width: 992px) {
-    /* line 287, ../components/sass/styles.scss */
+    /* line 300, ../components/sass/styles.scss */
     .feature::before, .feature::after {
       left: 24em; } }
   @media only screen and (min-width: 1200px) {
-    /* line 287, ../components/sass/styles.scss */
+    /* line 300, ../components/sass/styles.scss */
     .feature::before, .feature::after {
       left: 30em; } }
 
 @media only screen and (min-width: 992px) {
-  /* line 306, ../components/sass/styles.scss */
+  /* line 319, ../components/sass/styles.scss */
   .feature::before {
     top: 6em;
     width: 10px;
@@ -264,12 +277,12 @@ header {
     -o-transform: scaleX(0);
     transform: scaleX(0); } }
 @media only screen and (max-width: 1200px) {
-  /* line 306, ../components/sass/styles.scss */
+  /* line 319, ../components/sass/styles.scss */
   .feature::before {
     top: 6.4em; } }
 
 @media only screen and (min-width: 992px) {
-  /* line 319, ../components/sass/styles.scss */
+  /* line 332, ../components/sass/styles.scss */
   .feature::after {
     top: -3.36em;
     width: 7px;
@@ -280,11 +293,11 @@ header {
     -o-transform: translateX(0px);
     transform: translateX(0px); } }
 @media only screen and (max-width: 1200px) {
-  /* line 319, ../components/sass/styles.scss */
+  /* line 332, ../components/sass/styles.scss */
   .feature::after {
     top: -4.34em; } }
 
-/* line 333, ../components/sass/styles.scss */
+/* line 346, ../components/sass/styles.scss */
 .animate.feature::before {
   opacity: 1;
   transform-origin: left center;
@@ -294,7 +307,7 @@ header {
   -o-transform: scaleX(24);
   transform: scaleX(24); }
   @media only screen and (max-width: 1200px) {
-    /* line 333, ../components/sass/styles.scss */
+    /* line 346, ../components/sass/styles.scss */
     .animate.feature::before {
       -webkit-transform: scaleX(19);
       -moz-transform: scaleX(19);
@@ -302,7 +315,7 @@ header {
       -o-transform: scaleX(19);
       transform: scaleX(19); } }
 
-/* line 343, ../components/sass/styles.scss */
+/* line 356, ../components/sass/styles.scss */
 .animate.feature:nth-child(2)::before {
   -webkit-transform: scaleX(20);
   -moz-transform: scaleX(20);
@@ -310,7 +323,7 @@ header {
   -o-transform: scaleX(20);
   transform: scaleX(20); }
   @media only screen and (max-width: 1200px) {
-    /* line 343, ../components/sass/styles.scss */
+    /* line 356, ../components/sass/styles.scss */
     .animate.feature:nth-child(2)::before {
       -webkit-transform: scaleX(15);
       -moz-transform: scaleX(15);
@@ -318,7 +331,7 @@ header {
       -o-transform: scaleX(15);
       transform: scaleX(15); } }
 
-/* line 351, ../components/sass/styles.scss */
+/* line 364, ../components/sass/styles.scss */
 .animate.feature::after {
   opacity: 1;
   -webkit-transform: translateX(240px);
@@ -326,80 +339,80 @@ header {
   -o-transform: translateX(240px);
   transform: translateX(240px); }
   @media only screen and (max-width: 1200px) {
-    /* line 351, ../components/sass/styles.scss */
+    /* line 364, ../components/sass/styles.scss */
     .animate.feature::after {
       -webkit-transform: translateX(190px);
       -moz-transform: translateX(190px);
       -o-transform: translateX(190px);
       transform: translateX(190px); } }
 
-/* line 360, ../components/sass/styles.scss */
+/* line 373, ../components/sass/styles.scss */
 .animate.feature:nth-child(2)::after {
   -webkit-transform: translateX(200px);
   -moz-transform: translateX(200px);
   -o-transform: translateX(200px);
   transform: translateX(200px); }
   @media only screen and (max-width: 1200px) {
-    /* line 360, ../components/sass/styles.scss */
+    /* line 373, ../components/sass/styles.scss */
     .animate.feature:nth-child(2)::after {
       -webkit-transform: translateX(150px);
       -moz-transform: translateX(150px);
       -o-transform: translateX(150px);
       transform: translateX(150px); } }
 
-/* line 368, ../components/sass/styles.scss */
+/* line 381, ../components/sass/styles.scss */
 .related {
   background-color: white; }
 
-/* line 372, ../components/sass/styles.scss */
+/* line 385, ../components/sass/styles.scss */
 .tab-content {
   margin-top: 2em; }
 
-/* line 376, ../components/sass/styles.scss */
+/* line 389, ../components/sass/styles.scss */
 .related-tab-title {
   text-align: center;
   margin: 3em 0 2em 0; }
 
-/* line 381, ../components/sass/styles.scss */
+/* line 394, ../components/sass/styles.scss */
 .related-tabs ul {
   list-style-type: none;
   width: 360px;
   margin: auto;
   padding: 0; }
-  /* line 387, ../components/sass/styles.scss */
+  /* line 400, ../components/sass/styles.scss */
   .related-tabs ul li {
     display: inline-block;
     margin: 0 1.5em; }
-    /* line 392, ../components/sass/styles.scss */
+    /* line 405, ../components/sass/styles.scss */
     .related-tabs ul li a {
       display: block;
       width: 75px;
       height: 75px;
       background-color: #cecece;
       border-radius: 50%; }
-    /* line 400, ../components/sass/styles.scss */
+    /* line 413, ../components/sass/styles.scss */
     .related-tabs ul li.active a {
       border: 1px solid #1ebbef; }
 
-/* line 407, ../components/sass/styles.scss */
+/* line 420, ../components/sass/styles.scss */
 .tab-img-1 {
   height: 267px;
   background: url("../img/1.jpg") no-repeat center center;
   background-size: 100%; }
 
-/* line 407, ../components/sass/styles.scss */
+/* line 420, ../components/sass/styles.scss */
 .tab-img-2 {
   height: 267px;
   background: url("../img/2.jpg") no-repeat center center;
   background-size: 100%; }
 
-/* line 407, ../components/sass/styles.scss */
+/* line 420, ../components/sass/styles.scss */
 .tab-img-3 {
   height: 267px;
   background: url("../img/3.jpg") no-repeat center center;
   background-size: 100%; }
 
-/* line 414, ../components/sass/styles.scss */
+/* line 427, ../components/sass/styles.scss */
 .explore-img {
   max-width: 400px;
   height: 240px;
@@ -407,24 +420,24 @@ header {
   background-color: #cecece;
   border-radius: 5px; }
   @media only screen and (min-width: 768px) {
-    /* line 414, ../components/sass/styles.scss */
+    /* line 427, ../components/sass/styles.scss */
     .explore-img {
       width: 100%;
       height: 265px;
       margin: 0; } }
 
-/* line 428, ../components/sass/styles.scss */
+/* line 441, ../components/sass/styles.scss */
 .explore-title {
   text-align: center; }
 
-/* line 432, ../components/sass/styles.scss */
+/* line 445, ../components/sass/styles.scss */
 .vr {
   width: 1px;
   height: 260px;
   margin: 2.5px auto;
   background: #cecece; }
 
-/* line 439, ../components/sass/styles.scss */
+/* line 452, ../components/sass/styles.scss */
 footer {
   margin: 0;
   padding: 0;

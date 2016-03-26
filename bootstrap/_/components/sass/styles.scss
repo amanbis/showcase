@@ -95,6 +95,19 @@ body {
 	transition: color 0.3s ease-in-out;
 }
 
+.nav-links-md a::after {
+	content: '';
+	display: block;
+	width: 75%;
+	height: 2.5px;
+	margin: 0 auto;
+	background-color: $accent-pink;
+}
+
+.products-btn a::after {
+	width: 100%;
+}
+
 .nav-links-md a:hover {
 	color: #555;
 }
