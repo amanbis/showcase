@@ -26,10 +26,10 @@ $(document).ready(function() {
         $('.drawer-menu').addClass('show')
     })
 
-    $('.drawer').mouseleave(function(e) {
+    /*$('.nav-wrapper').mouseleave(function(e) {
         console.log('out')
         setTimeout(function() {
             $('.drawer-menu').removeClass('show')
         }, 600)
-    })
+    })*/
 })
