@@ -22,14 +22,4 @@ $(document).ready(function() {
 		classToAdd: 'animate'
 	})
 
-    $('.products-btn').click(function() {
-        $('.drawer-menu').addClass('show')
-    })
-
-    /*$('.nav-wrapper').mouseleave(function(e) {
-        console.log('out')
-        setTimeout(function() {
-            $('.drawer-menu').removeClass('show')
-        }, 600)
-    })*/
 })
