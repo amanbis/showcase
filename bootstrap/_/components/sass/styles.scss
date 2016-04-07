@@ -107,7 +107,7 @@ body {
 	transition: transform 0.5s cubic-bezier(.55,0,.1,1)
 }
 
-.nav-links-md li:hover a::after {
+.nav-links-md li:hover a::after, .drawer-container:hover a::after {
 	@include scale-out(1);
 }
 
@@ -143,23 +143,37 @@ body {
 	opacity: 0;
 	transform: scaleY(0);
 	transform-origin: center top;
-	transition: transform 1.0s cubic-bezier(.55,0,.1,1) 1.0s,
-				opacity 0.3s cubic-bezier(.55,0,.1,1) 1.0s,
-				visibility 0.3s cubic-bezier(.55,0,.1,1) 1.0s;
-
-	@include respond-to(lg, min-width) {
-		width: 1140px;
-		left: -343px;
-	}
+	transition: transform 1.0s cubic-bezier(.55,0,.1,1),
+				opacity 0.3s cubic-bezier(.55,0,.1,1),
+				visibility 0.3s cubic-bezier(.55,0,.1,1);
 }
 
-.drawer-container:hover .drawer-menu {
+.drawer-menu.show {
 	visibility: visible;
 	opacity: 0.95;
 	transform: scaleY(1);
-	transition: transform 1.0s cubic-bezier(.55,0,.1,1) 0.5s,
-				opacity 0.3s cubic-bezier(.55,0,.1,1) 0.5s,
-				visibility 0.3s cubic-bezier(.55,0,.1,1) 0.5s;
+	transition: transform 1.0s cubic-bezier(.55,0,.1,1),
+				opacity 0.3s cubic-bezier(.55,0,.1,1),
+				visibility 0.3s cubic-bezier(.55,0,.1,1);
+}
+
+@media only screen and (min-width: 1200px) {
+	.drawer-menu {
+		width: 1140px;
+		left: -343px;
+		transition: transform 1.0s cubic-bezier(.55,0,.1,1) 1.0s,
+				opacity 0.3s cubic-bezier(.55,0,.1,1) 1.0s,
+				visibility 0.3s cubic-bezier(.55,0,.1,1) 1.0s;
+	}
+
+	.drawer-container:hover .drawer-menu {
+		visibility: visible;
+		opacity: 0.95;
+		transform: scaleY(1);
+		transition: transform 1.0s cubic-bezier(.55,0,.1,1) 0.5s,
+					opacity 0.3s cubic-bezier(.55,0,.1,1) 0.5s,
+					visibility 0.3s cubic-bezier(.55,0,.1,1) 0.5s;
+	}
 }
 
 header {
