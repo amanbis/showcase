@@ -176,6 +176,72 @@ body {
 	}
 }
 
+
+/* === Menu Icon === */
+
+nav .menu {
+  z-index: 3;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  height: 4em;
+  width: 4em;
+  background-color: none;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  /*outline: 0;*/ /* Will add it back once I add focus styles */ 
+  
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+  position: absolute;
+  background-color: #333333;
+  width: 2em;
+  height: 0.2em;
+  
+  -webkit-transition: -webkit-transform 0.3s, background-color 0.3s;
+  -moz-transition: -moz-transform 0.3s, background-color 0.3s;
+  -o-transition: -o-transform 0.3s, background-color 0.3s;
+  -ms-transition: -ms-transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.hamburger {
+  top: 70%;
+  left: 25%;
+}
+
+.hamburger::before, .hamburger::after {
+  content: '';
+  left: 0;
+}
+
+.hamburger::before {
+  -webkit-transform: translateY(-9px);
+  -moz-transform: translateY(-9px);
+  -o-transform: translateY(-9px);
+  -ms-transform: translateY(-9px);
+  transform: translateY(-9px);
+}
+
+.hamburger::after {
+  -webkit-transform: translateY(9px);
+  -moz-transform: translateY(9px);
+  -o-transform: translateY(9px);
+  -ms-transform: translateY(9px);
+  transform: translateY(9px);
+}
+
+
+
 header {
 	position: relative;
 }
