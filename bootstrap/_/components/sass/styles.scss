@@ -107,7 +107,7 @@ body {
 	transition: transform 0.5s cubic-bezier(.55,0,.1,1)
 }
 
-.nav-links-md li:hover a::after, .drawer-container:hover a::after {
+.nav-links-md li:hover a::after, .drawer-container:hover a::after, .products-btn.active a::after {
 	@include scale-out(1);
 }
 

@@ -68,7 +68,7 @@ body {
   transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1); }
 
 /* line 110, ../components/sass/styles.scss */
-.nav-links-md li:hover a::after, .drawer-container:hover a::after {
+.nav-links-md li:hover a::after, .drawer-container:hover a::after, .products-btn.active a::after {
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);

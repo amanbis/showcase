@@ -5,6 +5,7 @@ $(document).ready(function() {
     $('.products-btn').click(function() {
         if($window.width() > 992) {
             $('.drawer-menu').toggleClass('show')
+            $(this).toggleClass('active')
         }
     })
 
