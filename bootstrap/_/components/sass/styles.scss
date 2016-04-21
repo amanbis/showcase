@@ -192,13 +192,7 @@ nav .menu {
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  /*outline: 0;*/ /* Will add it back once I add focus styles */ 
-  
-  -webkit-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  -ms-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+  outline: 0; 
 }
 
 .hamburger, .hamburger::before, .hamburger::after {
@@ -207,11 +201,16 @@ nav .menu {
   width: 2em;
   height: 0.2em;
   
-  -webkit-transition: -webkit-transform 0.3s, background-color 0.3s;
-  -moz-transition: -moz-transform 0.3s, background-color 0.3s;
-  -o-transition: -o-transform 0.3s, background-color 0.3s;
-  -ms-transition: -ms-transform 0.3s, background-color 0.3s;
-  transition: transform 0.3s, background-color 0.3s;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(.55,0,.1,1), 
+  					  background-color 0.3s;
+  -moz-transition: 	  -moz-transform 0.3s cubic-bezier(.55,0,.1,1), 
+  				   	  background-color 0.3s;
+  -o-transition: 	  -o-transform 0.3s cubic-bezier(.55,0,.1,1), 
+  				 	  background-color 0.3s;
+  -ms-transition: 	  -ms-transform 0.3s cubic-bezier(.55,0,.1,1), 
+  				  	  background-color 0.3s;
+  transition: 		  transform 0.3s cubic-bezier(.55,0,.1,1), 
+  			  		  background-color 0.3s;
 }
 
 .hamburger {
@@ -240,6 +239,40 @@ nav .menu {
   transform: translateY(9px);
 }
 
+/** Active/Inactive Menu and Navbar States **/
+
+.is-active > .hamburger {
+  background-color: transparent;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -o-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.is-active > .hamburger::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.is-active > .hamburger::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.is-active ~ .links-container {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+}
 
 
 header {

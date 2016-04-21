@@ -21,6 +21,17 @@ $(document).ready(function() {
         }
     }*/
 
+    /**
+     * This part toggles if the nav bar is active or not, 
+     * as well as the state of the menu icon.
+     */
+
+    $(".menu").on('click', function(evn) {
+        evn.preventDefault();
+        $(this).toggleClass('is-active');
+        //$(this).toggleClass('is-inactive');
+    });
+
 	/** 
      * This part does the "fixed navigation after scroll" functionality
      * We use the jQuery function scroll() to recalculate our variables as the 
