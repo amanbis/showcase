@@ -49,6 +49,7 @@ body {
 
 .nav-container {
 	/*margin: 0;*/
+	position: relative;
 	margin-bottom: 20px;
 }
 
@@ -58,7 +59,6 @@ body {
 
 .nav-container > div:nth-child(2) {
 	background-color: #f7f7f7;
-	height: 73px;
 }
 
 .nav-container > div:nth-child(3) {
@@ -73,62 +73,81 @@ body {
 	border-radius: 0 15px 15px 0;
 }
 
-.nav-links-md ul {
-	margin: 0 auto;
-	padding: 0;
-	max-width: 455px;
+.nav-links {
+	position: absolute;
+	top: 73px;
+	z-index: 998;
 }
 
-.nav-links-md ul li {
-	display: inline-block;
-	width: 7.75em;
-	padding: 26.5px 0;
-	margin: 0;
-	text-align: center;
+.nav-links ul {
+	padding: 0;
+}
+
+.nav-links ul li {
+	padding: 1em 0;
+	border-bottom: 1px solid $grey;
+	padding-left: 40px;
 	text-transform: uppercase;
 	list-style-type: none;
 	cursor: pointer;
+
 }
 
-.nav-links-md a {
-	color: #777;
-	text-decoration: none;
-	transition: color 0.3s ease-in-out;
-}
+@media only screen and (min-width: 992px) {
+	.nav-links {
+		position: relative;
+		top: 0;
+		height: 73px;
+	}
+	.nav-links ul {
+		margin: 0 auto;
+		padding: 0;
+		max-width: 455px;
+	}
 
-.nav-links-md a::after {
-	content: '';
-	display: block;
-	width: 75%;
-	height: 3px;
-	margin: 0.5em auto;
-	background-color: $accent-pink;
-	@include scale-out(0);
-	transition: transform 0.5s cubic-bezier(.55,0,.1,1)
-}
+	.nav-links ul li {
+		display: inline-block;
+		width: 7.75em;
+		padding: 26.5px 0;
+		margin: 0;
+		border: 0;
+		text-align: center;
+	}
 
-.nav-links-md li:hover a::after, .drawer-container:hover a::after, .products-btn.active a::after {
-	@include scale-out(1);
-}
+	.nav-links a {
+		color: #777;
+		text-decoration: none;
+		transition: color 0.3s ease-in-out;
+	}
 
-.products-btn a::after {
-	width: 100%;
-}
+	.nav-links a::after {
+		content: '';
+		display: block;
+		width: 75%;
+		height: 3px;
+		margin: 0.5em auto;
+		background-color: $accent-pink;
+		@include scale-out(0);
+		transition: transform 0.5s cubic-bezier(.55,0,.1,1)
+	}
 
-.nav-links-md a:hover {
-	color: #555;
-}
+	.nav-links li:hover a::after, .drawer-container:hover a::after, .products-btn.active a::after {
+		@include scale-out(1);
+	}
 
-.search-btn {
-	position: absolute;
-	top: 12.5px;
-	right: 15px;
+	.products-btn a::after {
+		width: 100%;
+	}
+
+	.nav-links a:hover {
+		color: #555;
+	}
 }
 
 .drawer {
 	position: absolute;
 	margin: 0;
-	z-index: 999;
+	z-index: 997;
 }
 
 .drawer-menu {
@@ -177,10 +196,18 @@ body {
 }
 
 
+.search-btn {
+	position: absolute;
+	top: 12.5px;
+	right: 15px;
+}
+
+
+
 /* === Menu Icon === */
 
 nav .menu {
-  z-index: 3;
+  z-index: 999;
   position: absolute;
   top: -5px;
   right: 0;
