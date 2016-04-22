@@ -192,7 +192,13 @@ nav .menu {
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  outline: 0; 
+  outline: 0;
+
+  -webkit-transition: background-color 0.3s cubic-bezier(.55,0,.1,1);
+  -moz-transition: background-color 0.3s cubic-bezier(.55,0,.1,1);
+  -o-transition: background-color 0.3s cubic-bezier(.55,0,.1,1);
+  -ms-transition: background-color 0.3s cubic-bezier(.55,0,.1,1);
+  transition: background-color 0.3s cubic-bezier(.55,0,.1,1);
 }
 
 .hamburger, .hamburger::before, .hamburger::after {
@@ -256,6 +262,7 @@ nav .menu {
   -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+  background-color: $accent-pink;
 }
 
 .is-active > .hamburger::after {
@@ -264,6 +271,7 @@ nav .menu {
   -o-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  background-color: $accent-pink;
 }
 
 .is-active ~ .links-container {
