@@ -30,6 +30,7 @@ $(document).ready(function() {
         evn.preventDefault();
         $(this).toggleClass('is-active');
         //$(this).toggleClass('is-inactive');
+        $('.nav-links').toggleClass('show')
     });
 
 	/** 
