@@ -3,10 +3,8 @@ $(document).ready(function() {
     var $window = $(window)
 
     $('.products-btn').click(function() {
-        if($window.width() > 992) {
-            $('.drawer-menu').toggleClass('show')
-            $(this).toggleClass('active')
-        }
+        $('.drawer-menu').toggleClass('show')
+        $(this).toggleClass('active').toggleClass('expanded')
     })
 
     /*function toggleDrawer() {
