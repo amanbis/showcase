@@ -244,7 +244,7 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
-	.nav-links a::after {
+	.products-btn a::after {
 		transition: transform 0.5s cubic-bezier(.55,0,.1,1) 0.5s;
 	}
 
@@ -264,9 +264,9 @@ body {
 		height: 175px;
 		visibility: visible;
 		opacity: 0.95;
-		transition: height 1.0s cubic-bezier(.55,0,.1,1),
-				opacity 0.3s cubic-bezier(.55,0,.1,1),
-				visibility 0.3s cubic-bezier(.55,0,.1,1);
+		transition: height 1.0s cubic-bezier(.55,0,.1,1) 0.3s,
+				opacity 0.3s cubic-bezier(.55,0,.1,1) 0.3s,
+				visibility 0.3s cubic-bezier(.55,0,.1,1) 0.3s;
 	}
 }
 
@@ -461,12 +461,14 @@ header {
 	border: 1px solid white;
 	background-color: rgba(255, 255, 255, 0.9);
 
-	@include respond-to(480px, min-width) {
-		margin-top: 4em;
-	}
-
 	@include respond-to(md, max-width) {
 		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.hero-title {
+		margin-top: 4em;
 	}
 }
 
@@ -491,7 +493,7 @@ header {
 
 .featurette {
 	background-color: #f3f3f3;
-	padding: 2.5em 0;
+	padding: 0;
 	margin: 0;
 
 	@include respond-to(md, min-width) {
@@ -501,6 +503,10 @@ header {
 	@include respond-to(lg, min-width) {
 		padding: 5em;
 	}
+}
+
+.related.featurette {
+	padding: 2.5em 0;
 }
 
 .feature-title {
@@ -653,6 +659,12 @@ header {
 		&.active a{
 			border: 1px solid $blue;
 		}
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	.related-tabs ul li {
+		margin: 0 1em;
 	}
 }
 
