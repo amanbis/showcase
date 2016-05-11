@@ -7,6 +7,10 @@ $(document).ready(function() {
         $(this).toggleClass('active').toggleClass('expanded')
     })
 
+    $('.search-btn').click(function() {
+        $('.search-md').toggleClass('active')
+    })
+
     /*function toggleDrawer() {
         return $('.products-btn').click(function() {
             $('.drawer-menu').toggleClass('show')
