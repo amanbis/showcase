@@ -211,7 +211,7 @@ nav input[type=text]:focus {
 		height: 73px;
 	}
 
-	.nav-links ul {
+	.nav-links-main {
 		margin: 0 auto;
 		padding: 0;
 		max-width: 455px;
@@ -255,24 +255,50 @@ nav input[type=text]:focus {
 
 	.drawer {
 		position: absolute;
+		top: 73px;
+		left: -227px;
+		width: 940px;
+		height: 0;
 		margin: 0;
 		z-index: 997;
+		background-color: #fff;
+		opacity: 0.95;
 	}
 
 	.drawer-menu {
 		display: table;
-		position: absolute;
-		top: -17px;
-		left: -243px;
-		width: 940px;
-		height: 0;
-		background-color: #fff;
+		width: 100%;
+		padding: 2em 3em;
+		background-color: transparent;
+
+		.product-categories li {
+			width: 12em;
+		}
+
+		.product-categories li::before {
+			content: '';
+			display: block;
+			width: 75px;
+			height: 75px;
+			margin: 0 auto;
+			margin-bottom: 1em;
+			background-color: #f3f3f3;
+
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		.product-categories li:hover::before {
+			background-color: $pink;
+		}
 	}
 
-	.drawer-menu.show {
-		height: 175px;
-		visibility: visible;
-		opacity: 0.95;
+	.drawer.show {
+		height: 200px;
+
+		.drawer-menu {
+			visibility: visible;
+			opacity: 0.95;
+		}
 	}
 }
 
