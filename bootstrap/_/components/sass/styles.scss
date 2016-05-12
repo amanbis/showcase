@@ -176,7 +176,7 @@ nav input[type=text]:focus {
 
 .search-md input[type=text] {
 	position: absolute;
-	top: 12.5px;
+	top: 11px;
 	right: 65px;
 	@include scale-out(0);
 	transform-origin: center right;
@@ -189,7 +189,7 @@ nav input[type=text]:focus {
 
 .search-btn {
 	position: absolute;
-	top: 12.5px;
+	top: 11px;
 	right: 15px;
 	padding: 16px 18px;
 	width: 50px;
