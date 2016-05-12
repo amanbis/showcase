@@ -54,7 +54,7 @@ body {
 }
 
 .nav-container > div:first-child {
-	background-color: #f3f3f3;
+	background-color: #fff;
 }
 
 .nav-container > div:nth-child(2) {
@@ -62,7 +62,7 @@ body {
 }
 
 .nav-container > div:nth-child(3) {
-	background-color: #f7f7f7;
+	background-color: #fff;
 	height: 73px;
 }
 
@@ -271,6 +271,10 @@ nav input[type=text]:focus {
 		padding: 2em 3em;
 		background-color: transparent;
 
+		.product-categories {
+			padding: 0;
+		}
+
 		.product-categories li {
 			width: 12em;
 		}
@@ -322,6 +326,10 @@ nav input[type=text]:focus {
 	.drawer-menu {
 		transition: opacity 0.3s cubic-bezier(.55,0,.1,1) 0.5s,
 					visibility 0.3s cubic-bezier(.55,0,.1,1) 0.5s;
+
+		.product-categories {
+			padding: 0 5em;
+		}
 	}
 
 	.drawer-container:hover .drawer {
