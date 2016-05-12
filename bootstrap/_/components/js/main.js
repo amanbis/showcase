@@ -3,7 +3,7 @@ $(document).ready(function() {
     var $window = $(window)
 
     $('.products-btn').click(function() {
-        $('.drawer-menu').toggleClass('show')
+        $('.drawer').toggleClass('show')
         $(this).toggleClass('active').toggleClass('expanded')
     })
 
