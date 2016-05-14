@@ -135,7 +135,7 @@ nav input[type=text]:focus {
 
 /* line 191, ../components/sass/styles.scss */
 .search-md.active input[type=text] {
-  width: 80%;
+  width: 75%;
   opacity: 1; }
 
 /* line 196, ../components/sass/styles.scss */
