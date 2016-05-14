@@ -1,7 +1,13 @@
+/* === Color Variables === */
+
 $pink: #e95f9d;
 $accent-pink: #d10371;
 $blue: #1ebbef;
 $grey: #cecece;
+
+
+/* === Media Query Mixin === */
+
 
 @mixin respond-to($media, $query) {
 	@if $media == xs {
@@ -27,6 +33,9 @@ $grey: #cecece;
 	}
 }
 
+
+/* === CSS Transform Mixins === */
+
 @mixin scale-out($length) {
 	-webkit-transform: scaleX($length);
 	-moz-transform: scaleX($length);
@@ -42,10 +51,16 @@ $grey: #cecece;
 	transform: translateX($length + px);
 }
 
+/* === Body Styles === */
+
 body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+/**************************
+==== Navigation Styles ====
+***************************/
 
 .nav-container {
 	/*margin: 0;*/
@@ -66,6 +81,9 @@ body {
 	height: 73px;
 }
 
+
+/* === Logo === */
+
 .logo {
 	background-color: $accent-pink;
 	width: 100px;
@@ -73,11 +91,17 @@ body {
 	border-radius: 0 15px 15px 0;
 }
 
+
+/* === Main Nav Links Container === */
+
 .nav-links {
 	position: absolute;
 	top: 73px;
 	z-index: 998;
 }
+
+
+/* Responsive Styling for Mobile */
 
 @include respond-to(md, max-width) {
 	.nav-links {
@@ -130,6 +154,9 @@ body {
 	transition: color 0.3s ease-in-out;
 }
 
+
+/* Product Categories Dropdown */
+
 .drawer {
 	position: relative;
 	height: 0;
@@ -159,6 +186,9 @@ body {
 				visibility 0.3s cubic-bezier(.55,0,.1,1);
 }
 
+
+/* === Search Input Styling === */
+
 nav input[type=text] {
 	padding: 15px 20px;
 	border: 0;
@@ -170,6 +200,9 @@ nav input[type=text]:focus {
 	background-color: #f3f3f3;
 }
 
+
+/* Search Input for Mobile */
+
 .search-sm {
 	margin: 1em 0;
 }
@@ -177,6 +210,9 @@ nav input[type=text]:focus {
 .search-sm input[type=text] {
 	width: 100%;
 }
+
+
+/* Search Input for Desktop/Tablet */
 
 .search-md input[type=text] {
 	position: absolute;
@@ -203,6 +239,9 @@ nav input[type=text]:focus {
 	background-color: #f3f3f3;
 	cursor: pointer;
 }
+
+
+/* Responsive Styling for Tablet */
 
 @media only screen and (min-width: 992px) {
 	.nav-links {
@@ -305,6 +344,9 @@ nav input[type=text]:focus {
 		}
 	}
 }
+
+
+/* Responsive Styling for Desktop */
 
 @media only screen and (min-width: 1200px) {
 	.products-btn a::after {
@@ -417,6 +459,7 @@ nav .menu {
   transform: translateY(9px);
 }
 
+
 /** Active/Inactive Menu and Navbar States **/
 
 .is-active > .hamburger {
@@ -454,6 +497,10 @@ nav .menu {
   transform: translateX(0%);
 }
 
+
+/***************************
+==== Hero Header Styles ====
+****************************/
 
 header {
 	position: relative;
@@ -513,6 +560,11 @@ header {
 		height: 600px;
 	}
 }
+
+
+/**************************
+==== Featurette Styles ====
+***************************/
 
 .medical {
 	margin: 0;
@@ -694,6 +746,11 @@ header {
 	}
 }
 
+
+/*******************************
+==== Related Product Styles ====
+********************************/
+
 .related {
 	background-color: white;
 }
@@ -745,6 +802,11 @@ header {
 		background-size: 100%;
 	}
 }
+
+
+/*******************************
+==== Explore Product Styles ====
+********************************/
 
 .explore-img {
 	max-width: 400px;
