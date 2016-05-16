@@ -507,6 +507,10 @@ header {
   background-color: #f3f3f3;
   padding: 0;
   margin: 0; }
+  @media only screen and (min-width: 0px) {
+    /* line 616, ../components/sass/styles.scss */
+    .featurette {
+      padding: 2em 0; } }
   @media only screen and (min-width: 992px) {
     /* line 616, ../components/sass/styles.scss */
     .featurette {
@@ -516,45 +520,45 @@ header {
     .featurette {
       padding: 5em; } }
 
-/* line 630, ../components/sass/styles.scss */
+/* line 633, ../components/sass/styles.scss */
 .related.featurette {
   padding: 2.5em 0; }
 
-/* line 634, ../components/sass/styles.scss */
+/* line 637, ../components/sass/styles.scss */
 .feature-title {
   text-align: left; }
   @media only screen and (min-width: 768px) {
-    /* line 634, ../components/sass/styles.scss */
+    /* line 637, ../components/sass/styles.scss */
     .feature-title {
       text-align: center; } }
 
-/* line 642, ../components/sass/styles.scss */
+/* line 645, ../components/sass/styles.scss */
 .product img {
   width: 100%; }
 
-/* line 646, ../components/sass/styles.scss */
+/* line 649, ../components/sass/styles.scss */
 .features, .product {
   margin-top: 2em; }
 
-/* line 650, ../components/sass/styles.scss */
+/* line 653, ../components/sass/styles.scss */
 .feature-img {
   width: 100%;
   height: 300px;
   background-color: #cecece; }
 
-/* line 656, ../components/sass/styles.scss */
+/* line 659, ../components/sass/styles.scss */
 .feature {
   margin-bottom: 5em; }
   @media only screen and (min-width: 992px) {
-    /* line 656, ../components/sass/styles.scss */
+    /* line 659, ../components/sass/styles.scss */
     .feature {
       margin: 2.15em 0; } }
   @media only screen and (min-width: 1200px) {
-    /* line 656, ../components/sass/styles.scss */
+    /* line 659, ../components/sass/styles.scss */
     .feature {
       margin: 3em 0; } }
 
-/* line 668, ../components/sass/styles.scss */
+/* line 671, ../components/sass/styles.scss */
 .feature::before, .feature::after {
   content: '';
   opacity: 0;
@@ -564,16 +568,16 @@ header {
   z-index: 999;
   transition: transform 1s cubic-bezier(0.55, 0, 0.1, 1), opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
   @media only screen and (min-width: 992px) {
-    /* line 668, ../components/sass/styles.scss */
+    /* line 671, ../components/sass/styles.scss */
     .feature::before, .feature::after {
       left: 24em; } }
   @media only screen and (min-width: 1200px) {
-    /* line 668, ../components/sass/styles.scss */
+    /* line 671, ../components/sass/styles.scss */
     .feature::before, .feature::after {
       left: 30em; } }
 
 @media only screen and (min-width: 992px) {
-  /* line 687, ../components/sass/styles.scss */
+  /* line 690, ../components/sass/styles.scss */
   .feature::before {
     top: 6em;
     width: 10px;
@@ -584,12 +588,12 @@ header {
     -o-transform: scaleX(0);
     transform: scaleX(0); } }
 @media only screen and (max-width: 1200px) {
-  /* line 687, ../components/sass/styles.scss */
+  /* line 690, ../components/sass/styles.scss */
   .feature::before {
     top: 6.4em; } }
 
 @media only screen and (min-width: 992px) {
-  /* line 700, ../components/sass/styles.scss */
+  /* line 703, ../components/sass/styles.scss */
   .feature::after {
     top: -3.36em;
     width: 7px;
@@ -600,11 +604,11 @@ header {
     -o-transform: translateX(0px);
     transform: translateX(0px); } }
 @media only screen and (max-width: 1200px) {
-  /* line 700, ../components/sass/styles.scss */
+  /* line 703, ../components/sass/styles.scss */
   .feature::after {
     top: -4.34em; } }
 
-/* line 714, ../components/sass/styles.scss */
+/* line 717, ../components/sass/styles.scss */
 .animate.feature::before {
   opacity: 1;
   transform-origin: left center;
@@ -614,7 +618,7 @@ header {
   -o-transform: scaleX(24);
   transform: scaleX(24); }
   @media only screen and (max-width: 1200px) {
-    /* line 714, ../components/sass/styles.scss */
+    /* line 717, ../components/sass/styles.scss */
     .animate.feature::before {
       -webkit-transform: scaleX(19);
       -moz-transform: scaleX(19);
@@ -622,7 +626,7 @@ header {
       -o-transform: scaleX(19);
       transform: scaleX(19); } }
 
-/* line 724, ../components/sass/styles.scss */
+/* line 727, ../components/sass/styles.scss */
 .animate.feature:nth-child(2)::before {
   -webkit-transform: scaleX(20);
   -moz-transform: scaleX(20);
@@ -630,7 +634,7 @@ header {
   -o-transform: scaleX(20);
   transform: scaleX(20); }
   @media only screen and (max-width: 1200px) {
-    /* line 724, ../components/sass/styles.scss */
+    /* line 727, ../components/sass/styles.scss */
     .animate.feature:nth-child(2)::before {
       -webkit-transform: scaleX(15);
       -moz-transform: scaleX(15);
@@ -638,7 +642,7 @@ header {
       -o-transform: scaleX(15);
       transform: scaleX(15); } }
 
-/* line 732, ../components/sass/styles.scss */
+/* line 735, ../components/sass/styles.scss */
 .animate.feature::after {
   opacity: 1;
   -webkit-transform: translateX(240px);
@@ -646,21 +650,21 @@ header {
   -o-transform: translateX(240px);
   transform: translateX(240px); }
   @media only screen and (max-width: 1200px) {
-    /* line 732, ../components/sass/styles.scss */
+    /* line 735, ../components/sass/styles.scss */
     .animate.feature::after {
       -webkit-transform: translateX(190px);
       -moz-transform: translateX(190px);
       -o-transform: translateX(190px);
       transform: translateX(190px); } }
 
-/* line 741, ../components/sass/styles.scss */
+/* line 744, ../components/sass/styles.scss */
 .animate.feature:nth-child(2)::after {
   -webkit-transform: translateX(200px);
   -moz-transform: translateX(200px);
   -o-transform: translateX(200px);
   transform: translateX(200px); }
   @media only screen and (max-width: 1200px) {
-    /* line 741, ../components/sass/styles.scss */
+    /* line 744, ../components/sass/styles.scss */
     .animate.feature:nth-child(2)::after {
       -webkit-transform: translateX(150px);
       -moz-transform: translateX(150px);
@@ -670,57 +674,57 @@ header {
 /*******************************
 ==== Related Product Styles ====
 ********************************/
-/* line 754, ../components/sass/styles.scss */
+/* line 757, ../components/sass/styles.scss */
 .related {
   background-color: white; }
 
-/* line 758, ../components/sass/styles.scss */
+/* line 761, ../components/sass/styles.scss */
 .tab-content {
   margin-top: 2em; }
 
-/* line 762, ../components/sass/styles.scss */
+/* line 765, ../components/sass/styles.scss */
 .related-tab-title {
   text-align: center;
   margin: 3em 0 2em 0; }
 
-/* line 767, ../components/sass/styles.scss */
+/* line 770, ../components/sass/styles.scss */
 .related-tabs ul {
   list-style-type: none;
   width: 360px;
   margin: auto;
   padding: 0; }
-  /* line 773, ../components/sass/styles.scss */
+  /* line 776, ../components/sass/styles.scss */
   .related-tabs ul li {
     display: inline-block;
     margin: 0 1.5em; }
-    /* line 778, ../components/sass/styles.scss */
+    /* line 781, ../components/sass/styles.scss */
     .related-tabs ul li a {
       display: block;
       width: 75px;
       height: 75px;
       background-color: #cecece;
       border-radius: 50%; }
-    /* line 786, ../components/sass/styles.scss */
+    /* line 789, ../components/sass/styles.scss */
     .related-tabs ul li.active a {
       border: 1px solid #1ebbef; }
 
 @media only screen and (max-width: 440px) {
-  /* line 793, ../components/sass/styles.scss */
+  /* line 796, ../components/sass/styles.scss */
   .related-tabs ul li {
     margin: 0 1em; } }
-/* line 799, ../components/sass/styles.scss */
+/* line 802, ../components/sass/styles.scss */
 .tab-img-1 {
   height: 267px;
   background: url("../img/1.jpg") no-repeat center center;
   background-size: 100%; }
 
-/* line 799, ../components/sass/styles.scss */
+/* line 802, ../components/sass/styles.scss */
 .tab-img-2 {
   height: 267px;
   background: url("../img/2.jpg") no-repeat center center;
   background-size: 100%; }
 
-/* line 799, ../components/sass/styles.scss */
+/* line 802, ../components/sass/styles.scss */
 .tab-img-3 {
   height: 267px;
   background: url("../img/3.jpg") no-repeat center center;
@@ -729,7 +733,7 @@ header {
 /*******************************
 ==== Explore Product Styles ====
 ********************************/
-/* line 811, ../components/sass/styles.scss */
+/* line 814, ../components/sass/styles.scss */
 .explore-img {
   max-width: 400px;
   height: 240px;
@@ -737,24 +741,24 @@ header {
   background-color: #cecece;
   border-radius: 5px; }
   @media only screen and (min-width: 768px) {
-    /* line 811, ../components/sass/styles.scss */
+    /* line 814, ../components/sass/styles.scss */
     .explore-img {
       width: 100%;
       height: 265px;
       margin: 0; } }
 
-/* line 825, ../components/sass/styles.scss */
+/* line 828, ../components/sass/styles.scss */
 .explore-title {
   text-align: center; }
 
-/* line 829, ../components/sass/styles.scss */
+/* line 832, ../components/sass/styles.scss */
 .vr {
   width: 1px;
   height: 260px;
   margin: 2.5px auto;
   background: #cecece; }
 
-/* line 836, ../components/sass/styles.scss */
+/* line 839, ../components/sass/styles.scss */
 footer {
   margin: 0;
   padding: 0;
