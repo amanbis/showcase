@@ -40,7 +40,7 @@ $(document).ready(function() {
      * We use the jQuery function scroll() to recalculate our variables as the 
      * page is scrolled/
      */
-    $window.scroll(function() {
+    /*$window.scroll(function() {
     	var window_top = $window.scrollTop(),
     	    div_top = $('header').offset().top
 
@@ -51,7 +51,7 @@ $(document).ready(function() {
     		$('.product-nav').removeClass('sticky')
             $('.buy').removeClass('visible')
     	}
-    })
+    })*/
 
 	$('.feature').viewportChecker({
 		classToAdd: 'animate'
