@@ -115,8 +115,56 @@ $grey: #cecece;
 .product-content {
 	width: 100%;
 	height: 100%;
+	padding: 2em 3em;
 	background-color: #f8f8f8;
 }
+
+.product-tile h2 {
+  margin: 10px 0;
+}
+
+.product-tile a {
+  text-decoration: none;
+  color: #2198b8;
+  font-size: 1.5em;
+  font-variant: small-caps;
+}
+
+.product-tile a:hover {
+  text-decoration: underline;
+}
+
+.product-img {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.product-img img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-img a:hover img {
+  transform: scale(1.15,1.15);
+}
+
+.m-breastpump {
+  margin-top: 1.5em;
+}
+
+.e-breastpump {
+  margin-top: 2.25em;
+}
+
+.nipple-protector {
+  margin-top: 3.5em;
+}
+
+.breastpad {
+  width: 35%;
+  margin-top: 2em;
+}
+
 
 /* === Body Styles === */
 
