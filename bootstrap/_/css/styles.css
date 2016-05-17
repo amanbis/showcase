@@ -860,13 +860,17 @@ header {
   text-align: center; }
 
 /* line 947, ../components/sass/styles.scss */
+.explore-title a {
+  color: #2198b8; }
+
+/* line 951, ../components/sass/styles.scss */
 .vr {
   width: 1px;
   height: 260px;
   margin: 2.5px auto;
   background: #cecece; }
 
-/* line 954, ../components/sass/styles.scss */
+/* line 958, ../components/sass/styles.scss */
 footer {
   margin: 0;
   padding: 0;
