@@ -2,26 +2,26 @@ $(document).ready(function() {
 
     var $window = $(window)
 
+    /** 
+     * This function toggles the classes for expanding and collapsing
+     * the product category drawer.
+     */
+
     $('.products-btn').click(function() {
         $('.drawer').toggleClass('show')
         $(this).toggleClass('active').toggleClass('expanded')
     })
 
+
+    /** 
+     * This simple toggles the active state of the search bar
+     * for desktop and tablet viewports.
+     */
+
     $('.search-btn').click(function() {
         $('.search-md').toggleClass('active')
     })
 
-    /*function toggleDrawer() {
-        return $('.products-btn').click(function() {
-            $('.drawer-menu').toggleClass('show')
-        })
-    }
-
-    function resize() {
-        if($window.width() > 992 && $window.width < 1200) {
-            return toggleDrawer()
-        }
-    }*/
 
     /**
      * This part toggles if the nav bar is active or not, 
@@ -35,10 +35,11 @@ $(document).ready(function() {
         $('.nav-links').toggleClass('show')
     });
 
+
 	/** 
      * This part does the "fixed navigation after scroll" functionality
      * We use the jQuery function scroll() to recalculate our variables as the 
-     * page is scrolled/
+     * page is scrolled.
      */
     /*$window.scroll(function() {
     	var window_top = $window.scrollTop(),
@@ -53,12 +54,14 @@ $(document).ready(function() {
     	}
     })*/
 
+
+    /** 
+     * This part triggers the viewportChecker function to initiate the
+     * animation for product features.
+     */
+
 	$('.feature').viewportChecker({
 		classToAdd: 'animate'
 	})
-
-    /*$window
-        .resize(resize)
-        .trigger('resize')*/
 
 })
