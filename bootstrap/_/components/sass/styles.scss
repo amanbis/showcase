@@ -62,23 +62,41 @@ $grey: #cecece;
 	background-image: none;
 }
 
-/* === Product Styles === */
+/* === About Styles === */
 
 .about {
 	margin: 2em 0 2.25em 0;
 }
 
-.about h1 {
+.about-heading {
+	margin-top: 8em;
+
+	h1 {
+		margin-bottom: 1em;
+	}
+}
+
+.about-intro h1 {
 	text-align: center;
-	margin-bottom: 1.5em;
+	margin-bottom: 1em;
 }
 
-.about .lead {
-	margin-bottom: 1.25em;
+.about-intro .lead {
+	text-align: center;
+	margin-bottom: 2em;
 }
 
-.about-content {
+.about-content h2 {
+	margin-bottom: 0.75em;
+}
+
+.about-content .lead.normal {
 	font-size: 1.25em;
+}
+
+.about-side-img {
+	height: 400px;
+	background-color: #f3f3f3;
 }
 
 /* === Promo Styles === */
@@ -686,12 +704,24 @@ header {
 	margin: 0;
 	width: 100%;
 	height: 400px;
-	background: url('../img/bp.png') no-repeat center center;
-	background-size: cover;
 
 	@include respond-to(md, min-width) {
 		height: 600px;
 	}
+}
+
+.about-hero {
+	background: url('../img/about-hero.jpg') no-repeat left center;
+	background-size: cover;
+
+	@include respond-to(md, min-width) {
+		background: url('../img/about-hero.jpg') no-repeat center center;
+	}
+}
+
+.ebp-product {
+	background: url('../img/bp.png') no-repeat center center;
+	background-size: cover;
 }
 
 
