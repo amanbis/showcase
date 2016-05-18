@@ -62,6 +62,22 @@ $grey: #cecece;
 	background-image: none;
 }
 
+/* === Blog Styles === */
+
+.blog {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	height: 622px;
+	background: url('../img/blog-xs.png') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, min-width) {
+		height: 509px;
+		background: url('../img/blog-md.png') no-repeat center center;
+	}
+}
+
 /* === About Styles === */
 
 .about {
@@ -111,7 +127,13 @@ $grey: #cecece;
 }
 
 .promo-tile:nth-child(1), .promo-tile:nth-child(2) {
-	padding-right: 10px;
+
+	padding-bottom: 10px;
+
+	@include respond-to(md, min-width) {
+		padding-bottom: 0;
+		padding-right: 10px;
+	}
 }
 
 .promo-content {
@@ -425,6 +447,10 @@ nav input[type=text]:focus {
 		background-color: $accent-pink;
 		@include scale-out(0);
 		transition: transform 0.5s cubic-bezier(.55,0,.1,1);
+	}
+
+	.product-categories a::after {
+		display: none;
 	}
 
 	.nav-links li:active {
