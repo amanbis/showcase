@@ -8,6 +8,7 @@ $grey: #cecece;
 
 /* === Media Query Mixin === */
 
+
 @mixin respond-to($media, $query) {
 	@if $media == xs {
 		@media only screen and ($query: 0px) {
@@ -51,13 +52,176 @@ $grey: #cecece;
 }
 
 
+/* === Bootstrap Styles === */
+
+.carousel-control {
+	opacity: 0.25;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background-image: none;
+}
+
+/* === Blog Styles === */
+
+.blog {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	height: 622px;
+	background: url('../img/blog-xs.png') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, min-width) {
+		height: 509px;
+		background: url('../img/blog-md.png') no-repeat center center;
+	}
+}
+
+/* === About Styles === */
+
+.about {
+	margin: 2em 0 2.25em 0;
+}
+
+.about-heading {
+	margin-top: 8em;
+
+	h1 {
+		margin-bottom: 1em;
+	}
+}
+
+.about-intro h1 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.about-intro .lead {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.about-content h2 {
+	margin-bottom: 0.75em;
+}
+
+.about-content .lead.normal {
+	font-size: 1.25em;
+}
+
+.about-side-img {
+	height: 400px;
+	background-color: #f3f3f3;
+}
+
+/* === Promo Styles === */
+
+.promo {
+	margin: 10px 0;
+}
+
+.promo-tile {
+	padding: 0;
+	height: 200px;
+}
+
+.promo-tile:nth-child(1), .promo-tile:nth-child(2) {
+
+	padding-bottom: 10px;
+
+	@include respond-to(md, min-width) {
+		padding-bottom: 0;
+		padding-right: 10px;
+	}
+}
+
+.promo-content {
+	width: 100%;
+	height: 100%;
+	background-color: #f8f8f8;
+}
 
 
-/*************************
+/* === Product Styles === */
 
-==== Universal Styles ====
+.products {
+	margin: 10px 0;
+}
 
-**************************/
+.product-tile {
+	height: 400px;
+	padding: 0;
+}
+
+.product-tile:nth-child(1), .product-tile:nth-child(3) {
+	padding-right: 5px;
+}
+
+.product-tile:nth-child(2), .product-tile:nth-child(4) {
+	padding-left: 5px;
+}
+
+.product-tile:nth-child(1), .product-tile:nth-child(2) {
+	padding-bottom: 5px;
+}
+
+.product-tile:nth-child(3), .product-tile:nth-child(4) {
+	padding-top: 5px;
+}
+
+.product-content {
+	width: 100%;
+	height: 100%;
+	padding: 2em 3em;
+	background-color: #f8f8f8;
+}
+
+.product-tile h2 {
+  margin: 10px 0;
+}
+
+.product-tile a {
+  text-decoration: none;
+  color: #2198b8;
+  font-size: 1.5em;
+  font-variant: small-caps;
+}
+
+.product-tile a:hover {
+  text-decoration: underline;
+}
+
+.product-img {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.product-img img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-img a:hover img {
+  transform: scale(1.15,1.15);
+}
+
+.m-breastpump {
+  margin-top: 1.5em;
+}
+
+.e-breastpump {
+  margin-top: 2.25em;
+}
+
+.nipple-protector {
+  margin-top: 3.5em;
+}
+
+.breastpad {
+  width: 35%;
+  margin-top: 2em;
+}
 
 
 /* === Body Styles === */
@@ -67,10 +231,9 @@ body {
   padding-bottom: 20px;
 }
 
-
 /**************************
-## Navigation Bar Styles ##  
-****************************/
+==== Navigation Styles ====
+***************************/
 
 .nav-container {
 	/*margin: 0;*/
@@ -404,6 +567,7 @@ nav input[type=text]:focus {
 }
 
 
+
 /* === Menu Icon === */
 
 nav .menu {
@@ -511,10 +675,9 @@ nav .menu {
 }
 
 
-
-/***********************
-## Hero Header Styles ##  
-************************/
+/***************************
+==== Hero Header Styles ====
+****************************/
 
 header {
 	position: relative;
@@ -573,11 +736,24 @@ header {
 	}
 }
 
+.about-hero {
+	background: url('../img/about-hero.jpg') no-repeat left center;
+	background-size: cover;
+
+	@include respond-to(md, min-width) {
+		background: url('../img/about-hero.jpg') no-repeat center center;
+	}
+}
+
+.ebp-product {
+	background: url('../img/bp.png') no-repeat center center;
+	background-size: cover;
+}
 
 
-/**********************
-## Featurette Styles ##
-***********************/
+/**************************
+==== Featurette Styles ====
+***************************/
 
 .featurette {
 	background-color: #f3f3f3;
@@ -596,304 +772,56 @@ header {
 	}
 }
 
-
-
-/***************************
-## Explore Product Styles ##
-****************************/
-
-.explore-img {
-	max-width: 400px;
-	height: 240px;
-	margin: 2em auto;
-	background-color: $grey;
-	border-radius: 5px;
-
-	@include respond-to (sm, min-width) {
-		width: 100%;
-		height: 265px;
-		margin: 0;
-	}
-}
-
-.explore-title {
-	text-align: center;
-}
-
-.explore-title a {
-	color: #2198b8;
-}
-
-.vr {
-	width: 1px;
-	height: 260px;
-	margin: 2.5px auto;
-	background: $grey;
-}
-
-footer {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 400px;
-	background-color: $grey;
-}
-
-
-
-
-
-/*************************
-
-==== Homepage Styles ====
-
-**************************/
-
-
-/********************
-## Carousel Styles ##  
-*********************/
-
-.carousel-control {
-	opacity: 0.25;
-}
-
-.carousel-control.left, .carousel-control.right {
-	background-image: none;
-}
-
-
-/*****************
-## Promo Styles ##  
-******************/
-
-.promo {
+.medical {
 	margin: 10px 0;
-}
-
-.promo-tile {
-	padding: 0;
-	height: 200px;
-}
-
-.promo-tile:nth-child(1), .promo-tile:nth-child(2) {
-
-	padding-bottom: 10px;
-
-	@include respond-to(md, min-width) {
-		padding-bottom: 0;
-		padding-right: 10px;
-	}
-}
-
-.promo-content {
 	width: 100%;
-	height: 100%;
-	background-color: #f8f8f8;
-}
-
-
-/****************
-## Blog Styles ##  
-*****************/
-
-.blog {
-	margin: 0;
-	margin-bottom: 10px;
-	padding: 0;
-	height: 622px;
-	background: url('../img/blog-xs.png') no-repeat center center;
+	height: 400px;
+	background: url('../img/bp-2.jpg') no-repeat center center;
 	background-size: cover;
 
 	@include respond-to(md, min-width) {
-		height: 509px;
-		background: url('../img/blog-md.png') no-repeat center center;
+		height: 600px;
 	}
 }
 
+.hero-title, .medical .feature-title {
+	margin-top: 1em;
+	border: 1px solid white;
+	background-color: rgba(255, 255, 255, 0.9);
 
+	@include respond-to(md, max-width) {
+		text-align: center;
+	}
+}
 
+@media only screen and (min-width: 480px) {
+	.hero-title {
+		margin-top: 4em;
+	}
+}
 
+@media only screen and (min-width: 992px) {
+	.hero-title {
+		margin-top: 25em;
+	}
 
-/**************************
+	.medical .feature-title {
+		margin-top: 0;
+	}
+}
 
-==== About Page Styles ====
-
-***************************/
-
-
-/***********************
-## Hero Header Styles ##  
-************************/
-
-.about-hero {
-	background: url('../img/about-hero.jpg') no-repeat left center;
-	background-size: cover;
+.hero-title h1, .medical .feature-title h1 {
+	color: $pink;
 
 	@include respond-to(md, min-width) {
-		background: url('../img/about-hero.jpg') no-repeat center center;
+		font-size: 3em;
 	}
+
 }
 
-/*******************
-## Content Styles ##  
-********************/
-
-.about {
-	margin: 2em 0 2.25em 0;
+.related.featurette {
+	padding: 2.5em 0;
 }
-
-/* === Intro === */
-
-.about-heading {
-	margin-top: 8em;
-
-	h1 {
-		margin-bottom: 1em;
-	}
-}
-
-.about-intro h1 {
-	text-align: center;
-	margin-bottom: 1em;
-}
-
-.about-intro .lead {
-	text-align: center;
-	margin-bottom: 2em;
-}
-
-/* === Main Content === */
-
-.about-content h2 {
-	margin-bottom: 0.75em;
-}
-
-.about-content .lead.normal {
-	font-size: 1.25em;
-}
-
-.about-side-img {
-	height: 400px;
-	background-color: #f3f3f3;
-}
-
-
-
-
-
-/*****************************
-
-==== Category Page Styles ====
-
-******************************/
-
-/************************
-## Product Tile Slides ##  
-*************************/
-
-.products {
-	margin: 10px 0;
-}
-
-.product-tile {
-	height: 400px;
-	padding: 0;
-}
-
-.product-tile:nth-child(1), .product-tile:nth-child(3) {
-	padding-right: 5px;
-}
-
-.product-tile:nth-child(2), .product-tile:nth-child(4) {
-	padding-left: 5px;
-}
-
-.product-tile:nth-child(1), .product-tile:nth-child(2) {
-	padding-bottom: 5px;
-}
-
-.product-tile:nth-child(3), .product-tile:nth-child(4) {
-	padding-top: 5px;
-}
-
-.product-content {
-	width: 100%;
-	height: 100%;
-	padding: 2em 3em;
-	background-color: #f8f8f8;
-}
-
-.product-tile h2 {
-  margin: 10px 0;
-}
-
-.product-tile a {
-  text-decoration: none;
-  color: #2198b8;
-  font-size: 1.5em;
-  font-variant: small-caps;
-}
-
-.product-tile a:hover {
-  text-decoration: underline;
-}
-
-.product-img {
-  width: 40%;
-  margin: 0 auto;
-}
-
-.product-img img {
-  width: 100%;
-  transition: transform 0.3s ease-in-out;
-}
-
-.product-img a:hover img {
-  transform: scale(1.15,1.15);
-}
-
-.m-breastpump {
-  margin-top: 1.5em;
-}
-
-.e-breastpump {
-  margin-top: 2.25em;
-}
-
-.nipple-protector {
-  margin-top: 3.5em;
-}
-
-.breastpad {
-  width: 35%;
-  margin-top: 2em;
-}
-
-
-
-
-
-/****************************
-
-==== Product Page Styles ====
-
-*****************************/
-
-
-/***********************
-## Hero Header Styles ##  
-************************/
-
-.ebp-product {
-	background: url('../img/bp.png') no-repeat center center;
-	background-size: cover;
-}
-
-
-/***********************
-## Product Featurette ##  
-************************/
 
 .feature-title {
 	text-align: left;
@@ -1011,68 +939,12 @@ footer {
 }
 
 
-/***********************
-## Medical Featurette ##  
-************************/
-
-.medical {
-	margin: 10px 0;
-	width: 100%;
-	height: 400px;
-	background: url('../img/bp-2.jpg') no-repeat center center;
-	background-size: cover;
-
-	@include respond-to(md, min-width) {
-		height: 600px;
-	}
-}
-
-.hero-title, .medical .feature-title {
-	margin-top: 1em;
-	border: 1px solid white;
-	background-color: rgba(255, 255, 255, 0.9);
-
-	@include respond-to(md, max-width) {
-		text-align: center;
-	}
-}
-
-@media only screen and (min-width: 480px) {
-	.hero-title {
-		margin-top: 4em;
-	}
-}
-
-@media only screen and (min-width: 992px) {
-	.hero-title {
-		margin-top: 25em;
-	}
-
-	.medical .feature-title {
-		margin-top: 0;
-	}
-}
-
-.hero-title h1, .medical .feature-title h1 {
-	color: $pink;
-
-	@include respond-to(md, min-width) {
-		font-size: 3em;
-	}
-
-}
-
-
-/***************************
-## Related Product Styles ##
-****************************/
+/*******************************
+==== Related Product Styles ====
+********************************/
 
 .related {
 	background-color: white;
-}
-
-.related.featurette {
-	padding: 2.5em 0;
 }
 
 .tab-content {
@@ -1121,4 +993,46 @@ footer {
 		background: url('../img/#{$i}.jpg') no-repeat center center;
 		background-size: 100%;
 	}
+}
+
+
+/*******************************
+==== Explore Product Styles ====
+********************************/
+
+.explore-img {
+	max-width: 400px;
+	height: 240px;
+	margin: 2em auto;
+	background-color: $grey;
+	border-radius: 5px;
+
+	@include respond-to (sm, min-width) {
+		width: 100%;
+		height: 265px;
+		margin: 0;
+	}
+}
+
+.explore-title {
+	text-align: center;
+}
+
+.explore-title a {
+	color: #2198b8;
+}
+
+.vr {
+	width: 1px;
+	height: 260px;
+	margin: 2.5px auto;
+	background: $grey;
+}
+
+footer {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 400px;
+	background-color: $grey;
 }
