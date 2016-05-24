@@ -774,8 +774,10 @@ footer {
 }
 
 .about-side-img {
-	height: 400px;
+	height: 450px;
 	background-color: #f3f3f3;
+	background: url('../img/about-side.jpg') no-repeat center center;
+	background-size: cover;
 }
 
 
@@ -788,8 +790,31 @@ footer {
 
 ******************************/
 
+
+/*******************
+##  Header Styles ##  
+********************/
+
+.category-hero {
+	background: url('../img/category/bottle-hero.jpg') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, max-width) {
+		background-position: left center;
+	}
+}
+
+/* === Introduction === */
+
+.category-intro {
+	margin: 0;
+	text-align: center;
+	padding: 10px 0;
+}
+
+
 /************************
-## Product Tile Slides ##  
+## Product Tile Styles ##  
 *************************/
 
 .products {
@@ -826,6 +851,10 @@ footer {
 
 .product-tile h2 {
   margin: 10px 0;
+
+  @include respond-to(sm, max-width) {
+  	font-size: 1.75em;
+  }
 }
 
 .product-tile a {
@@ -840,34 +869,68 @@ footer {
 }
 
 .product-img {
-  width: 40%;
   margin: 0 auto;
 }
 
-.product-img img {
+/*.product-img img {
   width: 100%;
   transition: transform 0.3s ease-in-out;
+}*/
+
+.product-img div {
+	transition: transform 0.3s ease-in-out;
 }
 
-.product-img a:hover img {
+.product-img a:hover div {
   transform: scale(1.15,1.15);
 }
 
 .m-breastpump {
   margin-top: 1.5em;
+  width: 176px;
 }
 
 .e-breastpump {
   margin-top: 2.25em;
+  width: 185px;
 }
 
 .nipple-protector {
   margin-top: 3.5em;
+  width: 237px;
 }
 
 .breastpad {
-  width: 35%;
+  width: 163px;
   margin-top: 2em;
+}
+
+.mbp-img {
+	width: 176px;
+	height: 200px;
+	background: url('../img/products/manual-bp.png') no-repeat center center;
+	background-size: 176px 200px;
+}
+
+.ebp-img {
+	width: 185px;
+	height: 200px;
+	background: url('../img/breastfeeding/electric-bp.png') no-repeat center center;
+	background-size: 185px 200px;
+}
+
+.protector-img {
+	width: 237px;
+	height: 200px;
+	background: url('../img/products/nipple-protector.png') no-repeat center center;
+	background-size: 237px 200px;
+}
+
+.pad-img {
+	width: 163px;
+	height: 200px;
+	background: url('../img/products/breast-pads.png') no-repeat center center;
+	background-size: 163px 200px;
 }
 
 

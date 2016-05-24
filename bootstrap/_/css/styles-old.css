@@ -1,0 +1,950 @@
+/* === Color Variables === */
+/* === Media Query Mixin === */
+/* === CSS Transform Mixins === */
+/* === Bootstrap Styles === */
+/* line 57, ../components/sass/styles-old.scss */
+.carousel-control {
+  opacity: 0.25; }
+
+/* line 61, ../components/sass/styles-old.scss */
+.carousel-control.left, .carousel-control.right {
+  background-image: none; }
+
+/* === Blog Styles === */
+/* line 67, ../components/sass/styles-old.scss */
+.blog {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  height: 622px;
+  background: url("../img/blog-xs.png") no-repeat center center;
+  background-size: cover; }
+  @media only screen and (min-width: 992px) {
+    /* line 67, ../components/sass/styles-old.scss */
+    .blog {
+      height: 509px;
+      background: url("../img/blog-md.png") no-repeat center center; } }
+
+/* === About Styles === */
+/* line 83, ../components/sass/styles-old.scss */
+.about {
+  margin: 2em 0 2.25em 0; }
+
+/* line 87, ../components/sass/styles-old.scss */
+.about-heading {
+  margin-top: 8em; }
+  /* line 90, ../components/sass/styles-old.scss */
+  .about-heading h1 {
+    margin-bottom: 1em; }
+
+/* line 95, ../components/sass/styles-old.scss */
+.about-intro h1 {
+  text-align: center;
+  margin-bottom: 1em; }
+
+/* line 100, ../components/sass/styles-old.scss */
+.about-intro .lead {
+  text-align: center;
+  margin-bottom: 2em; }
+
+/* line 105, ../components/sass/styles-old.scss */
+.about-content h2 {
+  margin-bottom: 0.75em; }
+
+/* line 109, ../components/sass/styles-old.scss */
+.about-content .lead.normal {
+  font-size: 1.25em; }
+
+/* line 113, ../components/sass/styles-old.scss */
+.about-side-img {
+  height: 400px;
+  background-color: #f3f3f3; }
+
+/* === Promo Styles === */
+/* line 120, ../components/sass/styles-old.scss */
+.promo {
+  margin: 10px 0; }
+
+/* line 124, ../components/sass/styles-old.scss */
+.promo-tile {
+  padding: 0;
+  height: 200px; }
+
+/* line 129, ../components/sass/styles-old.scss */
+.promo-tile:nth-child(1), .promo-tile:nth-child(2) {
+  padding-bottom: 10px; }
+  @media only screen and (min-width: 992px) {
+    /* line 129, ../components/sass/styles-old.scss */
+    .promo-tile:nth-child(1), .promo-tile:nth-child(2) {
+      padding-bottom: 0;
+      padding-right: 10px; } }
+
+/* line 139, ../components/sass/styles-old.scss */
+.promo-content {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8; }
+
+/* === Product Styles === */
+/* line 148, ../components/sass/styles-old.scss */
+.products {
+  margin: 10px 0; }
+
+/* line 152, ../components/sass/styles-old.scss */
+.product-tile {
+  height: 400px;
+  padding: 0; }
+
+/* line 157, ../components/sass/styles-old.scss */
+.product-tile:nth-child(1), .product-tile:nth-child(3) {
+  padding-right: 5px; }
+
+/* line 161, ../components/sass/styles-old.scss */
+.product-tile:nth-child(2), .product-tile:nth-child(4) {
+  padding-left: 5px; }
+
+/* line 165, ../components/sass/styles-old.scss */
+.product-tile:nth-child(1), .product-tile:nth-child(2) {
+  padding-bottom: 5px; }
+
+/* line 169, ../components/sass/styles-old.scss */
+.product-tile:nth-child(3), .product-tile:nth-child(4) {
+  padding-top: 5px; }
+
+/* line 173, ../components/sass/styles-old.scss */
+.product-content {
+  width: 100%;
+  height: 100%;
+  padding: 2em 3em;
+  background-color: #f8f8f8; }
+
+/* line 180, ../components/sass/styles-old.scss */
+.product-tile h2 {
+  margin: 10px 0; }
+
+/* line 184, ../components/sass/styles-old.scss */
+.product-tile a {
+  text-decoration: none;
+  color: #2198b8;
+  font-size: 1.5em;
+  font-variant: small-caps; }
+
+/* line 191, ../components/sass/styles-old.scss */
+.product-tile a:hover {
+  text-decoration: underline; }
+
+/* line 195, ../components/sass/styles-old.scss */
+.product-img {
+  width: 40%;
+  margin: 0 auto; }
+
+/* line 200, ../components/sass/styles-old.scss */
+.product-img img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out; }
+
+/* line 205, ../components/sass/styles-old.scss */
+.product-img a:hover img {
+  transform: scale(1.15, 1.15); }
+
+/* line 209, ../components/sass/styles-old.scss */
+.m-breastpump {
+  margin-top: 1.5em; }
+
+/* line 213, ../components/sass/styles-old.scss */
+.e-breastpump {
+  margin-top: 2.25em; }
+
+/* line 217, ../components/sass/styles-old.scss */
+.nipple-protector {
+  margin-top: 3.5em; }
+
+/* line 221, ../components/sass/styles-old.scss */
+.breastpad {
+  width: 35%;
+  margin-top: 2em; }
+
+/* === Body Styles === */
+/* line 229, ../components/sass/styles-old.scss */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+/**************************
+==== Navigation Styles ====
+***************************/
+/* line 238, ../components/sass/styles-old.scss */
+.nav-container {
+  /*margin: 0;*/
+  position: relative;
+  margin-bottom: 20px; }
+
+/* line 244, ../components/sass/styles-old.scss */
+.nav-container > div:first-child {
+  background-color: #fff; }
+
+/* line 248, ../components/sass/styles-old.scss */
+.nav-container > div:nth-child(2) {
+  background-color: #fff; }
+
+/* line 252, ../components/sass/styles-old.scss */
+.nav-container > div:nth-child(3) {
+  background-color: #fff;
+  height: 73px; }
+
+/* === Logo === */
+/* line 260, ../components/sass/styles-old.scss */
+.logo {
+  background-color: #d10371;
+  width: 100px;
+  height: 73px;
+  border-radius: 0 15px 15px 0; }
+
+/* === Main Nav Links Container === */
+/* line 270, ../components/sass/styles-old.scss */
+.nav-links {
+  position: absolute;
+  top: 73px;
+  z-index: 998; }
+
+/* Responsive Styling for Mobile */
+@media only screen and (max-width: 992px) {
+  /* line 280, ../components/sass/styles-old.scss */
+  .nav-links {
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: center top;
+    transition: transform 1s cubic-bezier(0.55, 0, 0.1, 1), opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
+
+  /* line 290, ../components/sass/styles-old.scss */
+  .nav-links.show {
+    visibility: visible;
+    opacity: 0.95;
+    transform: scaleY(1);
+    transition: transform 1s cubic-bezier(0.55, 0, 0.1, 1), opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
+
+  /* line 299, ../components/sass/styles-old.scss */
+  .nav-links li:active, .nav-links li.active {
+    border-left: 5px solid #d10371; }
+
+  /* line 303, ../components/sass/styles-old.scss */
+  .products-btn.expanded {
+    border-bottom-color: #d10371;
+    transition: border-bottom-color 0.5s cubic-bezier(0.55, 0, 0.1, 1); } }
+/* line 310, ../components/sass/styles-old.scss */
+.nav-links-main {
+  padding: 0;
+  margin: 0; }
+
+/* line 315, ../components/sass/styles-old.scss */
+.nav-links ul li {
+  padding: 1em 0;
+  border-bottom: 1px solid #cecece;
+  padding-left: 20px;
+  text-transform: uppercase;
+  list-style-type: none;
+  cursor: pointer; }
+
+/* line 324, ../components/sass/styles-old.scss */
+.nav-links a {
+  color: #777;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; }
+
+/* Product Categories Dropdown */
+/* line 333, ../components/sass/styles-old.scss */
+.drawer {
+  position: relative;
+  height: 0;
+  transition: height 1s cubic-bezier(0.55, 0, 0.1, 1); }
+
+/* line 339, ../components/sass/styles-old.scss */
+.drawer.show {
+  height: 245px; }
+  /* line 342, ../components/sass/styles-old.scss */
+  .drawer.show .drawer-menu {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s cubic-bezier(0.55, 0, 0.1, 1) 0.5s, visibility 0.5s cubic-bezier(0.55, 0, 0.1, 1) 0.5s; }
+
+/* line 350, ../components/sass/styles-old.scss */
+.drawer-menu {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px 0 30px;
+  background-color: #f9f9f9;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
+
+/* === Search Input Styling === */
+/* line 365, ../components/sass/styles-old.scss */
+nav input[type=text] {
+  padding: 15px 20px;
+  border: 0;
+  background-color: #f9f9f9;
+  transition: background-color 0.5s ease-in-out; }
+
+/* line 372, ../components/sass/styles-old.scss */
+nav input[type=text]:focus {
+  background-color: #f3f3f3; }
+
+/* Search Input for Mobile */
+/* line 379, ../components/sass/styles-old.scss */
+.search-sm {
+  margin: 1em 0; }
+
+/* line 383, ../components/sass/styles-old.scss */
+.search-sm input[type=text] {
+  width: 100%; }
+
+/* Search Input for Desktop/Tablet */
+/* line 390, ../components/sass/styles-old.scss */
+.search-md input[type=text] {
+  position: absolute;
+  top: 11px;
+  right: 65px;
+  width: 0;
+  opacity: 0;
+  transition: width 1s cubic-bezier(0.55, 0, 0.1, 1), opacity 0.5s cubic-bezier(0.55, 0, 0.1, 1); }
+
+/* line 400, ../components/sass/styles-old.scss */
+.search-md.active input[type=text] {
+  width: 75%;
+  opacity: 1; }
+
+/* line 405, ../components/sass/styles-old.scss */
+.search-btn {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  padding: 16px 18px;
+  width: 50px;
+  height: 50px;
+  background-color: #f3f3f3;
+  cursor: pointer; }
+
+/* Responsive Styling for Tablet */
+@media only screen and (min-width: 992px) {
+  /* line 420, ../components/sass/styles-old.scss */
+  .nav-links {
+    position: relative;
+    top: 0;
+    height: 73px; }
+
+  /* line 426, ../components/sass/styles-old.scss */
+  .nav-links-main {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 455px; }
+
+  /* line 432, ../components/sass/styles-old.scss */
+  .nav-links ul li {
+    display: inline-block;
+    width: 7.75em;
+    padding: 26.5px 0;
+    margin: 0;
+    border: 0;
+    text-align: center; }
+
+  /* line 441, ../components/sass/styles-old.scss */
+  .nav-links a::after {
+    content: '';
+    display: block;
+    width: 75%;
+    height: 3px;
+    margin: 0.5em auto;
+    background-color: #d10371;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1); }
+
+  /* line 452, ../components/sass/styles-old.scss */
+  .product-categories a::after {
+    display: none; }
+
+  /* line 456, ../components/sass/styles-old.scss */
+  .nav-links li:active {
+    border: 0; }
+
+  /* line 460, ../components/sass/styles-old.scss */
+  .nav-links li:hover a::after, .drawer-container:hover a::after, .products-btn.active a::after {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1); }
+
+  /* line 464, ../components/sass/styles-old.scss */
+  .products-btn a::after {
+    width: 100%; }
+
+  /* line 468, ../components/sass/styles-old.scss */
+  .nav-links a:hover {
+    color: #555; }
+
+  /* line 472, ../components/sass/styles-old.scss */
+  .drawer {
+    position: absolute;
+    top: 73px;
+    left: -227px;
+    width: 940px;
+    height: 0;
+    margin: 0;
+    z-index: 997;
+    background-color: #fff;
+    opacity: 0.95; }
+
+  /* line 484, ../components/sass/styles-old.scss */
+  .drawer-menu {
+    display: table;
+    width: 100%;
+    padding: 2em 3em;
+    background-color: transparent; }
+    /* line 490, ../components/sass/styles-old.scss */
+    .drawer-menu .product-categories {
+      padding: 0; }
+    /* line 494, ../components/sass/styles-old.scss */
+    .drawer-menu .product-categories li {
+      width: 12em; }
+    /* line 498, ../components/sass/styles-old.scss */
+    .drawer-menu .product-categories li::before {
+      content: '';
+      display: block;
+      width: 75px;
+      height: 75px;
+      margin: 0 auto;
+      margin-bottom: 1em;
+      background-color: #f3f3f3;
+      transition: background-color 0.3s ease-in-out; }
+    /* line 510, ../components/sass/styles-old.scss */
+    .drawer-menu .product-categories li:hover::before {
+      background-color: #e95f9d; }
+
+  /* line 515, ../components/sass/styles-old.scss */
+  .drawer.show {
+    height: 200px; }
+    /* line 518, ../components/sass/styles-old.scss */
+    .drawer.show .drawer-menu {
+      visibility: visible;
+      opacity: 0.95; } }
+/* Responsive Styling for Desktop */
+@media only screen and (min-width: 1200px) {
+  /* line 529, ../components/sass/styles-old.scss */
+  .products-btn a::after {
+    transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1) 0.5s; }
+
+  /* line 533, ../components/sass/styles-old.scss */
+  .nav-links li:hover a::after, .drawer-container:hover a::after, .products-btn.active a::after {
+    transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1); }
+
+  /* line 537, ../components/sass/styles-old.scss */
+  .drawer {
+    width: 1140px;
+    left: -278px;
+    background-color: #fff;
+    opacity: 0.95;
+    transition: height 1s cubic-bezier(0.55, 0, 0.1, 1) 0.5s; }
+
+  /* line 545, ../components/sass/styles-old.scss */
+  .drawer-menu {
+    transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1) 0.5s, visibility 0.3s cubic-bezier(0.55, 0, 0.1, 1) 0.5s; }
+    /* line 549, ../components/sass/styles-old.scss */
+    .drawer-menu .product-categories {
+      padding: 0 5em; }
+
+  /* line 554, ../components/sass/styles-old.scss */
+  .drawer-container:hover .drawer {
+    height: 200px;
+    transition: height 1s cubic-bezier(0.55, 0, 0.1, 1) 0.3s; }
+    /* line 557, ../components/sass/styles-old.scss */
+    .drawer-container:hover .drawer .drawer-menu {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.5s cubic-bezier(0.55, 0, 0.1, 1) 0.75s, visibility 0.5s cubic-bezier(0.55, 0, 0.1, 1) 0.75s; } }
+/* === Menu Icon === */
+/* line 573, ../components/sass/styles-old.scss */
+nav .menu {
+  z-index: 999;
+  position: absolute;
+  top: -5px;
+  right: 0;
+  height: 4em;
+  width: 4em;
+  background-color: none;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  outline: 0;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition: background-color 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: background-color 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  -ms-transition: background-color 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: background-color 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
+
+/* line 595, ../components/sass/styles-old.scss */
+.hamburger, .hamburger::before, .hamburger::after {
+  position: absolute;
+  background-color: #333333;
+  width: 2em;
+  height: 0.2em;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.55, 0, 0.1, 1), background-color 0.3s;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0.55, 0, 0.1, 1), background-color 0.3s;
+  -o-transition: -o-transform 0.3s cubic-bezier(0.55, 0, 0.1, 1), background-color 0.3s;
+  -ms-transition: -ms-transform 0.3s cubic-bezier(0.55, 0, 0.1, 1), background-color 0.3s;
+  transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1), background-color 0.3s; }
+
+/* line 613, ../components/sass/styles-old.scss */
+.hamburger {
+  top: 70%;
+  left: 25%; }
+
+/* line 618, ../components/sass/styles-old.scss */
+.hamburger::before, .hamburger::after {
+  content: '';
+  left: 0; }
+
+/* line 623, ../components/sass/styles-old.scss */
+.hamburger::before {
+  -webkit-transform: translateY(-9px);
+  -moz-transform: translateY(-9px);
+  -o-transform: translateY(-9px);
+  -ms-transform: translateY(-9px);
+  transform: translateY(-9px); }
+
+/* line 631, ../components/sass/styles-old.scss */
+.hamburger::after {
+  -webkit-transform: translateY(9px);
+  -moz-transform: translateY(9px);
+  -o-transform: translateY(9px);
+  -ms-transform: translateY(9px);
+  transform: translateY(9px); }
+
+/** Active/Inactive Menu and Navbar States **/
+/* line 642, ../components/sass/styles-old.scss */
+.is-active > .hamburger {
+  background-color: transparent;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -o-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center; }
+
+/* line 651, ../components/sass/styles-old.scss */
+.is-active > .hamburger::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #d10371; }
+
+/* line 660, ../components/sass/styles-old.scss */
+.is-active > .hamburger::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #d10371; }
+
+/* line 669, ../components/sass/styles-old.scss */
+.is-active ~ .links-container {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%); }
+
+/***************************
+==== Hero Header Styles ====
+****************************/
+/* line 682, ../components/sass/styles-old.scss */
+header {
+  position: relative; }
+
+/* line 686, ../components/sass/styles-old.scss */
+.product-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(243, 243, 243, 0.95); }
+
+/* line 693, ../components/sass/styles-old.scss */
+.product-nav > div {
+  padding: 2em 1em; }
+
+/* line 697, ../components/sass/styles-old.scss */
+.sticky {
+  position: fixed;
+  max-width: 1140px;
+  top: 0;
+  z-index: 1000; }
+
+/* line 704, ../components/sass/styles-old.scss */
+.product-nav h3 {
+  line-height: 0;
+  margin: 0; }
+
+/* line 709, ../components/sass/styles-old.scss */
+.buy {
+  position: absolute;
+  top: -1.3em;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; }
+
+/* line 719, ../components/sass/styles-old.scss */
+.buy.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out; }
+
+/* line 725, ../components/sass/styles-old.scss */
+.product-nav a {
+  padding: 5px 16px; }
+
+/* line 729, ../components/sass/styles-old.scss */
+.hero {
+  margin: 0;
+  width: 100%;
+  height: 400px; }
+  @media only screen and (min-width: 992px) {
+    /* line 729, ../components/sass/styles-old.scss */
+    .hero {
+      height: 600px; } }
+
+/* line 739, ../components/sass/styles-old.scss */
+.about-hero {
+  background: url("../img/about-hero.jpg") no-repeat left center;
+  background-size: cover; }
+  @media only screen and (min-width: 992px) {
+    /* line 739, ../components/sass/styles-old.scss */
+    .about-hero {
+      background: url("../img/about-hero.jpg") no-repeat center center; } }
+
+/* line 748, ../components/sass/styles-old.scss */
+.ebp-product {
+  background: url("../img/bp.png") no-repeat center center;
+  background-size: cover; }
+
+/**************************
+==== Featurette Styles ====
+***************************/
+/* line 758, ../components/sass/styles-old.scss */
+.featurette {
+  background-color: #f3f3f3;
+  padding: 0;
+  margin: 0; }
+  @media only screen and (min-width: 0px) {
+    /* line 758, ../components/sass/styles-old.scss */
+    .featurette {
+      padding: 2em 0; } }
+  @media only screen and (min-width: 992px) {
+    /* line 758, ../components/sass/styles-old.scss */
+    .featurette {
+      padding: 2.5em; } }
+  @media only screen and (min-width: 1200px) {
+    /* line 758, ../components/sass/styles-old.scss */
+    .featurette {
+      padding: 5em; } }
+
+/* line 775, ../components/sass/styles-old.scss */
+.medical {
+  margin: 10px 0;
+  width: 100%;
+  height: 400px;
+  background: url("../img/bp-2.jpg") no-repeat center center;
+  background-size: cover; }
+  @media only screen and (min-width: 992px) {
+    /* line 775, ../components/sass/styles-old.scss */
+    .medical {
+      height: 600px; } }
+
+/* line 787, ../components/sass/styles-old.scss */
+.hero-title, .medical .feature-title {
+  margin-top: 1em;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.9); }
+  @media only screen and (max-width: 992px) {
+    /* line 787, ../components/sass/styles-old.scss */
+    .hero-title, .medical .feature-title {
+      text-align: center; } }
+
+@media only screen and (min-width: 480px) {
+  /* line 798, ../components/sass/styles-old.scss */
+  .hero-title {
+    margin-top: 4em; } }
+@media only screen and (min-width: 992px) {
+  /* line 804, ../components/sass/styles-old.scss */
+  .hero-title {
+    margin-top: 25em; }
+
+  /* line 808, ../components/sass/styles-old.scss */
+  .medical .feature-title {
+    margin-top: 0; } }
+/* line 813, ../components/sass/styles-old.scss */
+.hero-title h1, .medical .feature-title h1 {
+  color: #e95f9d; }
+  @media only screen and (min-width: 992px) {
+    /* line 813, ../components/sass/styles-old.scss */
+    .hero-title h1, .medical .feature-title h1 {
+      font-size: 3em; } }
+
+/* line 822, ../components/sass/styles-old.scss */
+.related.featurette {
+  padding: 2.5em 0; }
+
+/* line 826, ../components/sass/styles-old.scss */
+.feature-title {
+  text-align: left; }
+  @media only screen and (min-width: 768px) {
+    /* line 826, ../components/sass/styles-old.scss */
+    .feature-title {
+      text-align: center; } }
+
+/* line 834, ../components/sass/styles-old.scss */
+.product img {
+  width: 100%; }
+
+/* line 838, ../components/sass/styles-old.scss */
+.features, .product {
+  margin-top: 2em; }
+
+/* line 842, ../components/sass/styles-old.scss */
+.feature-img {
+  width: 100%;
+  height: 300px;
+  background-color: #cecece; }
+
+/* line 848, ../components/sass/styles-old.scss */
+.feature {
+  margin-bottom: 5em; }
+  @media only screen and (min-width: 992px) {
+    /* line 848, ../components/sass/styles-old.scss */
+    .feature {
+      margin: 2.15em 0; } }
+  @media only screen and (min-width: 1200px) {
+    /* line 848, ../components/sass/styles-old.scss */
+    .feature {
+      margin: 3em 0; } }
+
+/* line 860, ../components/sass/styles-old.scss */
+.feature::before, .feature::after {
+  content: '';
+  opacity: 0;
+  display: block;
+  position: relative;
+  background-color: #cecece;
+  z-index: 999;
+  transition: transform 1s cubic-bezier(0.55, 0, 0.1, 1), opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
+  @media only screen and (min-width: 992px) {
+    /* line 860, ../components/sass/styles-old.scss */
+    .feature::before, .feature::after {
+      left: 24em; } }
+  @media only screen and (min-width: 1200px) {
+    /* line 860, ../components/sass/styles-old.scss */
+    .feature::before, .feature::after {
+      left: 30em; } }
+
+@media only screen and (min-width: 992px) {
+  /* line 879, ../components/sass/styles-old.scss */
+  .feature::before {
+    top: 6em;
+    width: 10px;
+    height: 2px;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0); } }
+@media only screen and (max-width: 1200px) {
+  /* line 879, ../components/sass/styles-old.scss */
+  .feature::before {
+    top: 6.4em; } }
+
+@media only screen and (min-width: 992px) {
+  /* line 892, ../components/sass/styles-old.scss */
+  .feature::after {
+    top: -3.36em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px); } }
+@media only screen and (max-width: 1200px) {
+  /* line 892, ../components/sass/styles-old.scss */
+  .feature::after {
+    top: -4.34em; } }
+
+/* line 906, ../components/sass/styles-old.scss */
+.animate.feature::before {
+  opacity: 1;
+  transform-origin: left center;
+  -webkit-transform: scaleX(24);
+  -moz-transform: scaleX(24);
+  -ms-transform: scaleX(24);
+  -o-transform: scaleX(24);
+  transform: scaleX(24); }
+  @media only screen and (max-width: 1200px) {
+    /* line 906, ../components/sass/styles-old.scss */
+    .animate.feature::before {
+      -webkit-transform: scaleX(19);
+      -moz-transform: scaleX(19);
+      -ms-transform: scaleX(19);
+      -o-transform: scaleX(19);
+      transform: scaleX(19); } }
+
+/* line 916, ../components/sass/styles-old.scss */
+.animate.feature:nth-child(2)::before {
+  -webkit-transform: scaleX(20);
+  -moz-transform: scaleX(20);
+  -ms-transform: scaleX(20);
+  -o-transform: scaleX(20);
+  transform: scaleX(20); }
+  @media only screen and (max-width: 1200px) {
+    /* line 916, ../components/sass/styles-old.scss */
+    .animate.feature:nth-child(2)::before {
+      -webkit-transform: scaleX(15);
+      -moz-transform: scaleX(15);
+      -ms-transform: scaleX(15);
+      -o-transform: scaleX(15);
+      transform: scaleX(15); } }
+
+/* line 924, ../components/sass/styles-old.scss */
+.animate.feature::after {
+  opacity: 1;
+  -webkit-transform: translateX(240px);
+  -moz-transform: translateX(240px);
+  -o-transform: translateX(240px);
+  transform: translateX(240px); }
+  @media only screen and (max-width: 1200px) {
+    /* line 924, ../components/sass/styles-old.scss */
+    .animate.feature::after {
+      -webkit-transform: translateX(190px);
+      -moz-transform: translateX(190px);
+      -o-transform: translateX(190px);
+      transform: translateX(190px); } }
+
+/* line 933, ../components/sass/styles-old.scss */
+.animate.feature:nth-child(2)::after {
+  -webkit-transform: translateX(200px);
+  -moz-transform: translateX(200px);
+  -o-transform: translateX(200px);
+  transform: translateX(200px); }
+  @media only screen and (max-width: 1200px) {
+    /* line 933, ../components/sass/styles-old.scss */
+    .animate.feature:nth-child(2)::after {
+      -webkit-transform: translateX(150px);
+      -moz-transform: translateX(150px);
+      -o-transform: translateX(150px);
+      transform: translateX(150px); } }
+
+/*******************************
+==== Related Product Styles ====
+********************************/
+/* line 946, ../components/sass/styles-old.scss */
+.related {
+  background-color: white; }
+
+/* line 950, ../components/sass/styles-old.scss */
+.tab-content {
+  margin-top: 2em; }
+
+/* line 954, ../components/sass/styles-old.scss */
+.related-tab-title {
+  text-align: center;
+  margin: 3em 0 2em 0; }
+
+/* line 959, ../components/sass/styles-old.scss */
+.related-tabs ul {
+  list-style-type: none;
+  width: 360px;
+  margin: auto;
+  padding: 0; }
+  /* line 965, ../components/sass/styles-old.scss */
+  .related-tabs ul li {
+    display: inline-block;
+    margin: 0 1.5em; }
+    /* line 970, ../components/sass/styles-old.scss */
+    .related-tabs ul li a {
+      display: block;
+      width: 75px;
+      height: 75px;
+      background-color: #cecece;
+      border-radius: 50%; }
+    /* line 978, ../components/sass/styles-old.scss */
+    .related-tabs ul li.active a {
+      border: 1px solid #1ebbef; }
+
+@media only screen and (max-width: 440px) {
+  /* line 985, ../components/sass/styles-old.scss */
+  .related-tabs ul li {
+    margin: 0 1em; } }
+/* line 991, ../components/sass/styles-old.scss */
+.tab-img-1 {
+  height: 267px;
+  background: url("../img/1.jpg") no-repeat center center;
+  background-size: 100%; }
+
+/* line 991, ../components/sass/styles-old.scss */
+.tab-img-2 {
+  height: 267px;
+  background: url("../img/2.jpg") no-repeat center center;
+  background-size: 100%; }
+
+/* line 991, ../components/sass/styles-old.scss */
+.tab-img-3 {
+  height: 267px;
+  background: url("../img/3.jpg") no-repeat center center;
+  background-size: 100%; }
+
+/*******************************
+==== Explore Product Styles ====
+********************************/
+/* line 1003, ../components/sass/styles-old.scss */
+.explore-img {
+  max-width: 400px;
+  height: 240px;
+  margin: 2em auto;
+  background-color: #cecece;
+  border-radius: 5px; }
+  @media only screen and (min-width: 768px) {
+    /* line 1003, ../components/sass/styles-old.scss */
+    .explore-img {
+      width: 100%;
+      height: 265px;
+      margin: 0; } }
+
+/* line 1017, ../components/sass/styles-old.scss */
+.explore-title {
+  text-align: center; }
+
+/* line 1021, ../components/sass/styles-old.scss */
+.explore-title a {
+  color: #2198b8; }
+
+/* line 1025, ../components/sass/styles-old.scss */
+.vr {
+  width: 1px;
+  height: 260px;
+  margin: 2.5px auto;
+  background: #cecece; }
+
+/* line 1032, ../components/sass/styles-old.scss */
+footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 400px;
+  background-color: #cecece; }
