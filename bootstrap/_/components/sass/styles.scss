@@ -520,6 +520,10 @@ header {
 	position: relative;
 }
 
+.hero div h1 {
+	margin-bottom: 1em;
+}
+
 .product-nav {
 	position: absolute;
 	top: 0;
@@ -804,6 +808,80 @@ footer {
 	}
 }
 
+.breastfeeding-hero {
+	background: url('../img/category/breastfeeding-hero.jpg') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, max-width) {
+		background-position: left center;
+	}
+
+	.breastfeeding-heading {
+		position: relative;
+		left: 30px;
+		margin-top: 7.5em;
+	}
+}
+
+.bottle-hero {
+	background: url('../img/category/bottle-hero.jpg') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, max-width) {
+		background-position: left center;
+	}
+
+	.bottle-heading {
+		position: relative;
+		left: 40px;
+		margin-top: 7.5em;
+	}
+}
+
+.cup-hero {
+	background: url('../img/category/cup-hero.jpg') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, max-width) {
+		background-position: right center;
+	}
+
+	.cup-heading {
+		margin-top: 8em;
+	}
+}
+
+.soother-hero {
+	background: url('../img/category/soother-hero.jpg') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, max-width) {
+		background-position: left center;
+	}
+
+	.soother-heading {
+		position: relative;
+		left: 50px;
+		margin-top: 8em;
+	}
+}
+
+.care-hero {
+	background: url('../img/category/care-hero.jpg') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, max-width) {
+		background-position: right center;
+	}
+
+	.care-heading {
+		position: relative;
+		left: -20px;
+		margin-top: 8em;
+	}
+}
+
+
 /* === Introduction === */
 
 .category-intro {
@@ -826,11 +904,11 @@ footer {
 	padding: 0;
 }
 
-.product-tile:nth-child(1), .product-tile:nth-child(3) {
+.product-tile:nth-child(1), .product-tile:nth-child(3), .product-tile:nth-child(5) {
 	padding-right: 5px;
 }
 
-.product-tile:nth-child(2), .product-tile:nth-child(4) {
+.product-tile:nth-child(2), .product-tile:nth-child(4), .product-tile:nth-child(6) {
 	padding-left: 5px;
 }
 
@@ -839,6 +917,11 @@ footer {
 }
 
 .product-tile:nth-child(3), .product-tile:nth-child(4) {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.product-tile:nth-child(5), .product-tile:nth-child(6) {
 	padding-top: 5px;
 }
 
@@ -885,24 +968,12 @@ footer {
   transform: scale(1.15,1.15);
 }
 
+
+/* === Breastfeeding === */
+
 .m-breastpump {
   margin-top: 1.5em;
   width: 176px;
-}
-
-.e-breastpump {
-  margin-top: 2.25em;
-  width: 185px;
-}
-
-.nipple-protector {
-  margin-top: 3.5em;
-  width: 237px;
-}
-
-.breastpad {
-  width: 163px;
-  margin-top: 2em;
 }
 
 .mbp-img {
@@ -912,6 +983,11 @@ footer {
 	background-size: 176px 200px;
 }
 
+.e-breastpump {
+  margin-top: 2.25em;
+  width: 185px;
+}
+
 .ebp-img {
 	width: 185px;
 	height: 200px;
@@ -919,11 +995,21 @@ footer {
 	background-size: 185px 200px;
 }
 
+.nipple-protector {
+  margin-top: 3.5em;
+  width: 237px;
+}
+
 .protector-img {
 	width: 237px;
 	height: 200px;
 	background: url('../img/products/nipple-protector.png') no-repeat center center;
 	background-size: 237px 200px;
+}
+
+.breastpad {
+  width: 163px;
+  margin-top: 2em;
 }
 
 .pad-img {
@@ -934,7 +1020,79 @@ footer {
 }
 
 
+/* === Bottle Feeding === */
 
+.as-bottle {
+  margin-top: 2.125em;
+  width: 79px;
+}
+
+.as-img {
+	width: 79px;
+	height: 200px;
+	background: url('../img/bottle/active-suckling.png') no-repeat center center;
+	background-size: 79px 200px;
+}
+
+.medical-bottle {
+  margin-top: 2.25em;
+  width: 80px;
+}
+
+.medical-img {
+	width: 80px;
+	height: 200px;
+	background: url('../img/bottle/medical.png') no-repeat center center;
+	background-size: 80px 200px;
+}
+
+.ss-bottle {
+  margin-top: 2.5em;
+  width: 77px;
+}
+
+.ss-img {
+	width: 77px;
+	height: 200px;
+	background: url('../img/bottle/self-steri.png') no-repeat center center;
+	background-size: 77px 200px;
+}
+
+.glass-bottle {
+  width: 74px;
+  margin-top: 2.5em;
+}
+
+.glass-img {
+	width: 74px;
+	height: 200px;
+	background: url('../img/bottle/glass.png') no-repeat center center;
+	background-size: 74px 200px;
+}
+
+.multi-bottle {
+  width: 61px;
+  margin-top: 2.5em;
+}
+
+.multibottle-img {
+	width: 61px;
+	height: 200px;
+	background: url('../img/bottle/multifunctional.png') no-repeat center center;
+	background-size: 61px 200px;
+}
+
+.dynamic-teat {
+  width: 191px;
+  margin-top: 2.5em;
+}
+
+.teat-img {
+	width: 191px;
+	height: 200px;
+	background: url('../img/bottle/dynamic-teat.png') no-repeat center center;
+	background-size: 191px 200px;
+}
 
 
 /****************************
