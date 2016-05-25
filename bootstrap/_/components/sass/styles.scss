@@ -847,6 +847,8 @@ footer {
 	}
 
 	.cup-heading {
+		position: relative;
+		left: -20px;
 		margin-top: 8em;
 	}
 }
@@ -1093,6 +1095,37 @@ footer {
 	background: url('../img/bottle/dynamic-teat.png') no-repeat center center;
 	background-size: 191px 200px;
 }
+
+
+/****************************
+## Explore Category Styles ##  
+*****************************/
+
+.breastfeeding-explore {
+	background: url('../img/category/breastfeeding-explore.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.bottle-explore {
+	background: url('../img/category/bottle-explore.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.cup-explore {
+	background: url('../img/category/cup-explore.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.soother-explore {
+	background: url('../img/category/soother-explore.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.care-explore {
+	background: url('../img/category/care-explore.jpg') no-repeat center center;
+	background-size: cover;
+}
+
 
 
 /****************************
