@@ -658,12 +658,26 @@ footer {
 ## Carousel Styles ##  
 *********************/
 
+.carousel {
+	height: 600px;
+}
+
 .carousel-control {
 	opacity: 0.25;
+	transition: opacity 0.3s cubic-bezier(.55,0,.1,1);
 }
 
 .carousel-control.left, .carousel-control.right {
 	background-image: none;
+}
+
+.carousel-indicators li {
+	background-color: $pink;
+	border-color: $pink;
+}
+
+.carousel-indicators .active {
+	background-color: #f8f8f8;
 }
 
 
@@ -778,9 +792,9 @@ footer {
 }
 
 .about-side-img {
-	height: 450px;
+	height: 500px;
 	background-color: #f3f3f3;
-	background: url('../img/about-side.jpg') no-repeat center center;
+	background: url('../img/about-side.jpg') no-repeat left center;
 	background-size: cover;
 }
 
