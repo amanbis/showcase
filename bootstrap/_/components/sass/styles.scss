@@ -710,6 +710,20 @@ footer {
 	background-color: #f8f8f8;
 }
 
+.soother-promo {
+	background: url('../img/home/soother-promo.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.teat-promo {
+	background: url('../img/home/teat-promo.jpg') no-repeat center center;
+	background-size: cover;	
+}
+
+.medical-promo {
+	background: url('../img/home/medical-promo.jpg') no-repeat center center;
+	background-size: cover;	
+}
 
 /****************
 ## Blog Styles ##  
@@ -768,6 +782,7 @@ footer {
 
 	h1 {
 		margin-bottom: 1em;
+		color: $pink;
 	}
 }
 
@@ -946,6 +961,12 @@ footer {
 	height: 100%;
 	padding: 2em 3em;
 	background-color: #f8f8f8;
+}
+
+.product-content .glyphicon {
+	position: relative;
+	top:0.15em;
+	font-size: 0.75em;
 }
 
 .product-tile h2 {
