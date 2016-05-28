@@ -414,32 +414,33 @@ header {
 
 /* line 523, ../components/sass/styles.scss */
 .hero div h1 {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  color: #e95f9d; }
 
-/* line 527, ../components/sass/styles.scss */
+/* line 528, ../components/sass/styles.scss */
 .product-nav {
   position: absolute;
   top: 0;
   width: 100%;
   background-color: rgba(243, 243, 243, 0.95); }
 
-/* line 534, ../components/sass/styles.scss */
+/* line 535, ../components/sass/styles.scss */
 .product-nav > div {
   padding: 2em 1em; }
 
-/* line 538, ../components/sass/styles.scss */
+/* line 539, ../components/sass/styles.scss */
 .sticky {
   position: fixed;
   max-width: 1140px;
   top: 0;
   z-index: 1000; }
 
-/* line 545, ../components/sass/styles.scss */
+/* line 546, ../components/sass/styles.scss */
 .product-nav h3 {
   line-height: 0;
   margin: 0; }
 
-/* line 550, ../components/sass/styles.scss */
+/* line 551, ../components/sass/styles.scss */
 .buy {
   position: absolute;
   top: -1.3em;
@@ -448,51 +449,51 @@ header {
   visibility: hidden;
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; }
 
-/* line 560, ../components/sass/styles.scss */
+/* line 561, ../components/sass/styles.scss */
 .buy.visible {
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s ease-in-out; }
 
-/* line 566, ../components/sass/styles.scss */
+/* line 567, ../components/sass/styles.scss */
 .product-nav a {
   padding: 5px 16px; }
 
-/* line 570, ../components/sass/styles.scss */
+/* line 571, ../components/sass/styles.scss */
 .hero {
   margin: 0;
   width: 100%;
   height: 400px; }
   @media only screen and (min-width: 992px) {
-    /* line 570, ../components/sass/styles.scss */
+    /* line 571, ../components/sass/styles.scss */
     .hero {
       height: 600px; } }
 
 /**********************
 ## Featurette Styles ##
 ***********************/
-/* line 586, ../components/sass/styles.scss */
+/* line 587, ../components/sass/styles.scss */
 .featurette {
   background-color: #f3f3f3;
   padding: 0;
   margin: 0; }
   @media only screen and (min-width: 0px) {
-    /* line 586, ../components/sass/styles.scss */
+    /* line 587, ../components/sass/styles.scss */
     .featurette {
       padding: 2em 0; } }
   @media only screen and (min-width: 992px) {
-    /* line 586, ../components/sass/styles.scss */
+    /* line 587, ../components/sass/styles.scss */
     .featurette {
       padding: 2.5em; } }
   @media only screen and (min-width: 1200px) {
-    /* line 586, ../components/sass/styles.scss */
+    /* line 587, ../components/sass/styles.scss */
     .featurette {
       padding: 5em; } }
 
 /***************************
 ## Explore Product Styles ##
 ****************************/
-/* line 609, ../components/sass/styles.scss */
+/* line 610, ../components/sass/styles.scss */
 .explore-img {
   max-width: 400px;
   height: 240px;
@@ -500,28 +501,28 @@ header {
   background-color: #cecece;
   border-radius: 5px; }
   @media only screen and (min-width: 768px) {
-    /* line 609, ../components/sass/styles.scss */
+    /* line 610, ../components/sass/styles.scss */
     .explore-img {
       width: 100%;
       height: 265px;
       margin: 0; } }
 
-/* line 623, ../components/sass/styles.scss */
+/* line 624, ../components/sass/styles.scss */
 .explore-title {
   text-align: center; }
 
-/* line 627, ../components/sass/styles.scss */
+/* line 628, ../components/sass/styles.scss */
 .explore-title a {
   color: #2198b8; }
 
-/* line 631, ../components/sass/styles.scss */
+/* line 632, ../components/sass/styles.scss */
 .vr {
   width: 1px;
   height: 260px;
   margin: 2.5px auto;
   background: #cecece; }
 
-/* line 638, ../components/sass/styles.scss */
+/* line 639, ../components/sass/styles.scss */
 footer {
   margin: 0;
   padding: 0;
@@ -537,66 +538,66 @@ footer {
 /********************
 ## Carousel Styles ##  
 *********************/
-/* line 661, ../components/sass/styles.scss */
+/* line 662, ../components/sass/styles.scss */
 .carousel {
   height: 600px; }
 
-/* line 665, ../components/sass/styles.scss */
+/* line 666, ../components/sass/styles.scss */
 .carousel-control {
   opacity: 0.25;
   transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
 
-/* line 670, ../components/sass/styles.scss */
+/* line 671, ../components/sass/styles.scss */
 .carousel-control.left, .carousel-control.right {
   background-image: none; }
 
-/* line 674, ../components/sass/styles.scss */
+/* line 675, ../components/sass/styles.scss */
 .carousel-indicators li {
   background-color: #e95f9d;
   border-color: #e95f9d; }
 
-/* line 679, ../components/sass/styles.scss */
+/* line 680, ../components/sass/styles.scss */
 .carousel-indicators .active {
   background-color: #f8f8f8; }
 
 /*****************
 ## Promo Styles ##  
 ******************/
-/* line 688, ../components/sass/styles.scss */
+/* line 689, ../components/sass/styles.scss */
 .promo {
   margin: 10px 0; }
 
-/* line 692, ../components/sass/styles.scss */
+/* line 693, ../components/sass/styles.scss */
 .promo-tile {
   padding: 0;
   height: 200px; }
 
-/* line 697, ../components/sass/styles.scss */
+/* line 698, ../components/sass/styles.scss */
 .promo-tile:nth-child(1), .promo-tile:nth-child(2) {
   padding-bottom: 10px; }
   @media only screen and (min-width: 992px) {
-    /* line 697, ../components/sass/styles.scss */
+    /* line 698, ../components/sass/styles.scss */
     .promo-tile:nth-child(1), .promo-tile:nth-child(2) {
       padding-bottom: 0;
       padding-right: 10px; } }
 
-/* line 707, ../components/sass/styles.scss */
+/* line 708, ../components/sass/styles.scss */
 .promo-content {
   width: 100%;
   height: 100%;
   background-color: #f8f8f8; }
 
-/* line 713, ../components/sass/styles.scss */
+/* line 714, ../components/sass/styles.scss */
 .soother-promo {
   background: url("../img/home/soother-promo.jpg") no-repeat center center;
   background-size: cover; }
 
-/* line 718, ../components/sass/styles.scss */
+/* line 719, ../components/sass/styles.scss */
 .teat-promo {
   background: url("../img/home/teat-promo.jpg") no-repeat center center;
   background-size: cover; }
 
-/* line 723, ../components/sass/styles.scss */
+/* line 724, ../components/sass/styles.scss */
 .medical-promo {
   background: url("../img/home/medical-promo.jpg") no-repeat center center;
   background-size: cover; }
@@ -604,7 +605,7 @@ footer {
 /****************
 ## Blog Styles ##  
 *****************/
-/* line 732, ../components/sass/styles.scss */
+/* line 733, ../components/sass/styles.scss */
 .blog {
   margin: 0;
   margin-bottom: 10px;
@@ -613,7 +614,7 @@ footer {
   background: url("../img/blog-xs.png") no-repeat center center;
   background-size: cover; }
   @media only screen and (min-width: 992px) {
-    /* line 732, ../components/sass/styles.scss */
+    /* line 733, ../components/sass/styles.scss */
     .blog {
       height: 509px;
       background: url("../img/blog-md.png") no-repeat center center; } }
@@ -626,30 +627,29 @@ footer {
 /***********************
 ## Hero Header Styles ##  
 ************************/
-/* line 761, ../components/sass/styles.scss */
+/* line 762, ../components/sass/styles.scss */
 .about-hero {
   background: url("../img/about-hero.jpg") no-repeat left center;
   background-size: cover; }
   @media only screen and (min-width: 992px) {
-    /* line 761, ../components/sass/styles.scss */
+    /* line 762, ../components/sass/styles.scss */
     .about-hero {
       background: url("../img/about-hero.jpg") no-repeat center center; } }
 
 /*******************
 ## Content Styles ##  
 ********************/
-/* line 774, ../components/sass/styles.scss */
+/* line 775, ../components/sass/styles.scss */
 .about {
   margin: 2em 0 2.25em 0; }
 
 /* === Intro === */
-/* line 780, ../components/sass/styles.scss */
+/* line 781, ../components/sass/styles.scss */
 .about-heading {
   margin-top: 8em; }
-  /* line 783, ../components/sass/styles.scss */
+  /* line 784, ../components/sass/styles.scss */
   .about-heading h1 {
-    margin-bottom: 1em;
-    color: #e95f9d; }
+    margin-bottom: 1em; }
 
 /* line 789, ../components/sass/styles.scss */
 .about-intro h1 {
