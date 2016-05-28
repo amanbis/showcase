@@ -797,46 +797,49 @@ footer {
 
 /* line 950, ../components/sass/styles.scss */
 .product-tile:nth-child(3), .product-tile:nth-child(4) {
-  padding-top: 5px;
-  padding-bottom: 5px; }
+  padding-top: 5px; }
 
-/* line 955, ../components/sass/styles.scss */
+/* line 954, ../components/sass/styles.scss */
 .product-tile:nth-child(5), .product-tile:nth-child(6) {
   padding-top: 5px; }
 
-/* line 959, ../components/sass/styles.scss */
+/* line 958, ../components/sass/styles.scss */
+.bottle-feeding .product-tile:nth-child(3), .bottle-feeding .product-tile:nth-child(4) {
+  padding-bottom: 5px; }
+
+/* line 962, ../components/sass/styles.scss */
 .product-content {
   width: 100%;
   height: 100%;
   padding: 2em 3em;
   background-color: #f8f8f8; }
 
-/* line 966, ../components/sass/styles.scss */
+/* line 969, ../components/sass/styles.scss */
 .product-content .glyphicon {
   position: relative;
   top: 0.15em;
   font-size: 0.75em; }
 
-/* line 972, ../components/sass/styles.scss */
+/* line 975, ../components/sass/styles.scss */
 .product-tile h2 {
   margin: 10px 0; }
   @media only screen and (max-width: 768px) {
-    /* line 972, ../components/sass/styles.scss */
+    /* line 975, ../components/sass/styles.scss */
     .product-tile h2 {
       font-size: 1.75em; } }
 
-/* line 980, ../components/sass/styles.scss */
+/* line 983, ../components/sass/styles.scss */
 .product-tile a {
   text-decoration: none;
   color: #2198b8;
   font-size: 1.5em;
   font-variant: small-caps; }
 
-/* line 987, ../components/sass/styles.scss */
+/* line 990, ../components/sass/styles.scss */
 .product-tile a:hover {
   text-decoration: underline; }
 
-/* line 991, ../components/sass/styles.scss */
+/* line 994, ../components/sass/styles.scss */
 .product-img {
   margin: 0 auto; }
 
@@ -844,57 +847,57 @@ footer {
   width: 100%;
   transition: transform 0.3s ease-in-out;
 }*/
-/* line 1000, ../components/sass/styles.scss */
+/* line 1003, ../components/sass/styles.scss */
 .product-img div {
   transition: transform 0.3s ease-in-out; }
 
-/* line 1004, ../components/sass/styles.scss */
+/* line 1007, ../components/sass/styles.scss */
 .product-img a:hover div {
   transform: scale(1.15, 1.15); }
 
 /* === Breastfeeding === */
-/* line 1011, ../components/sass/styles.scss */
+/* line 1014, ../components/sass/styles.scss */
 .m-breastpump {
   margin-top: 1.5em;
   width: 176px; }
 
-/* line 1016, ../components/sass/styles.scss */
+/* line 1019, ../components/sass/styles.scss */
 .mbp-img {
   width: 176px;
   height: 200px;
   background: url("../img/products/manual-bp.png") no-repeat center center;
   background-size: 176px 200px; }
 
-/* line 1023, ../components/sass/styles.scss */
+/* line 1026, ../components/sass/styles.scss */
 .e-breastpump {
   margin-top: 2.25em;
   width: 185px; }
 
-/* line 1028, ../components/sass/styles.scss */
+/* line 1031, ../components/sass/styles.scss */
 .ebp-img {
   width: 185px;
   height: 200px;
   background: url("../img/breastfeeding/electric-bp.png") no-repeat center center;
   background-size: 185px 200px; }
 
-/* line 1035, ../components/sass/styles.scss */
+/* line 1038, ../components/sass/styles.scss */
 .nipple-protector {
   margin-top: 3.5em;
   width: 237px; }
 
-/* line 1040, ../components/sass/styles.scss */
+/* line 1043, ../components/sass/styles.scss */
 .protector-img {
   width: 237px;
   height: 200px;
   background: url("../img/products/nipple-protector.png") no-repeat center center;
   background-size: 237px 200px; }
 
-/* line 1047, ../components/sass/styles.scss */
+/* line 1050, ../components/sass/styles.scss */
 .breastpad {
   width: 163px;
   margin-top: 2em; }
 
-/* line 1052, ../components/sass/styles.scss */
+/* line 1055, ../components/sass/styles.scss */
 .pad-img {
   width: 163px;
   height: 200px;
@@ -902,102 +905,198 @@ footer {
   background-size: 163px 200px; }
 
 /* === Bottle Feeding === */
-/* line 1062, ../components/sass/styles.scss */
+/* line 1065, ../components/sass/styles.scss */
 .as-bottle {
   margin-top: 2.125em;
   width: 79px; }
 
-/* line 1067, ../components/sass/styles.scss */
+/* line 1070, ../components/sass/styles.scss */
 .as-img {
   width: 79px;
   height: 200px;
   background: url("../img/bottle/active-suckling.png") no-repeat center center;
   background-size: 79px 200px; }
 
-/* line 1074, ../components/sass/styles.scss */
+/* line 1077, ../components/sass/styles.scss */
 .medical-bottle {
   margin-top: 2.25em;
   width: 80px; }
 
-/* line 1079, ../components/sass/styles.scss */
+/* line 1082, ../components/sass/styles.scss */
 .medical-img {
   width: 80px;
   height: 200px;
   background: url("../img/bottle/medical.png") no-repeat center center;
   background-size: 80px 200px; }
 
-/* line 1086, ../components/sass/styles.scss */
+/* line 1089, ../components/sass/styles.scss */
 .ss-bottle {
   margin-top: 2.5em;
   width: 77px; }
 
-/* line 1091, ../components/sass/styles.scss */
+/* line 1094, ../components/sass/styles.scss */
 .ss-img {
   width: 77px;
   height: 200px;
   background: url("../img/bottle/self-steri.png") no-repeat center center;
   background-size: 77px 200px; }
 
-/* line 1098, ../components/sass/styles.scss */
+/* line 1101, ../components/sass/styles.scss */
 .glass-bottle {
   width: 74px;
   margin-top: 2.5em; }
 
-/* line 1103, ../components/sass/styles.scss */
+/* line 1106, ../components/sass/styles.scss */
 .glass-img {
   width: 74px;
   height: 200px;
   background: url("../img/bottle/glass.png") no-repeat center center;
   background-size: 74px 200px; }
 
-/* line 1110, ../components/sass/styles.scss */
+/* line 1113, ../components/sass/styles.scss */
 .multi-bottle {
   width: 61px;
   margin-top: 2.5em; }
 
-/* line 1115, ../components/sass/styles.scss */
+/* line 1118, ../components/sass/styles.scss */
 .multibottle-img {
   width: 61px;
   height: 200px;
   background: url("../img/bottle/multifunctional.png") no-repeat center center;
   background-size: 61px 200px; }
 
-/* line 1122, ../components/sass/styles.scss */
+/* line 1125, ../components/sass/styles.scss */
 .dynamic-teat {
   width: 191px;
   margin-top: 2.5em; }
 
-/* line 1127, ../components/sass/styles.scss */
+/* line 1130, ../components/sass/styles.scss */
 .teat-img {
   width: 191px;
   height: 200px;
   background: url("../img/bottle/dynamic-teat.png") no-repeat center center;
   background-size: 191px 200px; }
 
+/* line 1137, ../components/sass/styles.scss */
+.cup-360 {
+  width: 167px;
+  margin-top: 2.5em; }
+
+/* line 1142, ../components/sass/styles.scss */
+.img-360 {
+  width: 167px;
+  height: 200px;
+  background: url("../img/cups/360.png") no-repeat center center;
+  background-size: 167px 200px; }
+
+/* line 1149, ../components/sass/styles.scss */
+.hc-cup {
+  width: 142px;
+  margin-top: 2.75em; }
+
+/* line 1154, ../components/sass/styles.scss */
+.hc-img {
+  width: 142px;
+  height: 200px;
+  background: url("../img/cups/hot-cold.png") no-repeat center center;
+  background-size: 142px 200px; }
+
+/* line 1161, ../components/sass/styles.scss */
+.nonspill-cup {
+  width: 115px;
+  margin-top: 2.5em; }
+
+/* line 1166, ../components/sass/styles.scss */
+.nonspill-img {
+  width: 115px;
+  height: 200px;
+  background: url("../img/cups/nonspill.png") no-repeat center center;
+  background-size: 115px 200px; }
+
+/* line 1173, ../components/sass/styles.scss */
+.dynamic-soother {
+  width: 129px;
+  margin-top: 2.5em; }
+
+/* line 1178, ../components/sass/styles.scss */
+.soother-img {
+  width: 129px;
+  height: 200px;
+  background: url("../img/soothers/soother.png") no-repeat center center;
+  background-size: 129px 200px; }
+
+/* line 1185, ../components/sass/styles.scss */
+.soother-holder {
+  width: 282px;
+  margin-top: 2.5em; }
+
+/* line 1190, ../components/sass/styles.scss */
+.holder-img {
+  width: 282px;
+  height: 200px;
+  background: url("../img/soothers/holder.png") no-repeat center center;
+  background-size: 282px 200px; }
+
+/* line 1197, ../components/sass/styles.scss */
+.heat-pack {
+  width: 160px;
+  margin-top: 2.5em; }
+
+/* line 1202, ../components/sass/styles.scss */
+.pack-img {
+  width: 160px;
+  height: 200px;
+  background: url("../img/care/heat-pack.png") no-repeat center center;
+  background-size: 160px 200px; }
+
+/* line 1209, ../components/sass/styles.scss */
+.bottle-warmer {
+  width: 162px;
+  margin-top: 2.5em; }
+
+/* line 1214, ../components/sass/styles.scss */
+.warmer-img {
+  width: 162px;
+  height: 200px;
+  background: url("../img/care/warmer.png") no-repeat center center;
+  background-size: 162px 200px; }
+
+/* line 1221, ../components/sass/styles.scss */
+.bottle-insulator {
+  width: 85px;
+  margin-top: 2.5em; }
+
+/* line 1226, ../components/sass/styles.scss */
+.insulator-img {
+  width: 85px;
+  height: 200px;
+  background: url("../img/care/insulator.png") no-repeat center center;
+  background-size: 85px 200px; }
+
 /****************************
 ## Explore Category Styles ##  
 *****************************/
-/* line 1139, ../components/sass/styles.scss */
+/* line 1240, ../components/sass/styles.scss */
 .breastfeeding-explore {
   background: url("../img/category/breastfeeding-explore.jpg") no-repeat center center;
   background-size: cover; }
 
-/* line 1144, ../components/sass/styles.scss */
+/* line 1245, ../components/sass/styles.scss */
 .bottle-explore {
   background: url("../img/category/bottle-explore.jpg") no-repeat center center;
   background-size: cover; }
 
-/* line 1149, ../components/sass/styles.scss */
+/* line 1250, ../components/sass/styles.scss */
 .cup-explore {
   background: url("../img/category/cup-explore.jpg") no-repeat center center;
   background-size: cover; }
 
-/* line 1154, ../components/sass/styles.scss */
+/* line 1255, ../components/sass/styles.scss */
 .soother-explore {
   background: url("../img/category/soother-explore.jpg") no-repeat center center;
   background-size: cover; }
 
-/* line 1159, ../components/sass/styles.scss */
+/* line 1260, ../components/sass/styles.scss */
 .care-explore {
   background: url("../img/category/care-explore.jpg") no-repeat center center;
   background-size: cover; }
@@ -1010,7 +1109,7 @@ footer {
 /***********************
 ## Hero Header Styles ##  
 ************************/
-/* line 1177, ../components/sass/styles.scss */
+/* line 1278, ../components/sass/styles.scss */
 .ebp-product {
   background: url("../img/bp.png") no-repeat center center;
   background-size: cover; }
@@ -1018,41 +1117,41 @@ footer {
 /***********************
 ## Product Featurette ##  
 ************************/
-/* line 1187, ../components/sass/styles.scss */
+/* line 1288, ../components/sass/styles.scss */
 .feature-title {
   text-align: left; }
   @media only screen and (min-width: 768px) {
-    /* line 1187, ../components/sass/styles.scss */
+    /* line 1288, ../components/sass/styles.scss */
     .feature-title {
       text-align: center; } }
 
-/* line 1195, ../components/sass/styles.scss */
+/* line 1296, ../components/sass/styles.scss */
 .product img {
   width: 100%; }
 
-/* line 1199, ../components/sass/styles.scss */
+/* line 1300, ../components/sass/styles.scss */
 .features, .product {
   margin-top: 2em; }
 
-/* line 1203, ../components/sass/styles.scss */
+/* line 1304, ../components/sass/styles.scss */
 .feature-img {
   width: 100%;
   height: 300px;
   background-color: #cecece; }
 
-/* line 1209, ../components/sass/styles.scss */
+/* line 1310, ../components/sass/styles.scss */
 .feature {
   margin-bottom: 5em; }
   @media only screen and (min-width: 992px) {
-    /* line 1209, ../components/sass/styles.scss */
+    /* line 1310, ../components/sass/styles.scss */
     .feature {
       margin: 2.15em 0; } }
   @media only screen and (min-width: 1200px) {
-    /* line 1209, ../components/sass/styles.scss */
+    /* line 1310, ../components/sass/styles.scss */
     .feature {
       margin: 3em 0; } }
 
-/* line 1221, ../components/sass/styles.scss */
+/* line 1322, ../components/sass/styles.scss */
 .feature::before, .feature::after {
   content: '';
   opacity: 0;
@@ -1062,16 +1161,16 @@ footer {
   z-index: 999;
   transition: transform 1s cubic-bezier(0.55, 0, 0.1, 1), opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
   @media only screen and (min-width: 992px) {
-    /* line 1221, ../components/sass/styles.scss */
+    /* line 1322, ../components/sass/styles.scss */
     .feature::before, .feature::after {
       left: 24em; } }
   @media only screen and (min-width: 1200px) {
-    /* line 1221, ../components/sass/styles.scss */
+    /* line 1322, ../components/sass/styles.scss */
     .feature::before, .feature::after {
       left: 30em; } }
 
 @media only screen and (min-width: 992px) {
-  /* line 1240, ../components/sass/styles.scss */
+  /* line 1341, ../components/sass/styles.scss */
   .feature::before {
     top: 6em;
     width: 10px;
@@ -1082,12 +1181,12 @@ footer {
     -o-transform: scaleX(0);
     transform: scaleX(0); } }
 @media only screen and (max-width: 1200px) {
-  /* line 1240, ../components/sass/styles.scss */
+  /* line 1341, ../components/sass/styles.scss */
   .feature::before {
     top: 6.4em; } }
 
 @media only screen and (min-width: 992px) {
-  /* line 1253, ../components/sass/styles.scss */
+  /* line 1354, ../components/sass/styles.scss */
   .feature::after {
     top: -3.36em;
     width: 7px;
@@ -1098,11 +1197,11 @@ footer {
     -o-transform: translateX(0px);
     transform: translateX(0px); } }
 @media only screen and (max-width: 1200px) {
-  /* line 1253, ../components/sass/styles.scss */
+  /* line 1354, ../components/sass/styles.scss */
   .feature::after {
     top: -4.34em; } }
 
-/* line 1267, ../components/sass/styles.scss */
+/* line 1368, ../components/sass/styles.scss */
 .animate.feature::before {
   opacity: 1;
   transform-origin: left center;
@@ -1112,7 +1211,7 @@ footer {
   -o-transform: scaleX(24);
   transform: scaleX(24); }
   @media only screen and (max-width: 1200px) {
-    /* line 1267, ../components/sass/styles.scss */
+    /* line 1368, ../components/sass/styles.scss */
     .animate.feature::before {
       -webkit-transform: scaleX(19);
       -moz-transform: scaleX(19);
@@ -1120,7 +1219,7 @@ footer {
       -o-transform: scaleX(19);
       transform: scaleX(19); } }
 
-/* line 1277, ../components/sass/styles.scss */
+/* line 1378, ../components/sass/styles.scss */
 .animate.feature:nth-child(2)::before {
   -webkit-transform: scaleX(20);
   -moz-transform: scaleX(20);
@@ -1128,7 +1227,7 @@ footer {
   -o-transform: scaleX(20);
   transform: scaleX(20); }
   @media only screen and (max-width: 1200px) {
-    /* line 1277, ../components/sass/styles.scss */
+    /* line 1378, ../components/sass/styles.scss */
     .animate.feature:nth-child(2)::before {
       -webkit-transform: scaleX(15);
       -moz-transform: scaleX(15);
@@ -1136,7 +1235,7 @@ footer {
       -o-transform: scaleX(15);
       transform: scaleX(15); } }
 
-/* line 1285, ../components/sass/styles.scss */
+/* line 1386, ../components/sass/styles.scss */
 .animate.feature::after {
   opacity: 1;
   -webkit-transform: translateX(240px);
@@ -1144,21 +1243,21 @@ footer {
   -o-transform: translateX(240px);
   transform: translateX(240px); }
   @media only screen and (max-width: 1200px) {
-    /* line 1285, ../components/sass/styles.scss */
+    /* line 1386, ../components/sass/styles.scss */
     .animate.feature::after {
       -webkit-transform: translateX(190px);
       -moz-transform: translateX(190px);
       -o-transform: translateX(190px);
       transform: translateX(190px); } }
 
-/* line 1294, ../components/sass/styles.scss */
+/* line 1395, ../components/sass/styles.scss */
 .animate.feature:nth-child(2)::after {
   -webkit-transform: translateX(200px);
   -moz-transform: translateX(200px);
   -o-transform: translateX(200px);
   transform: translateX(200px); }
   @media only screen and (max-width: 1200px) {
-    /* line 1294, ../components/sass/styles.scss */
+    /* line 1395, ../components/sass/styles.scss */
     .animate.feature:nth-child(2)::after {
       -webkit-transform: translateX(150px);
       -moz-transform: translateX(150px);
@@ -1168,7 +1267,7 @@ footer {
 /***********************
 ## Medical Featurette ##  
 ************************/
-/* line 1307, ../components/sass/styles.scss */
+/* line 1408, ../components/sass/styles.scss */
 .medical {
   margin: 10px 0;
   width: 100%;
@@ -1176,98 +1275,98 @@ footer {
   background: url("../img/bp-2.jpg") no-repeat center center;
   background-size: cover; }
   @media only screen and (min-width: 992px) {
-    /* line 1307, ../components/sass/styles.scss */
+    /* line 1408, ../components/sass/styles.scss */
     .medical {
       height: 600px; } }
 
-/* line 1319, ../components/sass/styles.scss */
+/* line 1420, ../components/sass/styles.scss */
 .hero-title, .medical .feature-title {
   margin-top: 1em;
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.9); }
   @media only screen and (max-width: 992px) {
-    /* line 1319, ../components/sass/styles.scss */
+    /* line 1420, ../components/sass/styles.scss */
     .hero-title, .medical .feature-title {
       text-align: center; } }
 
 @media only screen and (min-width: 480px) {
-  /* line 1330, ../components/sass/styles.scss */
+  /* line 1431, ../components/sass/styles.scss */
   .hero-title {
     margin-top: 4em; } }
 @media only screen and (min-width: 992px) {
-  /* line 1336, ../components/sass/styles.scss */
+  /* line 1437, ../components/sass/styles.scss */
   .hero-title {
     margin-top: 25em; }
 
-  /* line 1340, ../components/sass/styles.scss */
+  /* line 1441, ../components/sass/styles.scss */
   .medical .feature-title {
     margin-top: 0; } }
-/* line 1345, ../components/sass/styles.scss */
+/* line 1446, ../components/sass/styles.scss */
 .hero-title h1, .medical .feature-title h1 {
   color: #e95f9d; }
   @media only screen and (min-width: 992px) {
-    /* line 1345, ../components/sass/styles.scss */
+    /* line 1446, ../components/sass/styles.scss */
     .hero-title h1, .medical .feature-title h1 {
       font-size: 3em; } }
 
 /***************************
 ## Related Product Styles ##
 ****************************/
-/* line 1359, ../components/sass/styles.scss */
+/* line 1460, ../components/sass/styles.scss */
 .related {
   background-color: white; }
 
-/* line 1363, ../components/sass/styles.scss */
+/* line 1464, ../components/sass/styles.scss */
 .related.featurette {
   padding: 2.5em 0; }
 
-/* line 1367, ../components/sass/styles.scss */
+/* line 1468, ../components/sass/styles.scss */
 .tab-content {
   margin-top: 2em; }
 
-/* line 1371, ../components/sass/styles.scss */
+/* line 1472, ../components/sass/styles.scss */
 .related-tab-title {
   text-align: center;
   margin: 3em 0 2em 0; }
 
-/* line 1376, ../components/sass/styles.scss */
+/* line 1477, ../components/sass/styles.scss */
 .related-tabs ul {
   list-style-type: none;
   width: 360px;
   margin: auto;
   padding: 0; }
-  /* line 1382, ../components/sass/styles.scss */
+  /* line 1483, ../components/sass/styles.scss */
   .related-tabs ul li {
     display: inline-block;
     margin: 0 1.5em; }
-    /* line 1387, ../components/sass/styles.scss */
+    /* line 1488, ../components/sass/styles.scss */
     .related-tabs ul li a {
       display: block;
       width: 75px;
       height: 75px;
       background-color: #cecece;
       border-radius: 50%; }
-    /* line 1395, ../components/sass/styles.scss */
+    /* line 1496, ../components/sass/styles.scss */
     .related-tabs ul li.active a {
       border: 1px solid #1ebbef; }
 
 @media only screen and (max-width: 440px) {
-  /* line 1402, ../components/sass/styles.scss */
+  /* line 1503, ../components/sass/styles.scss */
   .related-tabs ul li {
     margin: 0 1em; } }
-/* line 1408, ../components/sass/styles.scss */
+/* line 1509, ../components/sass/styles.scss */
 .tab-img-1 {
   height: 267px;
   background: url("../img/1.jpg") no-repeat center center;
   background-size: 100%; }
 
-/* line 1408, ../components/sass/styles.scss */
+/* line 1509, ../components/sass/styles.scss */
 .tab-img-2 {
   height: 267px;
   background: url("../img/2.jpg") no-repeat center center;
   background-size: 100%; }
 
-/* line 1408, ../components/sass/styles.scss */
+/* line 1509, ../components/sass/styles.scss */
 .tab-img-3 {
   height: 267px;
   background: url("../img/3.jpg") no-repeat center center;

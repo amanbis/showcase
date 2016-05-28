@@ -949,11 +949,14 @@ footer {
 
 .product-tile:nth-child(3), .product-tile:nth-child(4) {
 	padding-top: 5px;
-	padding-bottom: 5px;
 }
 
 .product-tile:nth-child(5), .product-tile:nth-child(6) {
 	padding-top: 5px;
+}
+
+.bottle-feeding .product-tile:nth-child(3), .bottle-feeding .product-tile:nth-child(4) {
+	padding-bottom: 5px;
 }
 
 .product-content {
@@ -1130,6 +1133,104 @@ footer {
 	background: url('../img/bottle/dynamic-teat.png') no-repeat center center;
 	background-size: 191px 200px;
 }
+
+.cup-360 {
+  width: 167px;
+  margin-top: 2.5em;
+}
+
+.img-360 {
+	width: 167px;
+	height: 200px;
+	background: url('../img/cups/360.png') no-repeat center center;
+	background-size: 167px 200px;
+}
+
+.hc-cup {
+  width: 142px;
+  margin-top: 2.75em;
+}
+
+.hc-img {
+	width: 142px;
+	height: 200px;
+	background: url('../img/cups/hot-cold.png') no-repeat center center;
+	background-size: 142px 200px;
+}
+
+.nonspill-cup {
+  width: 115px;
+  margin-top: 2.5em;
+}
+
+.nonspill-img {
+	width: 115px;
+	height: 200px;
+	background: url('../img/cups/nonspill.png') no-repeat center center;
+	background-size: 115px 200px;
+}
+
+.dynamic-soother {
+  width: 129px;
+  margin-top: 2.5em;
+}
+
+.soother-img {
+	width: 129px;
+	height: 200px;
+	background: url('../img/soothers/soother.png') no-repeat center center;
+	background-size: 129px 200px;
+}
+
+.soother-holder {
+  width: 282px;
+  margin-top: 2.5em;
+}
+
+.holder-img {
+	width: 282px;
+	height: 200px;
+	background: url('../img/soothers/holder.png') no-repeat center center;
+	background-size: 282px 200px;
+}
+
+.heat-pack {
+  width: 160px;
+  margin-top: 2.5em;
+}
+
+.pack-img {
+	width: 160px;
+	height: 200px;
+	background: url('../img/care/heat-pack.png') no-repeat center center;
+	background-size: 160px 200px;
+}
+
+.bottle-warmer {
+  width: 162px;
+  margin-top: 2.5em;
+}
+
+.warmer-img {
+	width: 162px;
+	height: 200px;
+	background: url('../img/care/warmer.png') no-repeat center center;
+	background-size: 162px 200px;
+}
+
+.bottle-insulator {
+  width: 85px;
+  margin-top: 2.5em;
+}
+
+.insulator-img {
+	width: 85px;
+	height: 200px;
+	background: url('../img/care/insulator.png') no-repeat center center;
+	background-size: 85px 200px;
+}
+
+
 
 
 /****************************
