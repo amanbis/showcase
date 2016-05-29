@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://getbootstrap.com/examples/navbar/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Product Showcase Prototype">
+    <meta name="author" content="Aman Biswas">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>LOVI - Baby Care</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./_/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./example_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!--<link rel="stylesheet" type="text/css" href="./_/css/main.css">-->
+    <link rel="stylesheet" type="text/css" href="./_/css/styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Navigation -->
+      <nav class="nav-container row">
+
+        <!-- Logo -->
+        <div class="col-md-3 col-xs-6">
+          <a href="index.html"><div class="logo"></div></a>
+        </div> <!-- /Logo -->
+
+        <!-- Main Navigation Links -->
+        <div class="nav-links col-md-6 col-xs-12">
+          <ul class="nav-links-main">
+            <li><a href="about.html">About</a></li>
+            <!-- Product Category Dropdown -->
+            <span class="drawer-container">
+              <li class="products-btn">
+                <a href="#">Products <span class="caret"></span></a>
+              </li>
+              <div class="drawer row">
+                  <div class="drawer-menu">
+                    <ul class="product-categories">
+                      <a href="breastfeeding.html"><li>Breastfeeding</li></a>
+                      <a href="bottle-feeding.html"><li>Bottle feeding</li></a>
+                      <a href="cups.html"><li>Non-spill Cups</li></a>
+                      <a href="soother.html"><li>Dynamic Soother</li></a>
+                      <a href="baby-care.html"><li>Baby Care</li></a>
+                    </ul>
+                  </div>
+              </div>
+            </span><!-- Product Category Dropdown -->
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <!-- Search Input for Mobile -->
+          <div class="search-sm visible-sm visible-xs">
+            <form>
+              <input type="text" name="Search" placeholder="Search products...">
+            </form>
+          </div> <!-- /Search Input for Mobile -->
+        </div> <!-- /Main Navigation Links -->
+
+        <div class="col-md-3 col-xs-6">
+          <!-- Search Input for Desktop/Tablet -->
+          <div class="search-md visible-lg visible-md">
+            <form>
+              <input type="text" name="Search" placeholder="Search products...">
+            </form>
+            <a class="search-btn" aria-label="Search">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </a>
+          </div><!-- /Search Input for Desktop/Tablet -->
+
+          <!-- Hamburger Menu for Tablet/Mobile -->
+          <a href="#menu" title="Menu" class="menu is-inactive visible-sm visible-xs" aria-label="menu">
+              <div class="hamburger origin-left"></div>
+          </a>
+        </div> <!-- /Hamburger Menu for Tablet/Mobile -->
+      </nav> <!-- /Navigation -->
+
+     <!-- Hero Header -->
+      <header class="hero care-hero row">
+        <!-- Hero Content -->
+        <div class="care-heading container col-xs-4 col-xs-offset-1 hidden-sm hidden-xs">
+          <h1>Baby Care</h1>
+          <p class="lead">A happy child is a child of fulfilled and energetic parents. LOVI products are developed on the premise of simplifyig a child's needs through easy to use, innovative design with minimum maintenance.</p>
+        </div> <!-- /Hero Content -->
+      </header> <!-- /Hero Header -->
+
+      <!-- Introduction -->
+      <section class="category-intro row hidden-md hidden-lg">
+        <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+          <h1>Baby Care</h1>
+          <p class="lead">A happy child is a child of fulfilled and energetic parents. LOVI products are developed on the premise of simplifyig a child's needs through easy to use, innovative design with minimum maintenance.</p>
+        </div>
+      </section> <!-- /Introduction -->
+
+      <!-- Products -->
+      <section class="products row">
+        <div class="product-tile col-md-6">
+          <div class="product-content">
+            <h2>Heat Pack</h2>
+            <a href="product.html">Heat food anytime, anywhere <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+            <div class="product-img heat-pack">
+              <a href="product.html">
+                <div class="pack-img"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-tile col-md-6">
+          <div class="product-content">
+            <h2>Bottle Warmer</h2>
+            <a href="product.html">Warm food safely and conveniently <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+            <div class="product-img bottle-warmer">
+              <a href="product.html">
+                <div class="warmer-img"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-tile col-md-6">
+          <div class="product-content">
+            <h2>Bottle Insulator</h2>
+            <a href="product.html">Chic, durable, 3 layered insulation <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+            <div class="product-img bottle-insulator">
+              <a href="product.html">
+                <div class="insulator-img"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Explore Products -->
+      <section class="explore featurette row">
+        <div class="col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+          <div class="col-md-5 col-sm-6">
+            <div class="explore-img soother-explore"></div>
+            <div class="explore-title">
+              <h3>Dynamic Soothers</h3>
+              <a href="#">
+                <p>Donec ullamcorper nulla non metus auctor <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-2 hidden-sm hidden-xs">
+            <div class="vr"></div>
+          </div>
+          <div class="col-md-5 col-sm-6">
+            <div class="explore-img breastfeeding-explore"></div>
+            <div class="explore-title">
+              <h3>Breastfeeding</h3>
+              <a href="#">
+                <p>Professional protection of lactation <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section> <!-- /Explore Products -->
+
+      <footer></footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./bower_components/jquery/jquery.min.js"><\/script>')</script>
+    <!-- Bootstrap JS Library -->
+    <script src="_/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./example_files/ie10-viewport-bug-workaround.js"></script>
+    <!-- -->
+    <script src="./bower_components/jQuery-viewport-checker/dist/jquery.viewportchecker.min.js"></script>
+    <!-- Main JS -->
+    <script src="_/js/main.js"></script>
+  
+
+  </body>
+</html>

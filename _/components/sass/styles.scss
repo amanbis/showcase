@@ -1,0 +1,1514 @@
+/* === Color Variables === */
+
+$pink: #e95f9d;
+$accent-pink: #d10371;
+$blue: #1ebbef;
+$grey: #cecece;
+
+
+/* === Media Query Mixin === */
+
+@mixin respond-to($media, $query) {
+	@if $media == xs {
+		@media only screen and ($query: 0px) {
+			@content
+		}
+	} @else if $media == sm {
+		@media only screen and ($query: 768px) {
+			@content
+		}
+	} @else if $media == md {
+		@media only screen and ($query: 992px) {
+			@content
+		}
+	} @else if $media == lg {
+		@media only screen and ($query: 1200px) {
+			@content
+		}
+	} @else {
+		@media only screen and ($query: $media) {
+			@content
+		}
+	}
+}
+
+
+/* === CSS Transform Mixins === */
+
+@mixin scale-out($length) {
+	-webkit-transform: scaleX($length);
+	-moz-transform: scaleX($length);
+	-ms-transform: scaleX($length);
+	-o-transform: scaleX($length);
+	transform: scaleX($length);
+}
+
+@mixin slide-out($length) {
+	-webkit-transform: translateX($length + px);
+	-moz-transform: translateX($length + px);
+	-o-transform: translateX($length + px);
+	transform: translateX($length + px);
+}
+
+
+
+
+/*************************
+
+==== Universal Styles ====
+
+**************************/
+
+
+/* === Body Styles === */
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+/**************************
+## Navigation Bar Styles ##  
+****************************/
+
+.nav-container {
+	/*margin: 0;*/
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.nav-container > div:first-child {
+	background-color: #fff;
+}
+
+.nav-container > div:nth-child(2) {
+	background-color: #fff;
+}
+
+.nav-container > div:nth-child(3) {
+	background-color: #fff;
+	height: 73px;
+}
+
+
+/* === Logo === */
+
+.logo {
+	background-color: $accent-pink;
+	width: 100px;
+	height: 73px;
+	border-radius: 0 15px 15px 0;
+}
+
+
+/* === Main Nav Links Container === */
+
+.nav-links {
+	position: absolute;
+	top: 73px;
+	z-index: 998;
+}
+
+
+/* Responsive Styling for Mobile */
+
+@include respond-to(md, max-width) {
+	.nav-links {
+		visibility: hidden;
+		opacity: 0;
+		transform: scaleY(0);
+		transform-origin: center top;
+		transition: transform 1.0s cubic-bezier(.55,0,.1,1),
+					opacity 0.3s cubic-bezier(.55,0,.1,1),
+					visibility 0.3s cubic-bezier(.55,0,.1,1);
+	}
+
+	.nav-links.show {
+		visibility: visible;
+		opacity: 0.95;
+		transform: scaleY(1);
+		transition: transform 1.0s cubic-bezier(.55,0,.1,1),
+					opacity 0.3s cubic-bezier(.55,0,.1,1),
+					visibility 0.3s cubic-bezier(.55,0,.1,1);
+	}
+
+	.nav-links li:active, .nav-links li.active {
+		border-left: 5px solid $accent-pink;
+	}
+
+	.products-btn.expanded {
+		border-bottom-color: $accent-pink;
+		transition: border-bottom-color 0.5s cubic-bezier(.55,0,.1,1);
+	}
+}
+
+
+.nav-links-main {
+	padding: 0;
+	margin: 0;
+}
+
+.nav-links ul li {
+	padding: 1em 0;
+	border-bottom: 1px solid $grey;
+	padding-left: 20px;
+	text-transform: uppercase;
+	list-style-type: none;
+	cursor: pointer;
+}
+
+.nav-links a {
+	color: #777;
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+
+/* Product Categories Dropdown */
+
+.drawer {
+	position: relative;
+	height: 0;
+	transition: height 1.0s cubic-bezier(.55,0,.1,1);
+}
+
+.drawer.show {
+	height: 245px;
+
+	.drawer-menu {
+		opacity: 1;
+		visibility: visible;
+		transition:	opacity 0.5s cubic-bezier(.55,0,.1,1) 0.5s,
+				visibility 0.5s cubic-bezier(.55,0,.1,1) 0.5s;
+	}
+}
+
+.drawer-menu {
+	display: table;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px 0 30px;
+	background-color: #f9f9f9;
+	opacity: 0;
+	visibility: hidden;
+	transition:	opacity 0.3s cubic-bezier(.55,0,.1,1),
+				visibility 0.3s cubic-bezier(.55,0,.1,1);
+}
+
+
+/* === Search Input Styling === */
+
+nav input[type=text] {
+	padding: 15px 20px;
+	border: 0;
+	background-color: #f9f9f9;
+	transition: background-color 0.5s ease-in-out;
+}
+
+nav input[type=text]:focus {
+	background-color: #f3f3f3;
+}
+
+
+/* Search Input for Mobile */
+
+.search-sm {
+	margin: 1em 0;
+}
+
+.search-sm input[type=text] {
+	width: 100%;
+}
+
+
+/* Search Input for Desktop/Tablet */
+
+.search-md input[type=text] {
+	position: absolute;
+	top: 11px;
+	right: 65px;
+	width: 0;
+	opacity: 0;
+	transition: width 1.0s cubic-bezier(.55,0,.1,1),
+				opacity 0.5s cubic-bezier(.55,0,.1,1);
+}
+
+.search-md.active input[type=text] {
+	width: 75%;
+	opacity: 1;
+}
+
+.search-btn {
+	position: absolute;
+	top: 11px;
+	right: 15px;
+	padding: 16px 18px;
+	width: 50px;
+	height: 50px;
+	background-color: #f3f3f3;
+	cursor: pointer;
+}
+
+
+/* Responsive Styling for Tablet */
+
+@media only screen and (min-width: 992px) {
+	.nav-links {
+		position: relative;
+		top: 0;
+		height: 73px;
+	}
+
+	.nav-links-main {
+		margin: 0 auto;
+		padding: 0;
+		max-width: 455px;
+	}
+
+	.nav-links ul li {
+		display: inline-block;
+		width: 7.75em;
+		padding: 26.5px 0;
+		margin: 0;
+		border: 0;
+		text-align: center;
+	}
+
+	.nav-links a::after {
+		content: '';
+		display: block;
+		width: 75%;
+		height: 3px;
+		margin: 0.5em auto;
+		background-color: $accent-pink;
+		@include scale-out(0);
+		transition: transform 0.5s cubic-bezier(.55,0,.1,1);
+	}
+
+	.product-categories a::after {
+		display: none;
+	}
+
+	.nav-links li:active {
+		border: 0;
+	}
+
+	.nav-links li:hover a::after, .drawer-container:hover a::after, .products-btn.active a::after {
+		@include scale-out(1);
+	}
+
+	.products-btn a::after {
+		width: 100%;
+	}
+
+	.nav-links a:hover {
+		color: #555;
+	}
+
+	.drawer {
+		position: absolute;
+		top: 73px;
+		left: -227px;
+		width: 940px;
+		height: 0;
+		margin: 0;
+		z-index: 997;
+		background-color: #fff;
+		opacity: 0.95;
+	}
+
+	.drawer-menu {
+		display: table;
+		width: 100%;
+		padding: 2em 3em;
+		background-color: transparent;
+
+		.product-categories {
+			padding: 0;
+		}
+
+		.product-categories li {
+			width: 12em;
+		}
+
+		.product-categories li::before {
+			content: '';
+			display: block;
+			width: 75px;
+			height: 75px;
+			margin: 0 auto;
+			margin-bottom: 1em;
+			background-color: #f3f3f3;
+
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		.product-categories li:hover::before {
+			background-color: $pink;
+		}
+	}
+
+	.drawer.show {
+		height: 200px;
+
+		.drawer-menu {
+			visibility: visible;
+			opacity: 0.95;
+		}
+	}
+}
+
+
+/* Responsive Styling for Desktop */
+
+@media only screen and (min-width: 1200px) {
+	.products-btn a::after {
+		transition: transform 0.5s cubic-bezier(.55,0,.1,1) 0.5s;
+	}
+
+	.nav-links li:hover a::after, .drawer-container:hover a::after, .products-btn.active a::after {
+		transition: transform 0.5s cubic-bezier(.55,0,.1,1);
+	}
+
+	.drawer {
+		width: 1140px;
+		left: -278px;
+		background-color: #fff;
+		opacity: 0.95;
+		transition: height 1.0s cubic-bezier(.55,0,.1,1) 0.5s;
+	}
+
+	.drawer-menu {
+		transition: opacity 0.3s cubic-bezier(.55,0,.1,1) 0.5s,
+					visibility 0.3s cubic-bezier(.55,0,.1,1) 0.5s;
+
+		.product-categories {
+			padding: 0 5em;
+		}
+	}
+
+	.drawer-container:hover .drawer {
+		height: 200px;
+
+		.drawer-menu {
+			visibility: visible;
+			opacity: 1;
+
+			transition: opacity 0.5s cubic-bezier(.55,0,.1,1) 0.75s,
+						visibility 0.5s cubic-bezier(.55,0,.1,1) 0.75s;
+		}
+		
+		transition: height 1.0s cubic-bezier(.55,0,.1,1) 0.3s;
+	}
+}
+
+
+/* === Menu Icon === */
+
+nav .menu {
+  z-index: 999;
+  position: absolute;
+  top: -5px;
+  right: 0;
+  height: 4em;
+  width: 4em;
+  background-color: none;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  outline: 0;
+
+  -webkit-transition: background-color 0.3s cubic-bezier(.55,0,.1,1);
+  -moz-transition: background-color 0.3s cubic-bezier(.55,0,.1,1);
+  -o-transition: background-color 0.3s cubic-bezier(.55,0,.1,1);
+  -ms-transition: background-color 0.3s cubic-bezier(.55,0,.1,1);
+  transition: background-color 0.3s cubic-bezier(.55,0,.1,1);
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+  position: absolute;
+  background-color: #333333;
+  width: 2em;
+  height: 0.2em;
+  
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(.55,0,.1,1), 
+  					  background-color 0.3s;
+  -moz-transition: 	  -moz-transform 0.3s cubic-bezier(.55,0,.1,1), 
+  				   	  background-color 0.3s;
+  -o-transition: 	  -o-transform 0.3s cubic-bezier(.55,0,.1,1), 
+  				 	  background-color 0.3s;
+  -ms-transition: 	  -ms-transform 0.3s cubic-bezier(.55,0,.1,1), 
+  				  	  background-color 0.3s;
+  transition: 		  transform 0.3s cubic-bezier(.55,0,.1,1), 
+  			  		  background-color 0.3s;
+}
+
+.hamburger {
+  top: 70%;
+  left: 25%;
+}
+
+.hamburger::before, .hamburger::after {
+  content: '';
+  left: 0;
+}
+
+.hamburger::before {
+  -webkit-transform: translateY(-9px);
+  -moz-transform: translateY(-9px);
+  -o-transform: translateY(-9px);
+  -ms-transform: translateY(-9px);
+  transform: translateY(-9px);
+}
+
+.hamburger::after {
+  -webkit-transform: translateY(9px);
+  -moz-transform: translateY(9px);
+  -o-transform: translateY(9px);
+  -ms-transform: translateY(9px);
+  transform: translateY(9px);
+}
+
+
+/** Active/Inactive Menu and Navbar States **/
+
+.is-active > .hamburger {
+  background-color: transparent;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -o-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.is-active > .hamburger::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: $accent-pink;
+}
+
+.is-active > .hamburger::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: $accent-pink;
+}
+
+.is-active ~ .links-container {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+
+
+/***********************
+## Hero Header Styles ##  
+************************/
+
+header {
+	position: relative;
+}
+
+.hero div h1 {
+	margin-bottom: 1em;
+	color: $pink;
+}
+
+.product-nav {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-color: rgba(#f3f3f3, 0.95);
+}
+
+.product-nav > div {
+	padding: 2em 1em;
+}
+
+.sticky {
+	position:fixed;
+	max-width: 1140px;
+	top: 0;
+	z-index: 1000;
+}
+
+.product-nav h3 {
+	line-height: 0;
+	margin: 0;
+}
+
+.buy {
+	position: absolute;
+	top: -1.3em;
+	margin: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s ease-in-out,
+				visibility 0.5s ease-in-out;
+}
+
+.buy.visible {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.product-nav a {
+	padding: 5px 16px;
+}
+
+.hero {
+	margin: 0;
+	width: 100%;
+	height: 400px;
+
+	@include respond-to(md, min-width) {
+		height: 600px;
+	}
+}
+
+
+
+/**********************
+## Featurette Styles ##
+***********************/
+
+.featurette {
+	background-color: #f3f3f3;
+	padding: 0;
+	margin: 0;
+
+	@include respond-to(xs, min-width) {
+		padding: 2em 0;
+	}
+	@include respond-to(md, min-width) {
+		padding: 2.5em;
+	}
+
+	@include respond-to(lg, min-width) {
+		padding: 5em;
+	}
+}
+
+
+
+/***************************
+## Explore Product Styles ##
+****************************/
+
+.explore-img {
+	max-width: 400px;
+	height: 240px;
+	margin: 2em auto;
+	background-color: $grey;
+	border-radius: 5px;
+
+	@include respond-to (sm, min-width) {
+		width: 100%;
+		height: 265px;
+		margin: 0;
+	}
+}
+
+.explore-title {
+	text-align: center;
+}
+
+.explore-title a {
+	color: #2198b8;
+}
+
+.vr {
+	width: 1px;
+	height: 260px;
+	margin: 2.5px auto;
+	background: $grey;
+}
+
+footer {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 400px;
+	background-color: $grey;
+}
+
+
+
+
+
+/*************************
+
+==== Homepage Styles ====
+
+**************************/
+
+
+/********************
+## Carousel Styles ##  
+*********************/
+
+.carousel {
+	height: 600px;
+}
+
+.carousel-control {
+	opacity: 0.25;
+	transition: opacity 0.3s cubic-bezier(.55,0,.1,1);
+}
+
+.carousel-control.left, .carousel-control.right {
+	background-image: none;
+}
+
+.carousel-indicators li {
+	background-color: $pink;
+	border-color: $pink;
+}
+
+.carousel-indicators .active {
+	background-color: #f8f8f8;
+}
+
+
+/*****************
+## Promo Styles ##  
+******************/
+
+.promo {
+	margin: 10px 0;
+}
+
+.promo-tile {
+	padding: 0;
+	height: 200px;
+}
+
+.promo-tile:nth-child(1), .promo-tile:nth-child(2) {
+
+	padding-bottom: 10px;
+
+	@include respond-to(md, min-width) {
+		padding-bottom: 0;
+		padding-right: 10px;
+	}
+}
+
+.promo-content {
+	width: 100%;
+	height: 100%;
+	background-color: #f8f8f8;
+}
+
+.soother-promo {
+	background: url('../img/home/soother-promo.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.teat-promo {
+	background: url('../img/home/teat-promo.jpg') no-repeat center center;
+	background-size: cover;	
+}
+
+.medical-promo {
+	background: url('../img/home/medical-promo.jpg') no-repeat center center;
+	background-size: cover;	
+}
+
+/****************
+## Blog Styles ##  
+*****************/
+
+.blog {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	height: 622px;
+	background: url('../img/blog-xs.png') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, min-width) {
+		height: 509px;
+		background: url('../img/blog-md.png') no-repeat center center;
+	}
+}
+
+
+
+
+
+/**************************
+
+==== About Page Styles ====
+
+***************************/
+
+
+/***********************
+## Hero Header Styles ##  
+************************/
+
+.about-hero {
+	background: url('../img/about-hero.jpg') no-repeat left center;
+	background-size: cover;
+
+	@include respond-to(md, min-width) {
+		background: url('../img/about-hero.jpg') no-repeat center center;
+	}
+}
+
+/*******************
+## Content Styles ##  
+********************/
+
+.about {
+	margin: 2em 0 2.25em 0;
+}
+
+/* === Intro === */
+
+.about-heading {
+	margin-top: 8em;
+
+	h1 {
+		margin-bottom: 1em;
+	}
+}
+
+.about-intro h1 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.about-intro .lead {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+/* === Main Content === */
+
+.about-content h2 {
+	margin-bottom: 0.75em;
+}
+
+.about-content .lead.normal {
+	font-size: 1.25em;
+}
+
+.about-side-img {
+	height: 500px;
+	background-color: #f3f3f3;
+	background: url('../img/about-side.jpg') no-repeat left center;
+	background-size: cover;
+}
+
+
+
+
+
+/*****************************
+
+==== Category Page Styles ====
+
+******************************/
+
+
+/*******************
+##  Header Styles ##  
+********************/
+
+.category-hero {
+	background: url('../img/category/bottle-hero.jpg') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, max-width) {
+		background-position: left center;
+	}
+}
+
+.breastfeeding-hero {
+	background: url('../img/category/breastfeeding-hero.jpg') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, max-width) {
+		background-position: left center;
+	}
+
+	.breastfeeding-heading {
+		position: relative;
+		left: 30px;
+		margin-top: 7.5em;
+	}
+}
+
+.bottle-hero {
+	background: url('../img/category/bottle-hero.jpg') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, max-width) {
+		background-position: left center;
+	}
+
+	.bottle-heading {
+		position: relative;
+		left: 40px;
+		margin-top: 7.5em;
+	}
+}
+
+.cup-hero {
+	background: url('../img/category/cup-hero.jpg') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, max-width) {
+		background-position: right center;
+	}
+
+	.cup-heading {
+		position: relative;
+		left: -20px;
+		margin-top: 8em;
+	}
+}
+
+.soother-hero {
+	background: url('../img/category/soother-hero.jpg') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, max-width) {
+		background-position: left center;
+	}
+
+	.soother-heading {
+		position: relative;
+		left: 50px;
+		margin-top: 8em;
+	}
+}
+
+.care-hero {
+	background: url('../img/category/care-hero.jpg') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, max-width) {
+		background-position: right center;
+	}
+
+	.care-heading {
+		position: relative;
+		left: -20px;
+		margin-top: 8em;
+	}
+}
+
+
+/* === Introduction === */
+
+.category-intro {
+	margin: 0;
+	text-align: center;
+	padding: 10px 0;
+}
+
+
+/************************
+## Product Tile Styles ##  
+*************************/
+
+.products {
+	margin: 10px 0;
+}
+
+.product-tile {
+	height: 400px;
+	padding: 0;
+}
+
+.product-tile:nth-child(1), .product-tile:nth-child(3), .product-tile:nth-child(5) {
+	padding-right: 5px;
+}
+
+.product-tile:nth-child(2), .product-tile:nth-child(4), .product-tile:nth-child(6) {
+	padding-left: 5px;
+}
+
+.product-tile:nth-child(1), .product-tile:nth-child(2) {
+	padding-bottom: 5px;
+}
+
+.product-tile:nth-child(3), .product-tile:nth-child(4) {
+	padding-top: 5px;
+}
+
+.product-tile:nth-child(5), .product-tile:nth-child(6) {
+	padding-top: 5px;
+}
+
+.bottle-feeding .product-tile:nth-child(3), .bottle-feeding .product-tile:nth-child(4) {
+	padding-bottom: 5px;
+}
+
+.product-content {
+	width: 100%;
+	height: 100%;
+	padding: 2em 3em;
+	background-color: #f8f8f8;
+}
+
+.product-content .glyphicon {
+	position: relative;
+	top:0.15em;
+	font-size: 0.75em;
+}
+
+.product-tile h2 {
+  margin: 10px 0;
+
+  @include respond-to(sm, max-width) {
+  	font-size: 1.75em;
+  }
+}
+
+.product-tile a {
+  text-decoration: none;
+  color: #2198b8;
+  font-size: 1.5em;
+  font-variant: small-caps;
+}
+
+.product-tile a:hover {
+  text-decoration: underline;
+}
+
+.product-img {
+  margin: 0 auto;
+}
+
+/*.product-img img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}*/
+
+.product-img div {
+	transition: transform 0.3s ease-in-out;
+}
+
+.product-img a:hover div {
+  transform: scale(1.15,1.15);
+}
+
+
+/* === Breastfeeding === */
+
+.m-breastpump {
+  margin-top: 1.5em;
+  width: 176px;
+}
+
+.mbp-img {
+	width: 176px;
+	height: 200px;
+	background: url('../img/products/manual-bp.png') no-repeat center center;
+	background-size: 176px 200px;
+}
+
+.e-breastpump {
+  margin-top: 2.25em;
+  width: 185px;
+}
+
+.ebp-img {
+	width: 185px;
+	height: 200px;
+	background: url('../img/breastfeeding/electric-bp.png') no-repeat center center;
+	background-size: 185px 200px;
+}
+
+.nipple-protector {
+  margin-top: 3.5em;
+  width: 237px;
+}
+
+.protector-img {
+	width: 237px;
+	height: 200px;
+	background: url('../img/products/nipple-protector.png') no-repeat center center;
+	background-size: 237px 200px;
+}
+
+.breastpad {
+  width: 163px;
+  margin-top: 2em;
+}
+
+.pad-img {
+	width: 163px;
+	height: 200px;
+	background: url('../img/products/breast-pads.png') no-repeat center center;
+	background-size: 163px 200px;
+}
+
+
+/* === Bottle Feeding === */
+
+.as-bottle {
+  margin-top: 2.125em;
+  width: 79px;
+}
+
+.as-img {
+	width: 79px;
+	height: 200px;
+	background: url('../img/bottle/active-suckling.png') no-repeat center center;
+	background-size: 79px 200px;
+}
+
+.medical-bottle {
+  margin-top: 2.25em;
+  width: 80px;
+}
+
+.medical-img {
+	width: 80px;
+	height: 200px;
+	background: url('../img/bottle/medical.png') no-repeat center center;
+	background-size: 80px 200px;
+}
+
+.ss-bottle {
+  margin-top: 2.5em;
+  width: 77px;
+}
+
+.ss-img {
+	width: 77px;
+	height: 200px;
+	background: url('../img/bottle/self-steri.png') no-repeat center center;
+	background-size: 77px 200px;
+}
+
+.glass-bottle {
+  width: 74px;
+  margin-top: 2.5em;
+}
+
+.glass-img {
+	width: 74px;
+	height: 200px;
+	background: url('../img/bottle/glass.png') no-repeat center center;
+	background-size: 74px 200px;
+}
+
+.multi-bottle {
+  width: 61px;
+  margin-top: 2.5em;
+}
+
+.multibottle-img {
+	width: 61px;
+	height: 200px;
+	background: url('../img/bottle/multifunctional.png') no-repeat center center;
+	background-size: 61px 200px;
+}
+
+.dynamic-teat {
+  width: 191px;
+  margin-top: 2.5em;
+}
+
+.teat-img {
+	width: 191px;
+	height: 200px;
+	background: url('../img/bottle/dynamic-teat.png') no-repeat center center;
+	background-size: 191px 200px;
+}
+
+.cup-360 {
+  width: 167px;
+  margin-top: 2.5em;
+}
+
+.img-360 {
+	width: 167px;
+	height: 200px;
+	background: url('../img/cups/360.png') no-repeat center center;
+	background-size: 167px 200px;
+}
+
+.hc-cup {
+  width: 142px;
+  margin-top: 2.75em;
+}
+
+.hc-img {
+	width: 142px;
+	height: 200px;
+	background: url('../img/cups/hot-cold.png') no-repeat center center;
+	background-size: 142px 200px;
+}
+
+.nonspill-cup {
+  width: 115px;
+  margin-top: 2.5em;
+}
+
+.nonspill-img {
+	width: 115px;
+	height: 200px;
+	background: url('../img/cups/nonspill.png') no-repeat center center;
+	background-size: 115px 200px;
+}
+
+.dynamic-soother {
+  width: 129px;
+  margin-top: 2.5em;
+}
+
+.soother-img {
+	width: 129px;
+	height: 200px;
+	background: url('../img/soothers/soother.png') no-repeat center center;
+	background-size: 129px 200px;
+}
+
+.soother-holder {
+  width: 282px;
+  margin-top: 2.5em;
+}
+
+.holder-img {
+	width: 282px;
+	height: 200px;
+	background: url('../img/soothers/holder.png') no-repeat center center;
+	background-size: 282px 200px;
+}
+
+.heat-pack {
+  width: 160px;
+  margin-top: 2.5em;
+}
+
+.pack-img {
+	width: 160px;
+	height: 200px;
+	background: url('../img/care/heat-pack.png') no-repeat center center;
+	background-size: 160px 200px;
+}
+
+.bottle-warmer {
+  width: 162px;
+  margin-top: 2.5em;
+}
+
+.warmer-img {
+	width: 162px;
+	height: 200px;
+	background: url('../img/care/warmer.png') no-repeat center center;
+	background-size: 162px 200px;
+}
+
+.bottle-insulator {
+  width: 85px;
+  margin-top: 2.5em;
+}
+
+.insulator-img {
+	width: 85px;
+	height: 200px;
+	background: url('../img/care/insulator.png') no-repeat center center;
+	background-size: 85px 200px;
+}
+
+
+
+
+/****************************
+## Explore Category Styles ##  
+*****************************/
+
+.breastfeeding-explore {
+	background: url('../img/category/breastfeeding-explore.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.bottle-explore {
+	background: url('../img/category/bottle-explore.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.cup-explore {
+	background: url('../img/category/cup-explore.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.soother-explore {
+	background: url('../img/category/soother-explore.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.care-explore {
+	background: url('../img/category/care-explore.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+
+
+/****************************
+
+==== Product Page Styles ====
+
+*****************************/
+
+
+/***********************
+## Hero Header Styles ##  
+************************/
+
+.ebp-product {
+	background: url('../img/bp.png') no-repeat center center;
+	background-size: cover;
+}
+
+
+/***********************
+## Product Featurette ##  
+************************/
+
+.feature-title {
+	text-align: left;
+
+	@include respond-to(sm, min-width) {
+		text-align: center;
+	}
+}
+
+.product img {
+	width: 100%;
+}
+
+.features, .product {
+	margin-top: 2em;
+}
+
+.feature-img {
+	width: 100%;
+	height: 300px;
+	background-color: #cecece;
+}
+
+.feature {
+	margin-bottom: 5em;
+
+	@include respond-to(md, min-width) {
+		margin:  2.15em 0;
+	}
+
+	@include respond-to(lg, min-width) {
+		margin: 3em 0;	
+	}
+}
+
+.feature::before, .feature::after {
+	content: '';
+	opacity: 0;
+	display: block;
+	position: relative;
+	background-color: #cecece;
+	z-index: 999;
+	transition: transform 1.0s cubic-bezier(.55,0,.1,1),
+				opacity 0.3s cubic-bezier(.55,0,.1,1);
+
+	@include respond-to(md, min-width) {
+		left: 24em;
+	}
+
+	@include respond-to(lg, min-width) {
+		left: 30em;
+	}
+}
+
+.feature::before {
+	@include respond-to(md, min-width) {
+		top: 6em;
+		width: 10px;
+		height: 2px;
+		@include scale-out(0);
+	}
+
+	@include respond-to(lg, max-width) {
+		top: 6.4em;
+	}
+}
+
+.feature::after {
+	@include respond-to(md, min-width) {
+		top: -3.36em;
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		@include slide-out(0);
+	}
+
+	@include respond-to(lg, max-width) {
+		top: -4.34em;
+	}
+}
+
+.animate.feature::before {
+	opacity: 1;
+	transform-origin: left center;
+	@include scale-out(24);
+
+	@include respond-to(lg, max-width) {
+		@include scale-out(19);
+	}
+}
+
+.animate.feature:nth-child(2)::before {
+	@include scale-out(20);
+
+	@include respond-to(lg, max-width) {
+		@include scale-out(15);
+	}
+}
+
+.animate.feature::after {
+	opacity: 1;
+	@include slide-out(240);
+
+	@include respond-to(lg, max-width) {
+		@include slide-out(190);
+	}
+}
+
+.animate.feature:nth-child(2)::after {
+	@include slide-out(200);
+
+	@include respond-to(lg, max-width) {
+		@include slide-out(150);
+	}
+}
+
+
+/***********************
+## Medical Featurette ##  
+************************/
+
+.medical {
+	margin: 10px 0;
+	width: 100%;
+	height: 400px;
+	background: url('../img/bp-2.jpg') no-repeat center center;
+	background-size: cover;
+
+	@include respond-to(md, min-width) {
+		height: 600px;
+	}
+}
+
+.hero-title, .medical .feature-title {
+	margin-top: 1em;
+	border: 1px solid white;
+	background-color: rgba(255, 255, 255, 0.9);
+
+	@include respond-to(md, max-width) {
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.hero-title {
+		margin-top: 4em;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.hero-title {
+		margin-top: 25em;
+	}
+
+	.medical .feature-title {
+		margin-top: 0;
+	}
+}
+
+.hero-title h1, .medical .feature-title h1 {
+	color: $pink;
+
+	@include respond-to(md, min-width) {
+		font-size: 3em;
+	}
+
+}
+
+
+/***************************
+## Related Product Styles ##
+****************************/
+
+.related {
+	background-color: white;
+}
+
+.related.featurette {
+	padding: 2.5em 0;
+}
+
+.tab-content {
+	margin-top: 2em;
+}
+
+.related-tab-title {
+	text-align: center;
+	margin: 3em 0 2em 0;
+}
+
+.related-tabs ul {
+	list-style-type: none;
+	width: 360px;
+	margin: auto;
+	padding: 0;
+
+	li {
+		display: inline-block;
+		margin: 0 1.5em;
+
+
+		a {
+			display: block;
+			width: 75px;
+			height: 75px;
+			background-color: #cecece;
+			border-radius: 50%;
+		}
+
+		&.active a{
+			border: 1px solid $blue;
+		}
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	.related-tabs ul li {
+		margin: 0 1em;
+	}
+}
+
+@for $i from 1 through 3 {
+	.tab-img-#{$i} {
+		height: 267px;
+		background: url('../img/#{$i}.jpg') no-repeat center center;
+		background-size: 100%;
+	}
+}
