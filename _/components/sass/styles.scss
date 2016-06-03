@@ -660,7 +660,7 @@ footer {
 *********************/
 
 .carousel {
-	height: 600px;
+	max-height: 600px;
 }
 
 .carousel-control {
@@ -1168,6 +1168,18 @@ footer {
 	height: 200px;
 	background: url('../img/cups/nonspill.png') no-repeat center center;
 	background-size: 115px 200px;
+}
+
+.nonspill-soft {
+  width: 142px;
+  margin-top: 2.75em;
+}
+
+.softspout-img {
+	width: 142px;
+	height: 200px;
+	background: url('../img/cups/nonspill-soft.png') no-repeat center center;
+	background-size: 142px 200px;
 }
 
 .dynamic-soother {
